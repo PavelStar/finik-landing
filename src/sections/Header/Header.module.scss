@@ -1,0 +1,31 @@
+@use "@styles/media" as *;
+@use "@styles/colors" as *;
+
+.header {
+  position: absolute;
+  padding-top: 32px;
+  width: 100%;
+
+  @include mediaTablet {
+    padding-top: 24px;
+  }
+
+  @include mediaMobile {
+    padding-top: 16px;
+  }
+}
+
+.inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.white {
+  background-color: $white;
+}
+
+.transparent {
+  background-color: transparent;
+}

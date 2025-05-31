@@ -1,0 +1,18 @@
+@use "./styles/colors" as *;
+
+.app {
+  position: relative;
+  background: radial-gradient(
+    41.28% 85.7% at 70.14% 0%,
+    #589d13 0%,
+    #3d750d 30%,
+    #1b2f00 75.06%,
+    #1a1a1a 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 572px;
+
+  .wrapper {
+    background-color: $white;
+  }
+}

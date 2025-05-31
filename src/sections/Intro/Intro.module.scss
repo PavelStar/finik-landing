@@ -1,0 +1,32 @@
+@use "../../styles/media" as *;
+@use "../../styles/colors" as *;
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  min-height: 572px;
+  padding-top: 80px;
+  padding-bottom: 64px;
+
+  @include mediaTablet {
+    padding-bottom: 32px;
+    min-height: 324px;
+  }
+
+  @include mediaMobile {
+    min-height: 392px;
+  }
+}
+
+.button {
+  margin-bottom: 32px;
+
+  @include mediaTablet {
+    margin-bottom: 16px;
+  }
+
+  @include mediaMobile {
+  }
+}

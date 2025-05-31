@@ -1,0 +1,54 @@
+@use "@styles/media" as *;
+@use "@styles/colors" as *;
+
+.partners {
+  margin: 0;
+  padding: 48px 0;
+  width: 100%;
+  max-width: none;
+
+  @include mediaTablet {
+    padding: 24px 0;
+  }
+
+  @include mediaMobile {
+  }
+}
+
+.list {
+  display: flex;
+  gap: 80px;
+
+  @include mediaTablet {
+    gap: 48px;
+  }
+
+  @include mediaMobile {
+  }
+
+  li {
+    width: fit-content;
+
+    &:last-child {
+      margin-right: 80px;
+
+      @include mediaTablet {
+        margin-right: 48px;
+      }
+
+      @include mediaMobile {
+      }
+    }
+  }
+}
+
+.logo {
+  width: fit-content;
+
+  @include mediaTablet {
+    height: 24px;
+  }
+
+  @include mediaMobile {
+  }
+}

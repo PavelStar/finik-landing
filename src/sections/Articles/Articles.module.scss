@@ -1,0 +1,39 @@
+@use "@styles/media" as *;
+@use "@styles/colors" as *;
+
+.articles {
+  @include mediaTablet {
+  }
+
+  @include mediaMobile {
+  }
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  // display: grid;
+  // grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  gap: 48px 24px;
+  width: 100%;
+
+  @include mediaLaptop {
+    // grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  @include mediaTablet {
+    flex-direction: column;
+    gap: 24px 16px;
+  }
+
+  @include mediaMobile {
+  }
+}
+
+.cardWrap {
+  flex: 1 1 calc(50% - 12px);
+}
+
+// .card {
+//   width: 100%;
+// }

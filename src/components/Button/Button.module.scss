@@ -1,0 +1,61 @@
+@use "@styles/media" as *;
+@use "@styles/colors" as *;
+
+.button {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding: 20px 20px 20px 32px;
+
+  &:hover {
+    .background {
+      color: $dark-finik;
+      transition: color 0.2s ease-in-out;
+    }
+  }
+
+  &:focus {
+    .background {
+      color: $dark-finik;
+      transition: color 0.2s ease-in-out;
+    }
+  }
+
+  @include mediaTablet {
+    padding: 16px 16px 16px 24px;
+  }
+
+  @include mediaMobile {
+  }
+
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    height: auto;
+    width: 100%;
+    display: block;
+    color: $finik;
+  }
+
+  .text {
+    font-size: 24px;
+    line-height: 24px;
+    z-index: 1;
+
+    @include mediaTablet {
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+
+  .iconWrap {
+    z-index: 1;
+  }
+
+  .icon {
+  }
+}

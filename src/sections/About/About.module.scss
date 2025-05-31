@@ -1,0 +1,55 @@
+@use "@styles/media" as *;
+@use "@styles/colors" as *;
+
+.about {
+  @include mediaTablet {
+  }
+
+  @include mediaMobile {
+  }
+}
+
+.textWrap {
+  width: 100%;
+  max-width: 909px;
+  align-self: end;
+}
+
+.textInner {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  max-width: 676px;
+
+  @include mediaTablet {
+    max-width: 434px;
+    gap: 24px;
+  }
+}
+
+.titleWrap {
+  // background-color: $dark-finik;
+}
+
+.content {
+  // max-width: 909px;
+}
+
+.list {
+  display: flex;
+  // gap: 80px;
+  width: fit-content;
+  gap: 4px;
+
+  li {
+    &:last-child {
+      margin-right: 4px;
+
+      @include mediaTablet {
+      }
+
+      @include mediaMobile {
+      }
+    }
+  }
+}

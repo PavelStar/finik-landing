@@ -1,0 +1,22 @@
+@use "@styles/media" as *;
+@use "@styles/colors" as *;
+
+.mobileMenu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  height: 100vh;
+  background-color: $white;
+  padding: 32px;
+
+  .link {
+    color: $black;
+
+    @include mediaTablet {
+    }
+  }
+}

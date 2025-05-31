@@ -1,0 +1,23 @@
+@use "@styles/media" as *;
+@use "@styles/colors" as *;
+
+.logo {
+  cursor: pointer;
+  width: 164px;
+  height: 48px;
+
+  @include mediaTablet {
+    width: 108px;
+    height: 32px;
+  }
+
+  @include mediaMobile {
+  }
+
+  &.light {
+    color: $white;
+  }
+  &.dark {
+    color: $black;
+  }
+}

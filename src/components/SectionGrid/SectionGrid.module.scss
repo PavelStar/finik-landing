@@ -1,0 +1,36 @@
+@use "@styles/media" as *;
+@use "@styles/colors" as *;
+
+.sectionGrid {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+
+  @include mediaTablet {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    flex-direction: column;
+  }
+
+  @include mediaMobile {
+  }
+}
+
+.titleWrap {
+  min-width: 209px;
+}
+
+.contentWrap {
+  display: flex;
+  flex-direction: column;
+  max-width: 1143px;
+  width: 100%;
+
+  @include mediaTablet {
+  }
+
+  @include mediaMobile {
+  }
+}

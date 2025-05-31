@@ -1,0 +1,14 @@
+@use "../../styles/media" as *;
+@use "../../styles/colors" as *;
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  @include mediaTablet {
+  }
+
+  @include mediaMobile {
+  }
+}

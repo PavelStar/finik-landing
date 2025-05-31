@@ -1,0 +1,18 @@
+@use "@styles/media" as *;
+@use "@styles/colors" as *;
+
+.menu {
+  display: flex;
+  gap: 48px;
+
+  @include mediaTablet {
+  }
+
+  @include mediaMobile {
+  }
+
+  .link {
+    @include mediaTablet {
+    }
+  }
+}

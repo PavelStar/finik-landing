@@ -1,0 +1,29 @@
+@use "@styles/media" as *;
+@use "@styles/colors" as *;
+
+.howWeWork {
+  @include mediaTablet {
+  }
+
+  @include mediaMobile {
+  }
+}
+
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+  width: 100%;
+
+  @include mediaTablet {
+    gap: 24px 16px;
+  }
+
+  @include mediaMobile {
+    flex-direction: column;
+  }
+}
+
+.cardWrap {
+  flex: 1 1 calc(50% - 12px);
+}

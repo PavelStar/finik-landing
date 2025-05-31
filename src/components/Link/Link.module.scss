@@ -1,0 +1,47 @@
+@use "@styles/media" as *;
+@use "@styles/colors" as *;
+
+.link {
+  cursor: pointer;
+
+  @include mediaTablet {
+  }
+
+  @include mediaMobile {
+  }
+}
+
+.light {
+  color: $white;
+
+  &:hover {
+    color: $dark-grey;
+    transition: color 0.2s ease-in-out;
+  }
+
+  &:active {
+    color: $dark-grey;
+  }
+}
+.dark {
+  color: $black;
+
+  &:hover {
+    color: $light-gray;
+    transition: color 0.2s ease-in-out;
+  }
+
+  &:active {
+    color: $light-gray;
+  }
+}
+
+.S {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.M {
+  font-size: 24px;
+  line-height: 30px;
+}

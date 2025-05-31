@@ -1,0 +1,9 @@
+export { default as Header } from "./Header/Header";
+export { default as Footer } from "./Footer/Footer";
+export { default as Intro } from "./Intro/Intro";
+export { default as Cases } from "./Cases/Cases";
+export { default as Partners } from "./Partners/Partners";
+export { default as About } from "./About/About";
+export { default as HowWeWork } from "./HowWeWork/HowWeWork";
+export { default as Contacts } from "./Contacts/Contacts";
+export { default as Articles } from "./Articles/Articles";

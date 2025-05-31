@@ -1,0 +1,34 @@
+@use "@styles/media" as *;
+@use "@styles/colors" as *;
+
+.accordionButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 72px;
+  height: 72px;
+  background-color: $black;
+  border-radius: 48px;
+
+  &:hover {
+  }
+
+  &:focus {
+  }
+
+  @include mediaTablet {
+    width: 48px;
+    height: 48px;
+  }
+
+  @include mediaMobile {
+  }
+}
+
+.icon {
+  @include mediaTablet {
+    width: 16px;
+    height: 16px;
+  }
+}
