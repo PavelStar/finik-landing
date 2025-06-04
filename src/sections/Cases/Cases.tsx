@@ -1,3 +1,4 @@
+import type { FC } from "react";
 import { Section, Title } from "../../components/index";
 import classNames from "classnames/bind";
 import styles from "./Cases.module.scss";
@@ -5,9 +6,13 @@ import { CASES } from "../../constants/cases";
 
 const cx = classNames.bind(styles);
 
-const Cases = () => {
+interface ICases {
+  id?: string;
+}
+
+const Cases: FC<ICases> = ({ id }) => {
   return (
-    <Section className={cx(styles.cases)}>
+    <Section className={cx(styles.cases)} id={id}>
       <ul className={cx(styles.list)}>
         {CASES.map((item) => {
           return (

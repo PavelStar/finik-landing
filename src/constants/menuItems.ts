@@ -27,7 +27,7 @@ export const menuItems = [
   {
     id: 6,
     text: "Мы в сми",
-    href: "#media",
+    href: "#articles",
   },
   {
     id: 7,

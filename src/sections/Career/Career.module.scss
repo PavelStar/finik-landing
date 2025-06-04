@@ -1,0 +1,85 @@
+@use "@styles/media" as *;
+@use "@styles/colors" as *;
+
+.career {
+  @include mediaTablet {
+  }
+
+  @include mediaMobile {
+  }
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
+  @include mediaTablet {
+    gap: 24px;
+  }
+}
+
+.contentWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 64px;
+
+  @include mediaTablet {
+    margin-bottom: 32px;
+  }
+}
+
+.descriptionWrap {
+  // margin-bottom: 24px;
+}
+
+.listsWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.itemListItem {
+  position: relative;
+  padding-left: 48px;
+
+  @include mediaTablet {
+    padding-left: 24px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    left: 20px;
+    top: 14px;
+    border-radius: 50%;
+    background-color: $white;
+
+    @include mediaTablet {
+      width: 2px;
+      height: 2px;
+      left: 8px;
+      top: 8px;
+    }
+  }
+}
+
+.items {
+  margin-bottom: 64px;
+
+  @include mediaTablet {
+    margin-bottom: 32px;
+  }
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 909px;
+  width: 100%;
+  margin-left: auto;
+}

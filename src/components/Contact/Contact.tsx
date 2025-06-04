@@ -1,5 +1,5 @@
 import type { FC, ReactNode } from "react";
-import { Paragraph } from "../../components/index";
+import { Paragraph, Link } from "../../components/index";
 import styles from "./Contact.module.scss";
 import classNames from "classnames/bind";
 import Phone from "../../assets/contacts/phone.svg?react";
@@ -9,6 +9,7 @@ const cx = classNames.bind(styles);
 
 interface IParagraph {
   type?: "phone" | "mail";
+  href?: string;
   textColor?: "light" | "dark" | "grey";
   children: ReactNode;
   className?: string;
@@ -16,6 +17,7 @@ interface IParagraph {
 
 const Contact: FC<IParagraph> = ({
   type = "phone",
+  href,
   textColor = "dark",
   children,
   className,
@@ -26,12 +28,14 @@ const Contact: FC<IParagraph> = ({
   };
 
   const Icon = icons[`${type}`];
+  const linkHref =
+    type == "phone" ? "tel:+74959883738" : "mailto:hello@finik-lab.ru";
 
   return (
-    <div className={cx(styles.contact, className)}>
+    <Link className={cx(styles.contact, className)} href={href || linkHref}>
       <Icon />
       <Paragraph color={textColor}>{children}</Paragraph>
-    </div>
+    </Link>
   );
 };
 

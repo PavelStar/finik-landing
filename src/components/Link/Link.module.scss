@@ -23,6 +23,7 @@
     color: $dark-grey;
   }
 }
+
 .dark {
   color: $black;
 
@@ -36,6 +37,10 @@
   }
 }
 
+.grey {
+  color: $dark-grey;
+}
+
 .S {
   font-size: 16px;
   line-height: 20px;
@@ -44,4 +49,23 @@
 .M {
   font-size: 24px;
   line-height: 30px;
+
+  @include mediaTablet {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.L {
+  font-size: 40px;
+  line-height: 48px;
+
+  @include mediaTablet {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+.underline {
+  text-decoration: underline;
 }

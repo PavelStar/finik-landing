@@ -8,14 +8,26 @@ import Paragraph from "../Paragraph/Paragraph";
 const cx = classNames.bind(styles);
 
 interface IButton {
+  type?: "button" | "submit";
   children?: string;
   size?: "S" | "M" | "L" | "XL";
   className?: string;
+  onClick?: () => void;
 }
 
-const Button: FC<IButton> = ({ children, size = "S", className }) => {
+const Button: FC<IButton> = ({
+  type = "button",
+  children,
+  size = "S",
+  className,
+  onClick,
+}) => {
   return (
-    <button className={cx(styles.button, size, className)} type="button">
+    <button
+      className={cx(styles.button, size, className)}
+      type={type}
+      onClick={onClick}
+    >
       <ButtonBg className={cx(styles.background)} />
       <Paragraph
         className={cx(styles.text)}

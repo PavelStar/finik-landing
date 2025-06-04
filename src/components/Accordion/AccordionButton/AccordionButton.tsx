@@ -7,13 +7,18 @@ import MinusIcon from "../../../assets/AccordionButton/minus.svg?react";
 const cx = classNames.bind(styles);
 
 interface IAccordionButton {
+  theme?: "light" | "dark";
   isOpen: boolean;
   className?: string;
 }
 
-const AccordionButton: FC<IAccordionButton> = ({ isOpen, className }) => {
+const AccordionButton: FC<IAccordionButton> = ({
+  theme = "dark",
+  isOpen,
+  className,
+}) => {
   return (
-    <div className={cx(styles.accordionButton, className)}>
+    <div className={cx(styles.accordionButton, theme, className)}>
       {isOpen ? (
         <MinusIcon className={cx(styles.icon)} />
       ) : (

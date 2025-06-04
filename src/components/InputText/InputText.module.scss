@@ -1,0 +1,21 @@
+@use "../../styles/media" as *;
+@use "../../styles/colors" as *;
+
+.inputText {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputTextField {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px $light-gray solid;
+
+  &Error {
+    border-color: red;
+  }
+}
+
+.inputTextErrorMessage {
+  color: red;
+}

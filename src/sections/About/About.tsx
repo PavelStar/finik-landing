@@ -1,3 +1,4 @@
+import type { FC } from "react";
 import { Paragraph, Section, SectionGrid } from "../../components/index";
 import classNames from "classnames/bind";
 import styles from "./About.module.scss";
@@ -6,9 +7,13 @@ import { slides } from "../../constants/slider";
 
 const cx = classNames.bind(styles);
 
-const About = () => {
+interface IAbout {
+  id?: string;
+}
+
+const About: FC<IAbout> = ({ id }) => {
   return (
-    <Section className={cx(styles.about)}>
+    <Section className={cx(styles.about)} id={id}>
       <SectionGrid
         contentClassName={styles.content}
         titleWrapClassName={styles.titleWrap}

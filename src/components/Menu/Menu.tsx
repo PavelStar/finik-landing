@@ -3,6 +3,7 @@ import styles from "./Menu.module.scss";
 import classNames from "classnames/bind";
 import { Link } from "../../components";
 import { menuItems } from "../../constants/menuItems";
+import { scrollToSection } from "../../utils/scroll";
 
 const cx = classNames.bind(styles);
 
@@ -11,6 +12,10 @@ interface IMenu {
 }
 
 const Menu: FC<IMenu> = ({ className }) => {
+  const handleClick = (href: string) => {
+    scrollToSection(href);
+  };
+
   return (
     <ul className={cx(styles.menu, className)}>
       {menuItems.map((item) => {
@@ -20,7 +25,8 @@ const Menu: FC<IMenu> = ({ className }) => {
               className={styles.link}
               size="S"
               text={item.text}
-              href={item.href}
+              // href={item.href}
+              onClick={() => handleClick(item.href)}
             />
           </li>
         );

@@ -1,34 +1,24 @@
-import {
-  Header,
-  Intro,
-  Cases,
-  Footer,
-  Partners,
-  About,
-  HowWeWork,
-  Contacts,
-  Articles,
-} from "./sections/index";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Header, Footer } from "./sections/index";
+import { HomePage, Privacy, Articles } from "./pages/index";
 import styles from "./App.module.scss";
-import Services from "./sections/Services/Services";
 
 function App() {
   return (
     <div className={styles.app}>
-      <Header />
-      <Intro />
-      <Cases />
-      <Partners />
-      <div className={styles.wrapper}>
-        <Services />
-      </div>
-      <About />
-      <HowWeWork />
-      <div className={styles.wrapper}>
-        <Contacts />
-      </div>
-      <Articles />
-      <Footer />
+      <BrowserRouter>
+        <Header />
+
+        <div className={styles.content}>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/articles" element={<Articles />} />
+          </Routes>
+        </div>
+
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }

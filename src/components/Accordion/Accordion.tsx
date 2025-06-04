@@ -1,7 +1,7 @@
-import type { Dispatch, FC, SetStateAction } from "react";
+import type { Dispatch, FC, ReactNode, SetStateAction } from "react";
 import styles from "./Accordion.module.scss";
 import classNames from "classnames/bind";
-import { Paragraph, Title } from "../index";
+import { Title } from "../index";
 import {
   Root,
   Item,
@@ -9,75 +9,55 @@ import {
   Trigger,
   Content,
 } from "@radix-ui/react-accordion";
-import { useMediaQuery } from "react-responsive";
-import { BREAKPOINTS } from "../../constants/breakpoints";
-import type { IService } from "../../constants/services";
 import AccordionButton from "./AccordionButton/AccordionButton";
 
 const cx = classNames.bind(styles);
 
 interface IAccordion {
-  items: Array<IService>;
+  id: number | string;
+  title: string;
+  image?: string;
+  children: ReactNode;
   openItems: Array<string>;
+  theme?: "light" | "dark";
   setOpenItems: Dispatch<SetStateAction<string[]>>;
 }
 
-const Accordion: FC<IAccordion> = ({ items, openItems, setOpenItems }) => {
-  const isTablet = useMediaQuery({ maxWidth: BREAKPOINTS.tablet });
-
+const Accordion: FC<IAccordion> = ({
+  id,
+  title,
+  children,
+  image,
+  openItems,
+  theme = "light",
+  setOpenItems,
+}) => {
   return (
     <Root
       type="multiple"
-      className={styles.root}
+      className={cx(styles.accordion, theme)}
       value={openItems}
       onValueChange={setOpenItems}
     >
-      <ul className={cx(styles.items)}>
-        {items.map((service) => {
-          const isImageShown = !isTablet && openItems.includes(service.title);
-
-          return (
-            <div className={cx(styles.itemWrapper)} key={service.id}>
-              {/* <div className={cx(styles.imageWrapper)}>
-              </div> */}
-              {isImageShown && (
-                <img
-                  className={cx(styles.imageWrapper)}
-                  src={service.image}
-                  alt=""
-                />
-              )}
-              <Item
-                key={service.id}
-                value={service.title}
-                className={styles.item}
-              >
-                <Header className={styles.header}>
-                  <Trigger className={styles.trigger}>
-                    <Title size="L" color="dark" level={3}>
-                      {service.title}
-                    </Title>
-                    <AccordionButton
-                      isOpen={openItems.includes(service.title)}
-                    />
-                  </Trigger>
-                </Header>
-                <Content className={styles.content}>
-                  <ul>
-                    {service.content.map((item, index) => {
-                      return (
-                        <li key={index}>
-                          <Paragraph color="dark">{item}</Paragraph>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </Content>
-              </Item>
-            </div>
-          );
-        })}
-      </ul>
+      <div className={cx(styles.itemWrapper)} key={id}>
+        {image && (
+          <img className={cx(styles.imageWrapper)} src={image} alt="" />
+        )}
+        <Item key={id} value={title} className={styles.item}>
+          <Header className={styles.header}>
+            <Trigger className={styles.trigger}>
+              <Title size="L" color={theme} level={3}>
+                {title}
+              </Title>
+              <AccordionButton
+                isOpen={openItems.includes(title)}
+                theme={theme}
+              />
+            </Trigger>
+          </Header>
+          <Content className={styles.content}>{children}</Content>
+        </Item>
+      </div>
     </Root>
   );
 };

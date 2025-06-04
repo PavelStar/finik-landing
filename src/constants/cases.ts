@@ -1,20 +1,20 @@
 import sber from "../assets/cases/sber.png";
-import sber2x from "../assets/cases/sber@2x.png";
+// import sber2x from "../assets/cases/sber@2x.png";
 import sberTablet from "../assets/cases/sber-tablet.png";
 import sberMobile from "../assets/cases/sber-mobile.png";
 
 import t2 from "../assets/cases/t2.png";
-import t22x from "../assets/cases/t2@2x.png";
+// import t22x from "../assets/cases/t2@2x.png";
 import t2Tablet from "../assets/cases/t2-tablet.png";
 import t2Mobile from "../assets/cases/t2-mobile.png";
 
 import sberBusiness from "../assets/cases/sber-business.png";
-import sberBusiness2x from "../assets/cases/sber-business@2x.png";
+// import sberBusiness2x from "../assets/cases/sber-business@2x.png";
 import sberBusinessTablet from "../assets/cases/sber-business-tablet.png";
 import sberBusinessMobile from "../assets/cases/sber-business-mobile.png";
 
 import rostelekom from "../assets/cases/rostelekom.png";
-import rostelekom2x from "../assets/cases/rostelekom@2x.png";
+// import rostelekom2x from "../assets/cases/rostelekom@2x.png";
 import rostelekomTablet from "../assets/cases/rostelekom-tablet.png";
 import rostelekomMobile from "../assets/cases/rostelekom-mobile.png";
 

@@ -11,6 +11,7 @@ interface IParagraph {
   size?: "S" | "M" | "L" | "XL";
   weight?: "bold" | "medium" | "regular";
   textTransform?: "uppercase" | "capitalize";
+  textDecoration?: "underline" | "none";
   className?: string;
 }
 
@@ -21,6 +22,7 @@ const Paragraph: FC<IParagraph> = ({
   size = "M",
   weight = "regular",
   textTransform = "capitalize",
+  textDecoration = "none",
   className,
 }) => {
   const Tag = tag as keyof JSX.IntrinsicElements;
@@ -33,6 +35,7 @@ const Paragraph: FC<IParagraph> = ({
         size,
         weight,
         textTransform,
+        textDecoration,
         className
       )}
     >

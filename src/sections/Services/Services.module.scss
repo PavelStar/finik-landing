@@ -8,3 +8,13 @@
   @include mediaMobile {
   }
 }
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
+  @include mediaTablet {
+    gap: 24px;
+  }
+}

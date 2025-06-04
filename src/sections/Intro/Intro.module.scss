@@ -6,17 +6,16 @@
   flex-direction: column;
   justify-content: end;
   align-items: start;
-  min-height: 572px;
-  padding-top: 80px;
+  padding-top: 240px;
   padding-bottom: 64px;
 
   @include mediaTablet {
+    padding-top: 152px;
     padding-bottom: 32px;
-    min-height: 324px;
   }
 
   @include mediaMobile {
-    min-height: 392px;
+    padding-top: 144px;
   }
 }
 

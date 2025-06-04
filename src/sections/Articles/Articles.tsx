@@ -1,18 +1,18 @@
-import {
-  Paragraph,
-  Section,
-  SectionGrid,
-  ArticleCard,
-} from "../../components/index";
+import type { FC } from "react";
+import { Section, SectionGrid, ArticleCard } from "../../components/index";
 import classNames from "classnames/bind";
 import styles from "./Articles.module.scss";
 import { articles } from "../../constants/articles";
 
 const cx = classNames.bind(styles);
 
-const Articles = () => {
+interface IArticles {
+  id?: string;
+}
+
+const Articles: FC<IArticles> = ({ id }) => {
   return (
-    <Section className={cx(styles.articles)}>
+    <Section className={cx(styles.articles)} id={id}>
       <SectionGrid
         contentClassName={styles.content}
         titleWrapClassName={styles.titleWrap}

@@ -1,22 +1,57 @@
-import { useState } from "react";
-import { Accordion, Section, SectionGrid } from "../../components/index";
+import { useState, type FC } from "react";
+import {
+  Accordion,
+  Paragraph,
+  Section,
+  SectionGrid,
+} from "../../components/index";
 import classNames from "classnames/bind";
 import styles from "./Services.module.scss";
 import { services } from "../../constants/services";
+import { useMediaQuery } from "react-responsive";
+import { BREAKPOINTS } from "../../constants/breakpoints";
 
 const cx = classNames.bind(styles);
 
-const Services = () => {
+interface IServices {
+  id?: string;
+}
+
+const Services: FC<IServices> = ({ id }) => {
   const [openItems, setOpenItems] = useState<Array<string>>([]);
+  const isTablet = useMediaQuery({ maxWidth: BREAKPOINTS.tablet });
 
   return (
-    <Section className={cx(styles.services)}>
+    <Section className={cx(styles.services)} id={id}>
       <SectionGrid title="Услуги" titleColor="grey">
-        <Accordion
-          items={services}
-          openItems={openItems}
-          setOpenItems={setOpenItems}
-        />
+        <ul className={cx(styles.items)}>
+          {services.map((service) => {
+            const isImageShown = !isTablet && openItems.includes(service.title);
+
+            return (
+              <li key={service.id}>
+                <Accordion
+                  theme="dark"
+                  id={service.id}
+                  title={service.title}
+                  image={isImageShown ? service.image : undefined}
+                  openItems={openItems}
+                  setOpenItems={setOpenItems}
+                >
+                  <ul>
+                    {service.content.map((item) => {
+                      return (
+                        <li key={item}>
+                          <Paragraph color="dark">{item}</Paragraph>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </Accordion>
+              </li>
+            );
+          })}
+        </ul>
       </SectionGrid>
     </Section>
   );

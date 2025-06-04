@@ -1,3 +1,4 @@
+import type { FC } from "react";
 import { Section, SectionGrid, WorkCard } from "../../components/index";
 import classNames from "classnames/bind";
 import styles from "./HowWeWork.module.scss";
@@ -5,9 +6,13 @@ import { workCards } from "../../constants/howWeWork";
 
 const cx = classNames.bind(styles);
 
-const HowWeWork = () => {
+interface IHowWeWork {
+  id?: string;
+}
+
+const HowWeWork: FC<IHowWeWork> = ({ id }) => {
   return (
-    <Section className={cx(styles.howWeWork)}>
+    <Section className={cx(styles.howWeWork)} id={id}>
       <SectionGrid
         contentClassName={styles.content}
         titleWrapClassName={styles.titleWrap}

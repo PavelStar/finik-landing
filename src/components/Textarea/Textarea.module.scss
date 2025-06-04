@@ -1,0 +1,19 @@
+@use "../../styles/media" as *;
+@use "../../styles/colors" as *;
+
+.textareaField {
+  width: 100%;
+  resize: none;
+  overflow-y: auto;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px $light-gray solid;
+
+  &Error {
+    border-color: red;
+  }
+}
+
+.textareaErrorMessage {
+  color: red;
+}

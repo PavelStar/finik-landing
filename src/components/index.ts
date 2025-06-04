@@ -12,3 +12,8 @@ export { default as SectionGrid } from "./SectionGrid/SectionGrid";
 export { default as WorkCard } from "./WorkCard/WorkCard";
 export { default as Contact } from "./Contact/Contact";
 export { default as ArticleCard } from "./ArticleCard/ArticleCard";
+export { default as Form } from "./Form/Form";
+export { default as InputText } from "./InputText/InputText";
+export { default as InputPhone } from "./InputPhone/InputPhone";
+export { default as Textarea } from "./Textarea/Textarea";
+export { default as Modal } from "./Modal/Modal";
