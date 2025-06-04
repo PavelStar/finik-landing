@@ -1,6 +1,30 @@
+// @font-face {
+//   font-family: "TTNorms";
+//   src: url("../assets/fonts/TTNorms-Regular.otf") format("opentype");
+//   font-weight: 400;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "TTNorms";
+//   src: url("../assets/fonts/TTNorms-medium.otf") format("opentype");
+//   font-weight: 500;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "TTNorms";
+//   src: url("../assets/fonts/TTNorms-Bold.otf") format("opentype");
+//   font-weight: 700;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
 @font-face {
   font-family: "TTNorms";
-  src: url("../assets/fonts/TTNorms-Regular.otf") format("opentype");
+  src: url("/finik-landing/assets/fonts/TTNorms-Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -8,7 +32,7 @@
 
 @font-face {
   font-family: "TTNorms";
-  src: url("../assets/fonts/TTNorms-medium.otf") format("opentype");
+  src: url("/finik-landing/assets/fonts/TTNorms-medium.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -16,7 +40,7 @@
 
 @font-face {
   font-family: "TTNorms";
-  src: url("../assets/fonts/TTNorms-Bold.otf") format("opentype");
+  src: url("/finik-landing/assets/fonts/TTNorms-Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
