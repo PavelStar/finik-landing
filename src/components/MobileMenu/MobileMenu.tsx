@@ -23,7 +23,6 @@ const MobileMenu: FC<IMenu> = ({
   const handleClick = (href: string) => {
     setIsMenuShown(false);
     scrollToSection(href);
-    console.log(href);
   };
 
   return (

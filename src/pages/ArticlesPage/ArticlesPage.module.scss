@@ -1,7 +1,18 @@
-@use "@styles/media" as *;
-@use "@styles/colors" as *;
+@use "../../styles/media" as *;
+@use "../../styles/colors" as *;
 
-.articles {
+.articlesPage {
+  padding-bottom: 96px;
+
+  @include mediaTablet {
+    padding-bottom: 48px;
+  }
+
+  @include mediaMobile {
+  }
+}
+
+.section {
   @include mediaTablet {
   }
 

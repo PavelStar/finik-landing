@@ -1,7 +1,7 @@
 import type { FC } from "react";
 import styles from "./Menu.module.scss";
 import classNames from "classnames/bind";
-import { Link, Paragraph } from "../../components";
+import { Paragraph } from "../../components";
 import { menuItems } from "../../constants/menuItems";
 import { scrollToSection } from "../../utils/scroll";
 import { Link as RouterLink } from "react-router-dom";
@@ -21,10 +21,9 @@ const Menu: FC<IMenu> = ({ className }) => {
     <ul className={cx(styles.menu, className)}>
       {menuItems.map((item) => {
         return (
-          <li key={item.id}>
+          <li key={item.id} className={styles.item}>
             <RouterLink
               className={styles.link}
-              // to="privacy"
               to={`/${item.href}`}
               onClick={() =>
                 setTimeout(() => {
@@ -41,13 +40,6 @@ const Menu: FC<IMenu> = ({ className }) => {
                 {item.text}
               </Paragraph>
             </RouterLink>
-            {/* <Link
-              className={styles.link}
-              size="S"
-              text={item.text}
-              // href={item.href}
-              onClick={() => handleClick(item.href)}
-            /> */}
           </li>
         );
       })}

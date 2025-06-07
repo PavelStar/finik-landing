@@ -29,7 +29,7 @@ const ArticleCard: FC<IArticleCard> = ({
         <Paragraph className={styles.date} color="light">
           {date}
         </Paragraph>
-        <Paragraph className={styles.title} size="L">
+        <Paragraph className={styles.title} size="L" weight="medium">
           {title}
         </Paragraph>
       </div>

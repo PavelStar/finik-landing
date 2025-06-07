@@ -1,11 +1,10 @@
 import type { FC } from "react";
 import type { IPictureItem } from "../../constants/cases";
+import styles from "./Picture.module.scss";
 
 const Picture: FC<IPictureItem> = ({ ...item }) => {
-  console.log(item);
-
   return (
-    <picture>
+    <picture className={styles.picture}>
       <source
         srcSet={`${item.images.mobile} 1x, ${item.images.mobile2x} 2x`}
         media="(max-width: 768px)"

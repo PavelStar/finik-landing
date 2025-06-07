@@ -28,7 +28,6 @@ const Articles: FC<IArticles> = ({ id }) => {
                   title={article.title}
                   date={article.date}
                   href={article.href}
-                  image={article.image}
                   pictureItem={article.pictureItem}
                 />
               </li>

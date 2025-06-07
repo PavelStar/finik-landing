@@ -3,7 +3,11 @@
 
 .menu {
   display: flex;
-  gap: 48px;
+  // gap: 48px;
+  max-width: 894px;
+  width: 100%;
+  justify-content: space-between;
+  margin-left: 48px;
 
   @include mediaTablet {
   }
