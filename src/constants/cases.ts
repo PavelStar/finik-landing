@@ -18,7 +18,7 @@ import rostelekom from "../assets/cases/rostelekom.png";
 import rostelekomTablet from "../assets/cases/rostelekom-tablet.png";
 import rostelekomMobile from "../assets/cases/rostelekom-mobile.png";
 
-export interface CaseItem {
+export interface IPictureItem {
   id: number;
   alt: string;
   title: string;
@@ -32,7 +32,7 @@ export interface CaseItem {
   };
 }
 
-export const CASES: CaseItem[] = [
+export const CASES: IPictureItem[] = [
   {
     id: 1,
     alt: "Сбер",

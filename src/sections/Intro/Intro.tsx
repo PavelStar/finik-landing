@@ -16,7 +16,13 @@ const Intro: FC<IIntro> = ({ title, buttonText, onClick }) => {
           Обсудить проект
         </Button>
       )}
-      <Title className={styles.title} level={1} size="XL">
+      <Title
+        className={styles.title}
+        level={1}
+        size="XL"
+        weight="extraBold"
+        textTransform="uppercase"
+      >
         {title}
       </Title>
     </Section>

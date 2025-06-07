@@ -17,7 +17,7 @@ const HowWeWork: FC<IHowWeWork> = ({ id }) => {
         contentClassName={styles.content}
         titleWrapClassName={styles.titleWrap}
         title="Как мы работаем"
-        titleColor="grey"
+        titleColor="darkGrey"
       >
         <ul className={styles.inner}>
           {workCards.map((card) => {

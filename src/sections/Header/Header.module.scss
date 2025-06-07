@@ -21,6 +21,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include mediaTablet {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 .white {

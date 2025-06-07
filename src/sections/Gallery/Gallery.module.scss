@@ -1,0 +1,38 @@
+@use "@styles/media" as *;
+@use "@styles/colors" as *;
+
+.gallery {
+  @include mediaTablet {
+    padding: 0;
+  }
+
+  @include mediaMobile {
+  }
+}
+
+.list {
+  display: flex;
+  // gap: 80px;
+  width: fit-content;
+  gap: 4px;
+
+  li {
+    &:last-child {
+      margin-right: 4px;
+
+      @include mediaTablet {
+      }
+
+      @include mediaMobile {
+      }
+    }
+  }
+}
+
+.marquee {
+  img {
+    @include mediaTablet {
+      height: 160px;
+    }
+  }
+}

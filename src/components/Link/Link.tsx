@@ -9,7 +9,9 @@ interface ILink {
   text?: string;
   color?: "light" | "dark" | "grey";
   size?: "S" | "M" | "L" | "XL";
+  weight?: "bold" | "medium" | "regular";
   textDecoration?: "underline" | "none";
+  textTransform?: "uppercase" | "capitalize";
   href?: string;
   className?: string;
   onClick?: () => void;
@@ -20,7 +22,9 @@ const Link: FC<ILink> = ({
   text = "",
   color = "light",
   size = "M",
+  weight = "regular",
   textDecoration = "none",
+  textTransform,
   href,
   className,
   onClick,
@@ -33,7 +37,15 @@ const Link: FC<ILink> = ({
 
   return (
     <a
-      className={cx(styles.link, color, size, textDecoration, className)}
+      className={cx(
+        styles.link,
+        color,
+        size,
+        weight,
+        textDecoration,
+        textTransform,
+        className
+      )}
       href={href}
       onClick={handleClick}
     >

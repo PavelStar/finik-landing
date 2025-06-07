@@ -2,9 +2,8 @@
 @use "@styles/colors" as *;
 
 .mobileMenuButton {
-  width: 24px;
-  height: 16px;
-  position: relative;
+  width: 32px;
+  height: 32px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -14,11 +13,20 @@
   -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @include mediaTablet {
   }
 
   @include mediaMobile {
+  }
+
+  .linesWrap {
+    position: relative;
+    width: 24px;
+    height: 16px;
   }
 
   span {

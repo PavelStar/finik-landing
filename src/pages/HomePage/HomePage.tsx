@@ -8,6 +8,7 @@ import {
   Contacts,
   Career,
   Articles,
+  Gallery,
 } from "../../sections/index";
 import { ANCHORS } from "../../constants/anchors";
 import { Form, Modal } from "../../components/index";
@@ -31,6 +32,7 @@ const HomePage = () => {
       </Modal>
       <Intro
         title="Инновации, которые трансформируют бизнес"
+        buttonText="обсудить проект"
         onClick={handleOpen}
       />
       <Cases id={ANCHORS.cases} />
@@ -39,6 +41,7 @@ const HomePage = () => {
         <Services id={ANCHORS.services} />
       </div>
       <About id={ANCHORS.about} />
+      <Gallery id={ANCHORS.gallery} />
       <HowWeWork id={ANCHORS.howWeWork} />
       <div className={styles.wrapper}>
         <Contacts id={ANCHORS.contacts} onClick={handleOpen} />

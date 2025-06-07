@@ -7,9 +7,9 @@ const cx = classNames.bind(styles);
 interface ITitle {
   children: ReactNode;
   level?: 1 | 2 | 3 | 4;
-  color?: "light" | "dark" | "grey";
+  color?: "light" | "dark" | "grey" | "darkGrey";
   size?: "S" | "M" | "L" | "XL";
-  weight?: "bold" | "medium" | "regular";
+  weight?: "extraBold" | "bold" | "medium" | "regular";
   textTransform?: "uppercase" | "capitalize";
   className?: string;
 }

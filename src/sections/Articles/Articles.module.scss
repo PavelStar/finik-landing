@@ -10,30 +10,28 @@
 }
 
 .list {
-  display: flex;
-  flex-wrap: wrap;
-  // display: grid;
-  // grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
-  gap: 48px 24px;
-  width: 100%;
+  // display: flex;
+  // flex-wrap: wrap;
+  // gap: 48px 24px;
+  // width: 100%;
 
-  @include mediaLaptop {
-    // grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px 24px;
 
   @include mediaTablet {
-    flex-direction: column;
     gap: 24px 16px;
   }
 
   @include mediaMobile {
+    grid-template-columns: 1fr;
   }
 }
 
 .cardWrap {
-  flex: 1 1 calc(50% - 12px);
-}
+  // flex: 1 1 calc(50% - 12px);
 
-// .card {
-//   width: 100%;
-// }
+  @include mediaTablet {
+    flex: auto;
+  }
+}

@@ -27,7 +27,7 @@
   display: flex;
   justify-content: space-between;
 
-  @include mediaLaptop {
+  @include mediaMobile {
     flex-direction: column;
     gap: 24px;
   }

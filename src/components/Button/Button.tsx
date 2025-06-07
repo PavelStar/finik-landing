@@ -22,21 +22,58 @@ const Button: FC<IButton> = ({
   className,
   onClick,
 }) => {
+  const SvgC = () => {
+    return (
+      <svg
+        width="0"
+        height="0"
+        className={styles.filter}
+        colorInterpolationFilters="sRGB"
+      >
+        <defs>
+          <filter id="buttonFilter">
+            <feGaussianBlur
+              in="SourceGraphic"
+              stdDeviation="5"
+              result="blur"
+            ></feGaussianBlur>
+            <feColorMatrix
+              in="blur"
+              mode="matrix"
+              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+              result="buttonFilter"
+            ></feColorMatrix>
+            <feComposite
+              in="SourceGraphic"
+              in2="buttonFilter"
+              operator="atop"
+            ></feComposite>
+            <feBlend in="SourceGraphic" in2="buttonFilter"></feBlend>
+          </filter>
+        </defs>
+      </svg>
+    );
+  };
   return (
     <button
       className={cx(styles.button, size, className)}
       type={type}
       onClick={onClick}
+      // style={{ filter: `url(#buttonFilter)` }}
     >
-      <ButtonBg className={cx(styles.background)} />
-      <Paragraph
-        className={cx(styles.text)}
-        tag="span"
-        size="M"
-        textTransform="uppercase"
-      >
-        {children}
-      </Paragraph>
+      <SvgC />
+      {/* <ButtonBg className={cx(styles.background)} /> */}
+      <div className={cx(styles.textWrap)}>
+        <Paragraph
+          className={cx(styles.text)}
+          tag="span"
+          size="M"
+          textTransform="uppercase"
+          weight="medium"
+        >
+          {children}
+        </Paragraph>
+      </div>
       <span className={cx(styles.iconWrap)}>
         <ArrowIcon className={cx(styles.icon)} />
       </span>

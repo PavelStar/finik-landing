@@ -1,14 +1,15 @@
 import type { FC } from "react";
 import styles from "./ArticleCard.module.scss";
 import classNames from "classnames/bind";
-import Paragraph from "../Paragraph/Paragraph";
+import { Paragraph, Picture } from "../../components/index";
+import type { IPictureItem } from "../../constants/cases";
 
 const cx = classNames.bind(styles);
 
 export interface IArticleCard {
   id?: number;
   href: string;
-  image: string;
+  pictureItem: IPictureItem;
   date: string;
   title: string;
   className?: string;
@@ -16,14 +17,14 @@ export interface IArticleCard {
 
 const ArticleCard: FC<IArticleCard> = ({
   href,
-  image,
+  pictureItem,
   date,
   title,
   className,
 }) => {
   return (
     <a className={cx(styles.articleCard, className)} href={href}>
-      <img className={styles.image} src={image} alt="" />
+      <Picture {...pictureItem} />
       <div className={styles.textWrap}>
         <Paragraph className={styles.date} color="light">
           {date}

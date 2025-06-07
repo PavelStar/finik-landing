@@ -28,7 +28,11 @@ const MobileMenu: FC<IMenu> = ({
 
   return (
     <>
-      <MobileMenuButton onClick={onButtonClick} isMenuShown={isMenuShown} />
+      <MobileMenuButton
+        className={styles.menuButton}
+        onClick={onButtonClick}
+        isMenuShown={isMenuShown}
+      />
       {isMenuShown && (
         <ul className={cx(styles.mobileMenu, className)}>
           {menuItems.map((item) => {
@@ -38,6 +42,8 @@ const MobileMenu: FC<IMenu> = ({
                   className={styles.link}
                   size="S"
                   text={item.text}
+                  textTransform="uppercase"
+                  weight="bold"
                   // href={item.href}
                   onClick={() => handleClick(item.href)}
                 />

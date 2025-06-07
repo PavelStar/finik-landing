@@ -2,7 +2,7 @@ import type { FC } from "react";
 import { Section, SectionGrid, ArticleCard } from "../../components/index";
 import classNames from "classnames/bind";
 import styles from "./Articles.module.scss";
-import { articles } from "../../constants/articles";
+import { articlesData } from "../../constants/articles";
 
 const cx = classNames.bind(styles);
 
@@ -16,11 +16,11 @@ const Articles: FC<IArticles> = ({ id }) => {
       <SectionGrid
         contentClassName={styles.content}
         titleWrapClassName={styles.titleWrap}
-        title="О нас"
+        title="Мы в СМИ"
         titleColor="grey"
       >
         <ul className={cx(styles.list)}>
-          {articles.map((article) => {
+          {articlesData.map((article) => {
             return (
               <li className={styles.cardWrap} key={article.id}>
                 <ArticleCard
@@ -29,6 +29,7 @@ const Articles: FC<IArticles> = ({ id }) => {
                   date={article.date}
                   href={article.href}
                   image={article.image}
+                  pictureItem={article.pictureItem}
                 />
               </li>
             );

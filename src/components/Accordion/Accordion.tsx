@@ -1,4 +1,9 @@
-import type { Dispatch, FC, ReactNode, SetStateAction } from "react";
+import {
+  type Dispatch,
+  type FC,
+  type ReactNode,
+  type SetStateAction,
+} from "react";
 import styles from "./Accordion.module.scss";
 import classNames from "classnames/bind";
 import { Title } from "../index";
@@ -46,7 +51,7 @@ const Accordion: FC<IAccordion> = ({
         <Item key={id} value={title} className={styles.item}>
           <Header className={styles.header}>
             <Trigger className={styles.trigger}>
-              <Title size="L" color={theme} level={3}>
+              <Title size="L" color={theme} level={3} weight="medium">
                 {title}
               </Title>
               <AccordionButton
@@ -55,6 +60,7 @@ const Accordion: FC<IAccordion> = ({
               />
             </Trigger>
           </Header>
+
           <Content className={styles.content}>{children}</Content>
         </Item>
       </div>

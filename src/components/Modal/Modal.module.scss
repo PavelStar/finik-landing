@@ -15,6 +15,7 @@
 }
 
 .modal {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,32 +37,44 @@
   }
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 32px 32px 0;
-  border-radius: 32px 32px 0 0;
-  background-color: $white;
-  width: 100%;
+// .header {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding: 32px 32px 0;
+//   border-radius: 32px 32px 0 0;
+//   background-color: $white;
+//   width: 100%;
 
-  @include mediaTablet {
-    border-radius: 0;
-    padding-top: 25px;
-  }
+//   @include mediaTablet {
+//     border-radius: 0;
+//     padding-top: 25px;
+//   }
 
-  @include mediaMobile {
-    padding: 16px 16px 0;
-  }
-}
+//   @include mediaMobile {
+//     padding: 16px 16px 0;
+//   }
+// }
 
-.title {
-  margin: 0;
-  font-size: 1.25rem;
-}
+// .title {
+//   margin: 0;
+//   font-size: 1.25rem;
+// }
 
 .closeBtn {
   cursor: pointer;
+  position: absolute;
+  right: 32px;
+  top: 40px;
+
+  @include mediaTablet {
+    top: 24px;
+  }
+
+  @include mediaMobile {
+    top: 16px;
+    right: 16px;
+  }
 }
 
 .content {

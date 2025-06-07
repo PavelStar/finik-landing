@@ -5,10 +5,18 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  width: fit-content;
 
   @include mediaTablet {
   }
 
   @include mediaMobile {
+  }
+}
+
+.icon {
+  @include mediaTablet {
+    width: 24px;
+    height: 24px;
   }
 }

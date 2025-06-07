@@ -20,6 +20,10 @@
   color: $light-gray;
 }
 
+.darkGrey {
+  color: $dark-grey;
+}
+
 // Размеры
 .S {
   font-size: 16px;
@@ -57,6 +61,8 @@
   }
 
   @include mediaMobile {
+    font-size: 24px;
+    line-height: 30px;
   }
 }
 
@@ -66,6 +72,10 @@
 }
 .lowercase {
   text-transform: lowercase;
+}
+
+.extraBold {
+  font-weight: 800;
 }
 
 .bold {

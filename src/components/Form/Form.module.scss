@@ -6,12 +6,13 @@
   width: 100%;
   background-color: $white;
   padding: 32px;
-  border-radius: 0 0 32px 32px;
+  border-radius: 32px;
 
   @include mediaTablet {
     // max-width: none;
     height: 100%;
     border-radius: 0;
+    padding: 24px 32px;
   }
 
   @include mediaMobile {
@@ -19,26 +20,23 @@
   }
 }
 
-.formHeader {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px;
+.header {
   margin-bottom: 24px;
 
   @include mediaTablet {
-    margin-bottom: 16px;
+    margin-bottom: 17px;
   }
 }
 
 .formFieldsWrap {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  gap: 24px;
   margin-bottom: 48px;
 
   @include mediaTablet {
     margin-bottom: 32px;
+    gap: 16px;
   }
 
   @include mediaLargeMobile {
@@ -63,4 +61,8 @@
   @include mediaMobile {
     margin-bottom: 8px;
   }
+}
+
+.link {
+  display: inline-block;
 }

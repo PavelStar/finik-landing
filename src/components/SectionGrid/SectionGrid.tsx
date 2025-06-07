@@ -7,7 +7,7 @@ const cx = classNames.bind(styles);
 
 interface ISectionGrid {
   title: string;
-  titleColor?: "light" | "dark" | "grey";
+  titleColor?: "light" | "dark" | "grey" | "darkGrey";
   children?: React.ReactNode;
   className?: string;
   titleWrapClassName?: string;

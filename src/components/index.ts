@@ -17,3 +17,4 @@ export { default as InputText } from "./InputText/InputText";
 export { default as InputPhone } from "./InputPhone/InputPhone";
 export { default as Textarea } from "./Textarea/Textarea";
 export { default as Modal } from "./Modal/Modal";
+export { default as Picture } from "./Picture/Picture";

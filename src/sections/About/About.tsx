@@ -2,8 +2,6 @@ import type { FC } from "react";
 import { Paragraph, Section, SectionGrid } from "../../components/index";
 import classNames from "classnames/bind";
 import styles from "./About.module.scss";
-import Marquee from "react-fast-marquee";
-import { slides } from "../../constants/slider";
 
 const cx = classNames.bind(styles);
 
@@ -13,8 +11,9 @@ interface IAbout {
 
 const About: FC<IAbout> = ({ id }) => {
   return (
-    <Section className={cx(styles.about)} id={id}>
+    <Section className={styles.about} id={id}>
       <SectionGrid
+        className={styles.grid}
         contentClassName={styles.content}
         titleWrapClassName={styles.titleWrap}
         title="О нас"
@@ -37,23 +36,6 @@ const About: FC<IAbout> = ({ id }) => {
           </div>
         </div>
       </SectionGrid>
-      <Marquee
-        className={cx(styles.marquee)}
-        gradient={false}
-        speed={100}
-        pauseOnHover={false}
-        autoFill={true}
-      >
-        <ul className={cx(styles.list)}>
-          {slides.map((slide) => {
-            return (
-              <li key={slide.id}>
-                <img src={slide.image} alt="" />
-              </li>
-            );
-          })}
-        </ul>
-      </Marquee>
     </Section>
   );
 };

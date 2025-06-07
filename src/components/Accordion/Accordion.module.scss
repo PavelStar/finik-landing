@@ -3,10 +3,11 @@
 
 .accordion {
   @include mediaTablet {
-    padding: 16px 16px 16px 24px;
+    // padding: 16px 16px 16px 24px;
   }
 
   @include mediaMobile {
+    // padding: 0;
   }
 }
 
@@ -44,13 +45,10 @@
     text-align: left;
     display: flex;
     justify-content: end;
-    // padding-top: 16px;
-    // padding-bottom: 16px;
+    margin-bottom: 4px;
 
-    // @include mediaTablet {
-    //   padding-top: 9px;
-    //   padding-bottom: 9px;
-    // }
+    @include mediaTablet {
+    }
   }
 }
 
@@ -66,4 +64,27 @@
 .content {
   max-width: 909px;
   margin-left: auto;
+}
+
+.accordion-enter {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.accordion-enter-active {
+  max-height: 500px;
+  opacity: 1;
+  transition: max-height 300ms ease, opacity 300ms ease;
+}
+
+.accordion-exit {
+  max-height: 500px;
+  opacity: 1;
+}
+
+.accordion-exit-active {
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 300ms ease, opacity 300ms ease;
 }

@@ -77,7 +77,8 @@ const Career: FC<ICareer> = ({ id }) => {
             Хотите у нас работать?
           </Paragraph>
           <Paragraph>
-            Присылайте резюме на <Link>hello@finik-lab.ru</Link>
+            Присылайте резюме на{" "}
+            <Link textDecoration="underline">hello@finik-lab.ru</Link>
           </Paragraph>
         </div>
       </SectionGrid>

@@ -21,10 +21,20 @@ const MobileMenuButton: FC<IMenu> = ({ isMenuShown, className, onClick }) => {
       type="button"
       onClick={onClick}
     >
-      <span className={cx(styles.line, isMenuShown ? styles.open : "")}></span>
-      <span className={cx(styles.line, isMenuShown ? styles.open : "")}></span>
-      <span className={cx(styles.line, isMenuShown ? styles.open : "")}></span>
-      <span className={cx(styles.line, isMenuShown ? styles.open : "")}></span>
+      <div className={styles.linesWrap}>
+        <span
+          className={cx(styles.line, isMenuShown ? styles.open : "")}
+        ></span>
+        <span
+          className={cx(styles.line, isMenuShown ? styles.open : "")}
+        ></span>
+        <span
+          className={cx(styles.line, isMenuShown ? styles.open : "")}
+        ></span>
+        <span
+          className={cx(styles.line, isMenuShown ? styles.open : "")}
+        ></span>
+      </div>
     </button>
   );
 };

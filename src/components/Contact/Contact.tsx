@@ -33,8 +33,10 @@ const Contact: FC<IParagraph> = ({
 
   return (
     <Link className={cx(styles.contact, className)} href={href || linkHref}>
-      <Icon />
-      <Paragraph color={textColor}>{children}</Paragraph>
+      <Icon className={styles.icon} />
+      <Paragraph color={textColor} textDecoration="underline">
+        {children}
+      </Paragraph>
     </Link>
   );
 };

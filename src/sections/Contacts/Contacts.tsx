@@ -37,6 +37,7 @@ const Contacts: FC<IContacts> = ({ id, onClick }) => {
           <Button className={styles.button} onClick={onClick}>
             обсудить проект
           </Button>
+
           <div className={styles.contactsBlock}>
             <Contact type="mail">hello@finik-lab.ru</Contact>
             <Contact>+7 (495) 988-37-38</Contact>
