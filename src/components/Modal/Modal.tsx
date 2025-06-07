@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
-import { Title } from "../index";
 import styles from "./Modal.module.scss";
 import classNames from "classnames/bind";
 import CloseIcon from "../../assets/close.svg?react";

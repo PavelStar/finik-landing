@@ -2,7 +2,6 @@ import type { FC } from "react";
 import styles from "./Button.module.scss";
 import classNames from "classnames/bind";
 import ArrowIcon from "../../assets/arrow-icon.svg?react";
-import ButtonBg from "../../assets/button-bg.svg?react";
 import Paragraph from "../Paragraph/Paragraph";
 
 const cx = classNames.bind(styles);
@@ -59,10 +58,8 @@ const Button: FC<IButton> = ({
       className={cx(styles.button, size, className)}
       type={type}
       onClick={onClick}
-      // style={{ filter: `url(#buttonFilter)` }}
     >
       <SvgC />
-      {/* <ButtonBg className={cx(styles.background)} /> */}
       <div className={cx(styles.textWrap)}>
         <Paragraph
           className={cx(styles.text)}
