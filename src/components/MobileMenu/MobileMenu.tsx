@@ -1,9 +1,10 @@
 import { type FC } from "react";
 import styles from "./MobileMenu.module.scss";
 import classNames from "classnames/bind";
-import { Link, MobileMenuButton } from "..";
+import { MobileMenuButton, Paragraph } from "../../components/index";
 import { menuItems } from "../../constants/menuItems";
 import { scrollToSection } from "../../utils/scroll";
+import { Link as RouterLink } from "react-router-dom";
 
 const cx = classNames.bind(styles);
 
@@ -37,15 +38,37 @@ const MobileMenu: FC<IMenu> = ({
           {menuItems.map((item) => {
             return (
               <li key={item.id}>
-                <Link
+                {/* <RouterLink
                   className={styles.link}
                   size="S"
                   text={item.text}
                   textTransform="uppercase"
                   weight="bold"
-                  // href={item.href}
-                  onClick={() => handleClick(item.href)}
-                />
+                  onClick={() =>
+                    setTimeout(() => {
+                      handleClick(item.href);
+                    }, 200)
+                  }
+                /> */}
+                <RouterLink
+                  className={styles.link}
+                  to={`/${item.href}`}
+                  onClick={() =>
+                    setTimeout(() => {
+                      handleClick(item.href);
+                    }, 200)
+                  }
+                >
+                  <Paragraph
+                    size="S"
+                    // text={item.text}
+                    color="dark"
+                    textTransform="uppercase"
+                    weight="bold"
+                  >
+                    {item.text}
+                  </Paragraph>
+                </RouterLink>
               </li>
             );
           })}

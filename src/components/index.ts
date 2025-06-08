@@ -1,3 +1,4 @@
+export { default as ScrollToTop } from "./ScrollToTop/ScrollToTop";
 export { default as Section } from "./Section/Section";
 export { default as Menu } from "./Menu/Menu";
 export { default as MobileMenu } from "./MobileMenu/MobileMenu";

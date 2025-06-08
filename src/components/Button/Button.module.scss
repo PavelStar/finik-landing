@@ -43,6 +43,7 @@
 
     @include mediaTablet {
       padding: 15px 24px 15px 24px;
+      height: 48px;
     }
   }
 
@@ -59,6 +60,7 @@
     @include mediaTablet {
       padding: 15px 18px 15px 18px;
       margin-left: -5px;
+      height: 48px;
     }
   }
 

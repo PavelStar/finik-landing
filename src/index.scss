@@ -44,6 +44,7 @@ select {
   outline: none;
   border: none;
   background: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 button {
@@ -58,6 +59,7 @@ ol {
 a {
   color: inherit;
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 h1,
