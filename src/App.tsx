@@ -11,6 +11,8 @@ import styles from "./App.module.scss";
 import { ScrollToTop } from "./components/index";
 
 function App() {
+  console.log("finik version 1.0.0");
+
   return (
     <div className={styles.app}>
       <BrowserRouter basename="/finik-landing">
