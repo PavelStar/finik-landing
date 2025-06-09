@@ -1,14 +1,15 @@
 import type { FC } from "react";
-import { Section, Button, Title } from "../../components/index";
+import { Section, Button, Title, Paragraph } from "../../components/index";
 import styles from "./Intro.module.scss";
 
 interface IIntro {
   title: string;
+  description?: string;
   buttonText?: string;
   onClick?: () => void;
 }
 
-const Intro: FC<IIntro> = ({ title, buttonText, onClick }) => {
+const Intro: FC<IIntro> = ({ title, description, buttonText, onClick }) => {
   return (
     <Section className={styles.intro}>
       {buttonText && (
@@ -25,6 +26,16 @@ const Intro: FC<IIntro> = ({ title, buttonText, onClick }) => {
       >
         {title}
       </Title>
+      {description && (
+        <Paragraph
+          className={styles.description}
+          color="light"
+          size="L"
+          weight="medium"
+        >
+          Стань частью команды FINIK Design Lab
+        </Paragraph>
+      )}
     </Section>
   );
 };

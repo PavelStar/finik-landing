@@ -1,6 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Header, Footer } from "./sections/index";
-import { HomePage, PrivacyPage, Articles } from "./pages/index";
+import {
+  HomePage,
+  PrivacyPage,
+  ArticlesPage,
+  CareerPage,
+  VacancyPage,
+} from "./pages/index";
 import styles from "./App.module.scss";
 import { ScrollToTop } from "./components/index";
 
@@ -15,7 +21,9 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/privacy" element={<PrivacyPage />} />
-            <Route path="/articles" element={<Articles />} />
+            <Route path="/articles" element={<ArticlesPage />} />
+            <Route path="/career" element={<CareerPage />} />
+            <Route path="/career/:jobId" element={<VacancyPage />} />
           </Routes>
         </div>
 

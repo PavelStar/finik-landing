@@ -28,3 +28,11 @@
     flex: auto;
   }
 }
+
+.link {
+  margin-top: 48px;
+
+  @include mediaTablet {
+    margin-top: 24px;
+  }
+}

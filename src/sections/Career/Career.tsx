@@ -6,25 +6,49 @@ import {
   Title,
   Section,
   SectionGrid,
+  Button,
 } from "../../components/index";
 import classNames from "classnames/bind";
 import styles from "./Career.module.scss";
 import { careerItems } from "../../constants/career";
+import { Link as RouterLink } from "react-router-dom";
+import ArrowIcon from "../../assets/arrow-icon.svg?react";
 
 const cx = classNames.bind(styles);
 
 interface ICareer {
   id?: string;
+  itemsType?: "accordion" | "link";
 }
 
-const Career: FC<ICareer> = ({ id }) => {
+const Career: FC<ICareer> = ({ id, itemsType = "accordion" }) => {
   const [openItems, setOpenItems] = useState<Array<string>>([]);
+
+  const isBtnshown = !window.location.pathname.includes("career");
 
   return (
     <Section className={cx(styles.career)} id={id}>
       <SectionGrid title="Карьера" titleColor="grey">
         <ul className={cx(styles.items)}>
           {careerItems.map((career) => {
+            if (itemsType === "link") {
+              return (
+                <li key={career.id}>
+                  <RouterLink
+                    to={`${career.id}`}
+                    className={cx(styles.itemLink)}
+                  >
+                    <Title size="L" color="light" level={3} weight="medium">
+                      {career.title}
+                    </Title>
+                    <div className={cx(styles.iconWrap)}>
+                      <ArrowIcon className={styles.icon} />
+                    </div>
+                  </RouterLink>
+                </li>
+              );
+            }
+
             return (
               <li key={career.id}>
                 <Accordion
@@ -72,7 +96,13 @@ const Career: FC<ICareer> = ({ id }) => {
             );
           })}
         </ul>
+
         <div className={cx(styles.contacts)}>
+          {isBtnshown && (
+            <RouterLink to="career" className={cx(styles.link)}>
+              <Button>К вакансиям</Button>
+            </RouterLink>
+          )}
           <Paragraph size="L" weight="medium">
             Хотите у нас работать?
           </Paragraph>

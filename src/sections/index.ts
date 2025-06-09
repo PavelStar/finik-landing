@@ -11,3 +11,4 @@ export { default as Contacts } from "./Contacts/Contacts";
 export { default as Articles } from "./Articles/Articles";
 export { default as Career } from "./Career/Career";
 export { default as Privacy } from "./Privacy/Privacy";
+export { default as Advantages } from "./Advantages/Advantages";

@@ -21,7 +21,7 @@ const Button: FC<IButton> = ({
   className,
   onClick,
 }) => {
-  const SvgC = () => {
+  const Svgfilter = () => {
     return (
       <svg
         width="0"
@@ -53,13 +53,14 @@ const Button: FC<IButton> = ({
       </svg>
     );
   };
+
   return (
     <button
       className={cx(styles.button, size, className)}
       type={type}
       onClick={onClick}
     >
-      <SvgC />
+      <Svgfilter />
       <div className={cx(styles.textWrap)}>
         <Paragraph
           className={cx(styles.text)}

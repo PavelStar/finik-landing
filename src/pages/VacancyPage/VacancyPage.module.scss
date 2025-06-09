@@ -1,7 +1,7 @@
 @use "@styles/media" as *;
 @use "@styles/colors" as *;
 
-.career {
+.careerPage {
   @include mediaTablet {
   }
 
@@ -22,22 +22,17 @@
 .contentWrap {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  margin-bottom: 64px;
+  max-width: 678px;
+  gap: 64px;
 
   @include mediaTablet {
-    margin-bottom: 32px;
   }
-}
-
-.descriptionWrap {
-  // margin-bottom: 24px;
 }
 
 .listsWrap {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 64px;
 }
 
 .itemListItem {
@@ -84,43 +79,7 @@
   margin-left: auto;
 }
 
-.link {
-  // margin-bottom: 48px;
-}
-
-.iconWrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: 72px;
-  height: 72px;
-  border-radius: 48px;
-  background-color: $white;
-
-  @include mediaTablet {
-    width: 48px;
-    height: 48px;
-  }
-
-  @include mediaMobile {
-  }
-
-  .icon {
-    color: $black;
-
-    @include mediaTablet {
-      width: 16px;
-      height: 16px;
-    }
-  }
-}
-
-.itemLink {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.gridTitle {
   width: 100%;
-  max-width: 909px;
-  gap: 24px;
+  max-width: 443px;
 }

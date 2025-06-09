@@ -8,14 +8,7 @@
   flex-shrink: 0;
   width: 72px;
   height: 72px;
-  // background-color: $black;
   border-radius: 48px;
-
-  &:hover {
-  }
-
-  &:focus {
-  }
 
   @include mediaTablet {
     width: 48px;
@@ -43,8 +36,6 @@
 }
 
 .icon {
-  color: blue;
-
   @include mediaTablet {
     width: 16px;
     height: 16px;

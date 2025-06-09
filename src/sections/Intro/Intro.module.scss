@@ -29,3 +29,11 @@
   @include mediaMobile {
   }
 }
+
+.description {
+  margin-top: 16px;
+
+  @include mediaTablet {
+    margin-bottom: 8px;
+  }
+}

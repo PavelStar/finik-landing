@@ -6,10 +6,25 @@ import { articlesData } from "../../constants/articles";
 const ArticlesPage = () => {
   return (
     <div className={styles.articlesPage}>
-      <Intro title="политика конфиденциальности" />
+      <Intro title="мы в сми" />
       <Section className={styles.section}>
         <ul className={styles.list}>
           {articlesData.map((article) => {
+            return (
+              <li className={styles.cardWrap} key={article.id}>
+                <ArticleCard
+                  className={styles.card}
+                  title={article.title}
+                  date={article.date}
+                  href={article.href}
+                  pictureItem={article.pictureItem}
+                />
+              </li>
+            );
+          })}
+        </ul>
+        <ul className={styles.list2}>
+          {[...articlesData, ...articlesData].map((article) => {
             return (
               <li className={styles.cardWrap} key={article.id}>
                 <ArticleCard

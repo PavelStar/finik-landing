@@ -1,8 +1,14 @@
 import type { FC } from "react";
-import { Section, SectionGrid, ArticleCard } from "../../components/index";
+import {
+  Section,
+  SectionGrid,
+  ArticleCard,
+  Button,
+} from "../../components/index";
 import classNames from "classnames/bind";
 import styles from "./Articles.module.scss";
 import { articlesData } from "../../constants/articles";
+import { Link } from "react-router-dom";
 
 const cx = classNames.bind(styles);
 
@@ -34,6 +40,9 @@ const Articles: FC<IArticles> = ({ id }) => {
             );
           })}
         </ul>
+        <Link to="articles" className={cx(styles.link)}>
+          <Button>все статьи</Button>
+        </Link>
       </SectionGrid>
     </Section>
   );

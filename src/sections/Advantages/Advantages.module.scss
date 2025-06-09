@@ -1,0 +1,52 @@
+@use "@styles/media" as *;
+@use "@styles/colors" as *;
+
+.advantages {
+  @include mediaTablet {
+  }
+
+  @include mediaMobile {
+  }
+}
+
+.grid {
+  padding-bottom: 0;
+}
+
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  width: 100%;
+
+  @include mediaTablet {
+    gap: 16px;
+  }
+
+  @include mediaMobile {
+    flex-direction: column;
+  }
+}
+
+.cardWrap {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 calc(50% - 12px);
+  gap: 16px;
+  border-radius: 32px;
+  padding: 24px 32px;
+  background-color: $gray-transparent;
+  min-height: 228px;
+
+  @include mediaTablet {
+    gap: 8px;
+    padding: 8px 16px;
+    padding-bottom: 16px;
+    min-height: 192px;
+    border-radius: 24px;
+  }
+
+  @include mediaMobile {
+    min-height: auto;
+  }
+}

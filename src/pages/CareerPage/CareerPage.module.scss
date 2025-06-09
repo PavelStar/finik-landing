@@ -1,7 +1,7 @@
 @use "@styles/media" as *;
 @use "@styles/colors" as *;
 
-.career {
+.careerPage {
   @include mediaTablet {
   }
 
@@ -82,45 +82,4 @@
   max-width: 909px;
   width: 100%;
   margin-left: auto;
-}
-
-.link {
-  // margin-bottom: 48px;
-}
-
-.iconWrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: 72px;
-  height: 72px;
-  border-radius: 48px;
-  background-color: $white;
-
-  @include mediaTablet {
-    width: 48px;
-    height: 48px;
-  }
-
-  @include mediaMobile {
-  }
-
-  .icon {
-    color: $black;
-
-    @include mediaTablet {
-      width: 16px;
-      height: 16px;
-    }
-  }
-}
-
-.itemLink {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 909px;
-  gap: 24px;
 }
