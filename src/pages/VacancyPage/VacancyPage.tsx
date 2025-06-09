@@ -10,7 +10,7 @@ import classNames from "classnames/bind";
 import styles from "./VacancyPage.module.scss";
 import { Intro } from "../../sections/index";
 import { careerItems } from "../../constants/career";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 const cx = classNames.bind(styles);
 
