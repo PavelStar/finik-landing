@@ -21,3 +21,12 @@
 .content {
   flex-grow: 1;
 }
+
+.modal {
+  max-width: 908px;
+
+  @include mediaTablet {
+    max-width: none;
+    height: 100vh;
+  }
+}

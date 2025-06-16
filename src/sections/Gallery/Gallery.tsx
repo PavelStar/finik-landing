@@ -9,11 +9,12 @@ const cx = classNames.bind(styles);
 
 interface IGallery {
   id?: string;
+  tag?: "section" | "div";
 }
 
-const Gallery: FC<IGallery> = ({ id }) => {
+const Gallery: FC<IGallery> = ({ id, tag = "section" }) => {
   return (
-    <Section className={cx(styles.gallery)} id={id}>
+    <Section className={cx(styles.gallery)} id={id} tag={tag}>
       <Marquee
         className={cx(styles.marquee)}
         gradient={false}

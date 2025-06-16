@@ -1,4 +1,4 @@
-import type { IWorkCard } from "../components/WorkCard/WorkCard";
+import type { IWorkCard } from "../components/NumberCard/NumberCard";
 
 export const workCards: Array<IWorkCard> = [
   {

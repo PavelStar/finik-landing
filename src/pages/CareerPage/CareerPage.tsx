@@ -15,7 +15,7 @@ const CareerPage: FC<ICareerPage> = ({ id }) => {
     <Section className={cx(styles.career)} id={id}>
       <Intro
         title="карьера"
-        description="Стань частью команды FINIK Design Lab"
+        description={"Стань частью команды FINIK Design Lab"}
       />
       <Advantages />
       <Career itemsType="link" />

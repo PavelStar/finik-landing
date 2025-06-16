@@ -11,29 +11,21 @@ import {
   Gallery,
 } from "../../sections/index";
 import { ANCHORS } from "../../constants/anchors";
-import { Form, Modal } from "../../components/index";
-import { useState } from "react";
+import { type FC } from "react";
 import styles from "./HomePage.module.scss";
+import { workCards } from "../../constants/howWeWork";
 
-const HomePage = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const handleOpen = () => {
-    setIsOpen(true);
-  };
+interface IHomePage {
+  onModalOpen: () => void;
+}
 
-  const handleClose = () => {
-    setIsOpen(false);
-  };
-
+const HomePage: FC<IHomePage> = ({ onModalOpen }) => {
   return (
     <>
-      <Modal className={styles.modal} isOpen={isOpen} onClose={handleClose}>
-        <Form />
-      </Modal>
       <Intro
         title="Инновации, которые трансформируют бизнес"
         buttonText="обсудить проект"
-        onClick={handleOpen}
+        onClick={onModalOpen}
       />
       <Cases id={ANCHORS.cases} />
       <Partners />
@@ -42,9 +34,13 @@ const HomePage = () => {
       </div>
       <About id={ANCHORS.about} />
       <Gallery id={ANCHORS.gallery} />
-      <HowWeWork id={ANCHORS.howWeWork} />
+      <HowWeWork
+        id={ANCHORS.howWeWork}
+        title="Как мы работаем"
+        list={workCards}
+      />
       <div className={styles.wrapper}>
-        <Contacts id={ANCHORS.contacts} onClick={handleOpen} />
+        <Contacts id={ANCHORS.contacts} onClick={onModalOpen} />
       </div>
       <Articles id={ANCHORS.articles} />
       <Career id={ANCHORS.career} />

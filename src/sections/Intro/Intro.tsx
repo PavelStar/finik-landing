@@ -33,7 +33,7 @@ const Intro: FC<IIntro> = ({ title, description, buttonText, onClick }) => {
           size="L"
           weight="medium"
         >
-          Стань частью команды FINIK Design Lab
+          {description}
         </Paragraph>
       )}
     </Section>

@@ -10,7 +10,7 @@ export { default as Title } from "./Title/Title";
 export { default as Logo } from "./Logo/Logo";
 export { default as Accordion } from "./Accordion/Accordion";
 export { default as SectionGrid } from "./SectionGrid/SectionGrid";
-export { default as WorkCard } from "./WorkCard/WorkCard";
+export { default as NumberCard } from "./NumberCard/NumberCard";
 export { default as Contact } from "./Contact/Contact";
 export { default as ArticleCard } from "./ArticleCard/ArticleCard";
 export { default as Form } from "./Form/Form";

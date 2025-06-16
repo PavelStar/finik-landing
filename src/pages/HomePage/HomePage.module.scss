@@ -1,15 +1,6 @@
 @use "../../styles/media" as *;
 @use "../../styles/colors" as *;
 
-.modal {
-  max-width: 908px;
-
-  @include mediaTablet {
-    max-width: none;
-    height: 100vh;
-  }
-}
-
 .wrapper {
   background-color: $white;
 }

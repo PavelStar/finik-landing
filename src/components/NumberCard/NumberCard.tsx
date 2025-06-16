@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import styles from "./WorkCard.module.scss";
+import styles from "./NumberCard.module.scss";
 import classNames from "classnames/bind";
 import Paragraph from "../Paragraph/Paragraph";
 

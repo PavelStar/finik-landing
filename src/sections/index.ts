@@ -12,3 +12,6 @@ export { default as Articles } from "./Articles/Articles";
 export { default as Career } from "./Career/Career";
 export { default as Privacy } from "./Privacy/Privacy";
 export { default as Advantages } from "./Advantages/Advantages";
+export { default as MainInfo } from "./MainInfo/MainInfo";
+export { default as Details } from "./Details/Details";
+export { default as Results } from "./Results/Results";

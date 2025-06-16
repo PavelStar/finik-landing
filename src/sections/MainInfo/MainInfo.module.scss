@@ -1,0 +1,58 @@
+@use "@styles/media" as *;
+@use "@styles/colors" as *;
+
+.mainInfo {
+  padding-bottom: 96px;
+
+  @include mediaTablet {
+    padding-bottom: 48px;
+  }
+
+  @include mediaMobile {
+  }
+}
+
+.grid {
+  padding-bottom: 0;
+  padding-top: 64px;
+
+  @include mediaTablet {
+    padding-top: 32px;
+  }
+}
+
+.textWrap {
+  width: 100%;
+  max-width: 909px;
+  align-self: end;
+}
+
+.textInner {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 676px;
+
+  @include mediaTablet {
+    max-width: 434px;
+    gap: 20px;
+  }
+}
+
+.titleWrap {
+  max-width: 443px;
+
+  @include mediaTablet {
+    max-width: 164px;
+  }
+}
+
+.content {
+  // max-width: 909px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
