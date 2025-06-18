@@ -1,0 +1,70 @@
+@use "@styles/media" as *;
+@use "@styles/colors" as *;
+
+.examples {
+  padding-bottom: 96px;
+
+  @include mediaTablet {
+  }
+
+  @include mediaMobile {
+  }
+}
+
+.grid {
+  padding-bottom: 64px;
+
+  @include mediaTablet {
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
+
+  @include mediaMobile {
+  }
+}
+
+.titleWrap {
+  max-width: 443px;
+
+  @include mediaTablet {
+    max-width: 164px;
+  }
+}
+
+.textInner {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 676px;
+
+  @include mediaTablet {
+    max-width: 434px;
+    gap: 8px;
+  }
+}
+
+.list {
+  display: flex;
+  width: fit-content;
+  gap: 4px;
+
+  li {
+    &:last-child {
+      margin-right: 4px;
+
+      @include mediaTablet {
+      }
+
+      @include mediaMobile {
+      }
+    }
+  }
+}
+
+.marquee {
+  img {
+    @include mediaTablet {
+      height: 160px;
+    }
+  }
+}

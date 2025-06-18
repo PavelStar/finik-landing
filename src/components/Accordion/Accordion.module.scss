@@ -30,6 +30,7 @@
 .imageWrapper {
   max-width: 210px;
   width: 100%;
+  height: max-content;
 
   @include mediaTablet {
     max-width: none;
@@ -87,4 +88,9 @@
   max-height: 0;
   opacity: 0;
   transition: max-height 300ms ease, opacity 300ms ease;
+}
+
+.link {
+  display: block;
+  margin-top: 24px;
 }

@@ -26,8 +26,6 @@ const CasePage: FC<ICasePage> = ({ id, onModalOpen }) => {
 
   const currentCase = casesData.find((item) => item.id === Number(caseId));
 
-  console.log("currentCase ", currentCase);
-
   if (!currentCase) {
     return null;
   }

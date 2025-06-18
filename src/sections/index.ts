@@ -15,3 +15,4 @@ export { default as Advantages } from "./Advantages/Advantages";
 export { default as MainInfo } from "./MainInfo/MainInfo";
 export { default as Details } from "./Details/Details";
 export { default as Results } from "./Results/Results";
+export { default as Examples } from "./Examples/Examples";
