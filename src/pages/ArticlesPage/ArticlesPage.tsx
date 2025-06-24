@@ -7,7 +7,7 @@ const ArticlesPage = () => {
   return (
     <div className={styles.articlesPage}>
       <Intro title="мы в сми" />
-      <Section className={styles.section}>
+      <Section className={styles.section} theme="dark">
         <ul className={styles.list}>
           {articlesData.map((article) => {
             return (
@@ -17,7 +17,7 @@ const ArticlesPage = () => {
                   title={article.title}
                   date={article.date}
                   href={article.href}
-                  pictureItem={article.pictureItem}
+                  image={article.image}
                 />
               </li>
             );
@@ -32,7 +32,7 @@ const ArticlesPage = () => {
                   title={article.title}
                   date={article.date}
                   href={article.href}
-                  pictureItem={article.pictureItem}
+                  image={article.image}
                 />
               </li>
             );

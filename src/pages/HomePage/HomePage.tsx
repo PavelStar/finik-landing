@@ -29,7 +29,6 @@ const HomePage: FC<IHomePage> = ({ onModalOpen }) => {
       <Partners />
       <Services id={ANCHORS.services} />
       <About id={ANCHORS.about} />
-      {/* <Gallery id={ANCHORS.gallery} /> */}
       <Steps id={ANCHORS.howWeWork} title="Как мы работаем" list={workCards} />
       <Contacts id={ANCHORS.contacts} onClick={onModalOpen} />
       <Articles id={ANCHORS.articles} />

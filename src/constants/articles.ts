@@ -32,10 +32,8 @@ export const articlesData: Array<IArticleCard> = [
   {
     id: 1,
     href: "",
-    pictureItem: {
-      id: 1,
+    image: {
       alt: "Сбер",
-      title: "Сбер",
       images: {
         desktop: article1,
         desktop2x: article1_2x,
@@ -52,10 +50,8 @@ export const articlesData: Array<IArticleCard> = [
   {
     id: 2,
     href: "",
-    pictureItem: {
-      id: 1,
+    image: {
       alt: "Сбер",
-      title: "Сбер",
       images: {
         desktop: article2,
         desktop2x: article2_2x,
@@ -71,10 +67,8 @@ export const articlesData: Array<IArticleCard> = [
   {
     id: 3,
     href: "",
-    pictureItem: {
-      id: 1,
+    image: {
       alt: "Сбер",
-      title: "Сбер",
       images: {
         desktop: article3,
         desktop2x: article3_2x,
@@ -91,10 +85,8 @@ export const articlesData: Array<IArticleCard> = [
   {
     id: 4,
     href: "",
-    pictureItem: {
-      id: 1,
+    image: {
       alt: "Сбер",
-      title: "Сбер",
       images: {
         desktop: article4,
         desktop2x: article4_2x,

@@ -12,7 +12,7 @@ interface IAdvantages {
 
 const Advantages: FC<IAdvantages> = ({ id }) => {
   return (
-    <Section className={cx(styles.advantages)} id={id}>
+    <Section className={cx(styles.advantages)} theme="dark" id={id}>
       <SectionGrid
         className={cx(styles.grid)}
         contentClassName={styles.content}

@@ -34,7 +34,7 @@ const Articles: FC<IArticles> = ({ id }) => {
                   title={article.title}
                   date={article.date}
                   href={article.href}
-                  pictureItem={article.pictureItem}
+                  image={article.image}
                 />
               </li>
             );

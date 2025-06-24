@@ -12,7 +12,7 @@ interface ICareerPage {
 
 const CareerPage: FC<ICareerPage> = ({ id }) => {
   return (
-    <Section className={cx(styles.career)} id={id}>
+    <Section className={cx(styles.career)} theme="transparent" id={id}>
       <Intro
         title="карьера"
         description={"Стань частью команды FINIK Design Lab"}
