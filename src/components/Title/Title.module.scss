@@ -2,6 +2,8 @@
 @use "../../styles/colors" as *;
 
 .title {
+  font-weight: 500;
+
   @include mediaTablet {
   }
 

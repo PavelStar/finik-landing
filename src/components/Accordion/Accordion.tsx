@@ -52,7 +52,7 @@ const Accordion: FC<IAccordion> = ({
         <Item key={id} value={title} className={styles.item}>
           <Header className={styles.header}>
             <Trigger className={styles.trigger}>
-              <Title size="L" color={theme} level={3} weight="medium">
+              <Title size="L" color={theme} level={3}>
                 {title}
               </Title>
               <AccordionButton

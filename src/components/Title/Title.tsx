@@ -19,7 +19,7 @@ const Title: FC<ITitle> = ({
   level = 2,
   color = "light",
   size = "M",
-  weight = "bold",
+  weight = "medium",
   textTransform = "capitalize",
   className,
 }) => {

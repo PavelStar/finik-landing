@@ -1,5 +1,5 @@
 import { type FC } from "react";
-import { Section, Picture } from "../../components/index";
+import { Container, Picture } from "../../components/index";
 import classNames from "classnames/bind";
 import styles from "./CasePage.module.scss";
 import {
@@ -37,9 +37,9 @@ const CasePage: FC<ICasePage> = ({ id, onModalOpen }) => {
           title={currentCase.casePageData.intro.title}
           description={currentCase.casePageData.intro.description}
         />
-        <Section theme="dark">
+        <Container>
           <Picture {...currentCase.casePageData.image} />
-        </Section>
+        </Container>
         <MainInfo
           title="Основная информация"
           list={currentCase.casePageData.mainInfo.list}

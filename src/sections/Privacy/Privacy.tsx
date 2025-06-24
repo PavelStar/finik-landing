@@ -9,7 +9,7 @@ const Privacy = () => {
         {privacyData.map((privacyItem) => {
           return (
             <li className={styles.privacyListItem} key={privacyItem.id}>
-              <Title level={3} size="L" weight="medium">
+              <Title level={3} size="L">
                 {privacyItem.title}
               </Title>
               <ul>

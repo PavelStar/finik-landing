@@ -45,9 +45,7 @@ const ServicePage: FC<IServicePage> = ({ id, onModalOpen }) => {
         <Examples />
         <Partners />
       </div>
-      <div className={styles.wrapper}>
-        <Contacts onClick={onModalOpen} />
-      </div>
+      <Contacts onClick={onModalOpen} />
     </>
   );
 };

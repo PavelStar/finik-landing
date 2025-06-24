@@ -212,14 +212,44 @@ export const servicesData = [
 export const slides: Array<ISlide> = [
   {
     id: 1,
-    image: servicePage1,
+    image: {
+      alt: "Сбер",
+      images: {
+        desktop: servicePage1,
+        desktop2x: servicePage1,
+        tablet: servicePage1,
+        tablet2x: servicePage1,
+        mobile: servicePage1,
+        mobile2x: servicePage1,
+      },
+    },
   },
   {
     id: 2,
-    image: servicePage1,
+    image: {
+      alt: "Сбер",
+      images: {
+        desktop: servicePage1,
+        desktop2x: servicePage1,
+        tablet: servicePage1,
+        tablet2x: servicePage1,
+        mobile: servicePage1,
+        mobile2x: servicePage1,
+      },
+    },
   },
   {
     id: 3,
-    image: servicePage1,
+    image: {
+      alt: "Сбер",
+      images: {
+        desktop: servicePage1,
+        desktop2x: servicePage1,
+        tablet: servicePage1,
+        tablet2x: servicePage1,
+        mobile: servicePage1,
+        mobile2x: servicePage1,
+      },
+    },
   },
 ];

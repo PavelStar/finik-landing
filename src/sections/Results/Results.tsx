@@ -30,7 +30,7 @@ const Results: FC<IResults> = ({ id }) => {
           theme="dark"
         >
           <div className={styles.textInner}>
-            <Title level={2} size="L" weight="medium">
+            <Title level={2} size="L">
               Главный экран
             </Title>
             <Paragraph>
@@ -66,7 +66,7 @@ const Results: FC<IResults> = ({ id }) => {
           theme="dark"
         >
           <div className={styles.textInner}>
-            <Title level={2} size="L" weight="medium">
+            <Title level={2} size="L">
               Личный кабинет
             </Title>
             <Paragraph>

@@ -38,7 +38,7 @@ const Career: FC<ICareer> = ({ id, itemsType = "accordion" }) => {
                     to={`${career.id}`}
                     className={cx(styles.itemLink)}
                   >
-                    <Title size="L" color="light" level={3} weight="medium">
+                    <Title size="L" color="light" level={3}>
                       {career.title}
                     </Title>
                     <div className={cx(styles.iconWrap)}>
