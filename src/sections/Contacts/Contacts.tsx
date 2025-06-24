@@ -23,7 +23,7 @@ const Contacts: FC<IContacts> = ({ id, onClick }) => {
         contentClassName={styles.content}
         titleWrapClassName={styles.titleWrap}
         title="Контакты"
-        titleColor="grey"
+        theme="light"
       >
         <div className={styles.inner}>
           <div className={styles.textBlock}>

@@ -2,8 +2,10 @@
 @use "@styles/colors" as *;
 
 .gallery {
+  max-width: none;
+  padding: 0;
+
   @include mediaTablet {
-    padding: 0;
   }
 
   @include mediaMobile {
@@ -12,7 +14,6 @@
 
 .list {
   display: flex;
-  // gap: 80px;
   width: fit-content;
   gap: 4px;
 

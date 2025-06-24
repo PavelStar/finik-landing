@@ -11,7 +11,7 @@ interface IIntro {
 
 const Intro: FC<IIntro> = ({ title, description, buttonText, onClick }) => {
   return (
-    <Section className={styles.intro}>
+    <Section className={styles.intro} theme="transparent">
       {buttonText && (
         <Button className={styles.button} onClick={onClick}>
           Обсудить проект

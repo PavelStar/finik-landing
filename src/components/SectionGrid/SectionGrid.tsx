@@ -7,7 +7,7 @@ const cx = classNames.bind(styles);
 
 interface ISectionGrid {
   title?: string;
-  titleColor?: "light" | "dark" | "grey" | "darkGrey";
+  theme?: "light" | "dark";
   children?: React.ReactNode;
   className?: string;
   titleWrapClassName?: string;
@@ -16,17 +16,21 @@ interface ISectionGrid {
 
 const SectionGrid: FC<ISectionGrid> = ({
   title = "",
-  titleColor = "dark",
+  theme = "light",
   children,
   className,
   titleWrapClassName,
   contentClassName,
 }) => {
   return (
-    <div className={cx(styles.sectionGrid, className)}>
+    <div className={cx(styles.sectionGrid, theme, className)}>
       <div className={cx(styles.titleWrap, titleWrapClassName)}>
         {title && (
-          <Title size="M" color={titleColor} weight="regular">
+          <Title
+            size="M"
+            color={theme === "light" ? "lightGrey" : "darkGrey"}
+            weight="regular"
+          >
             {title}
           </Title>
         )}

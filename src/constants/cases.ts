@@ -21,72 +21,73 @@ import rostelekomMobile from "../assets/cases/rostelekom-mobile.png";
 import projectImg from "../assets/cases/project-img.png";
 import projectImgTablet from "../assets/cases/project-img-tablet.png";
 import projectImgMobile from "../assets/cases/project-img-mobile.png";
+import type { IPicture } from "../types/types";
 
-export interface IPictureItem {
-  id: number;
-  alt: string;
+export interface ICaseItem {
+  id: string | number;
   title: string;
-  images: {
-    desktop: string;
-    desktop2x?: string;
-    tablet?: string;
-    tablet2x?: string;
-    mobile?: string;
-    mobile2x?: string;
-  };
+  image: IPicture;
 }
 
-export const CASES: IPictureItem[] = [
+export const CASES: ICaseItem[] = [
   {
     id: 1,
-    alt: "Сбер",
     title: "Сбер",
-    images: {
-      desktop: sber,
-      desktop2x: sber,
-      tablet: sberTablet,
-      tablet2x: sberTablet,
-      mobile: sberMobile,
-      mobile2x: sberMobile,
+    image: {
+      alt: "Сбер",
+      images: {
+        desktop: sber,
+        desktop2x: sber,
+        tablet: sberTablet,
+        tablet2x: sberTablet,
+        mobile: sberMobile,
+        mobile2x: sberMobile,
+      },
     },
   },
   {
     id: 2,
-    alt: "T2",
     title: "Т2",
-    images: {
-      desktop: t2,
-      desktop2x: t2,
-      tablet: t2Tablet,
-      tablet2x: t2Tablet,
-      mobile: t2Mobile,
-      mobile2x: t2Mobile,
+    image: {
+      alt: "T2",
+      images: {
+        desktop: t2,
+        desktop2x: t2,
+        tablet: t2Tablet,
+        tablet2x: t2Tablet,
+        mobile: t2Mobile,
+        mobile2x: t2Mobile,
+      },
     },
   },
   {
     id: 3,
-    alt: "Сбер-бизнес",
     title: "Сбер-бизнес",
-    images: {
-      desktop: sberBusiness,
-      desktop2x: sberBusiness,
-      tablet: sberBusinessTablet,
-      tablet2x: sberBusinessTablet,
-      mobile: sberBusinessMobile,
-      mobile2x: sberBusinessMobile,
+    image: {
+      alt: "Сбер-бизнес",
+      images: {
+        desktop: sberBusiness,
+        desktop2x: sberBusiness,
+        tablet: sberBusinessTablet,
+        tablet2x: sberBusinessTablet,
+        mobile: sberBusinessMobile,
+        mobile2x: sberBusinessMobile,
+      },
     },
   },
   {
     id: 4,
-    alt: "Ростелеком",
     title: "Ростелеком",
-    images: {
-      desktop: rostelekom,
-      desktop2x: rostelekom,
-      tablet: rostelekomTablet,
-      tablet2x: rostelekomTablet,
-      mobile: rostelekomMobile,
-      mobile2x: rostelekomMobile,
+    image: {
+      alt: "Ростелеком",
+      images: {
+        desktop: rostelekom,
+        desktop2x: rostelekom,
+        tablet: rostelekomTablet,
+        tablet2x: rostelekomTablet,
+        mobile: rostelekomMobile,
+        mobile2x: rostelekomMobile,
+      },
     },
   },
 ];
@@ -101,9 +102,9 @@ export const casesData = [
     casePageData: {
       image: {
         id: 1,
-        alt: "Сбер",
         title: "Сбер",
         images: {
+          alt: "Сбер",
           desktop: projectImg,
           desktop2x: projectImg,
           tablet: projectImgTablet,
@@ -214,9 +215,9 @@ export const casesData = [
     casePageData: {
       image: {
         id: 1,
-        alt: "Сбер",
         title: "Сбер",
         images: {
+          alt: "Сбер",
           desktop: projectImg,
           desktop2x: projectImg,
           tablet: projectImgTablet,
@@ -327,9 +328,9 @@ export const casesData = [
     casePageData: {
       image: {
         id: 1,
-        alt: "Сбер",
         title: "Сбер",
         images: {
+          alt: "Сбер",
           desktop: projectImg,
           desktop2x: projectImg,
           tablet: projectImgTablet,
@@ -440,9 +441,9 @@ export const casesData = [
     casePageData: {
       image: {
         id: 1,
-        alt: "Сбер",
         title: "Сбер",
         images: {
+          alt: "Сбер",
           desktop: projectImg,
           desktop2x: projectImg,
           tablet: projectImgTablet,

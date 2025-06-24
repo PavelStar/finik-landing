@@ -5,12 +5,8 @@
   display: flex;
   justify-content: space-between;
   gap: 24px;
-  padding-top: 96px;
-  padding-bottom: 96px;
 
   @include mediaTablet {
-    padding-top: 48px;
-    padding-bottom: 48px;
     gap: 16px;
   }
 
@@ -42,7 +38,6 @@
   flex-shrink: 2;
 
   @include mediaTablet {
-    // max-width: 524px;
     max-width: 100%;
   }
 

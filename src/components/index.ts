@@ -1,5 +1,6 @@
 export { default as ScrollToTop } from "./ScrollToTop/ScrollToTop";
 export { default as Section } from "./Section/Section";
+export { default as Container } from "./Container/Container";
 export { default as Menu } from "./Menu/Menu";
 export { default as MobileMenu } from "./MobileMenu/MobileMenu";
 export { default as MobileMenuButton } from "./MobileMenu/MobileMenuButton/MobileMenuButton";
@@ -19,3 +20,4 @@ export { default as InputPhone } from "./InputPhone/InputPhone";
 export { default as Textarea } from "./Textarea/Textarea";
 export { default as Modal } from "./Modal/Modal";
 export { default as Picture } from "./Picture/Picture";
+export { default as Gallery } from "./Gallery/Gallery";

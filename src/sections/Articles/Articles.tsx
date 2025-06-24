@@ -18,12 +18,12 @@ interface IArticles {
 
 const Articles: FC<IArticles> = ({ id }) => {
   return (
-    <Section className={cx(styles.articles)} id={id}>
+    <Section className={cx(styles.articles)} theme="dark" id={id}>
       <SectionGrid
         contentClassName={styles.content}
         titleWrapClassName={styles.titleWrap}
         title="Мы в СМИ"
-        titleColor="grey"
+        theme="dark"
       >
         <ul className={cx(styles.list)}>
           {articlesData.map((article) => {

@@ -17,13 +17,13 @@ interface IMainInfo {
 
 const MainInfo: FC<IMainInfo> = ({ id, title, list }) => {
   return (
-    <Section className={styles.mainInfo} id={id}>
+    <Section className={styles.mainInfo} theme="dark" id={id}>
       <SectionGrid
         className={styles.grid}
         contentClassName={styles.content}
         titleWrapClassName={styles.titleWrap}
         title={title}
-        titleColor="darkGrey"
+        theme="dark"
       >
         <div className={cx(styles.textWrap)}>
           <div className={cx(styles.textInner)}>

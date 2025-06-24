@@ -30,7 +30,7 @@ const VacancyPage: FC<IVacancyPage> = ({ id }) => {
       <Intro title={vacancy?.title || ""} />
       <SectionGrid
         title="Карьера"
-        titleColor="grey"
+        theme="dark"
         titleWrapClassName={styles.gridTitle}
       >
         {vacancy && (

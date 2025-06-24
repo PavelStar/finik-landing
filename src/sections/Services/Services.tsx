@@ -23,7 +23,7 @@ const Services: FC<IServices> = ({ id }) => {
 
   return (
     <Section className={cx(styles.services)} id={id}>
-      <SectionGrid title="Услуги" titleColor="grey">
+      <SectionGrid title="Услуги" theme="light">
         <ul className={cx(styles.items)}>
           {services.map((service) => {
             const isImageShown = !isTablet && openItems.includes(service.title);

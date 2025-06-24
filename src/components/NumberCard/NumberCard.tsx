@@ -5,17 +5,17 @@ import Paragraph from "../Paragraph/Paragraph";
 
 const cx = classNames.bind(styles);
 
-export interface IWorkCard {
+export interface INumberCard {
   id?: number;
   number: number | string;
   title: string;
   className?: string;
 }
 
-const WorkCard: FC<IWorkCard> = ({ number, title, className }) => {
+const WorkCard: FC<INumberCard> = ({ number, title, className }) => {
   return (
-    <div className={cx(styles.workCard, className)}>
-      <Paragraph color="grey">{number}</Paragraph>
+    <div className={cx(styles.numberCard, className)}>
+      <Paragraph color="darkGrey">{number}</Paragraph>
       <Paragraph size="L" weight="medium">
         {title}
       </Paragraph>

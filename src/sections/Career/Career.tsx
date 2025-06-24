@@ -27,8 +27,8 @@ const Career: FC<ICareer> = ({ id, itemsType = "accordion" }) => {
   const isBtnshown = !window.location.pathname.includes("career");
 
   return (
-    <Section className={cx(styles.career)} id={id}>
-      <SectionGrid title="Карьера" titleColor="grey">
+    <Section className={cx(styles.career)} theme="dark" id={id}>
+      <SectionGrid title="Карьера" theme="dark">
         <ul className={cx(styles.items)}>
           {careerItems.map((career) => {
             if (itemsType === "link") {

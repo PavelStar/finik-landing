@@ -2,10 +2,20 @@
 @use "@styles/colors" as *;
 
 .about {
-  padding-bottom: 64px;
+  padding-bottom: 0;
 
   @include mediaTablet {
-    padding-bottom: 32px;
+  }
+
+  @include mediaMobile {
+  }
+}
+
+.container {
+  margin-bottom: 64px;
+
+  @include mediaTablet {
+    margin-bottom: 32px;
   }
 
   @include mediaMobile {

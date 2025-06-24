@@ -18,7 +18,7 @@ const Advantages: FC<IAdvantages> = ({ id }) => {
         contentClassName={styles.content}
         titleWrapClassName={styles.titleWrap}
         title="Почему мы?"
-        titleColor="darkGrey"
+        theme="dark"
       >
         <ul className={styles.inner}>
           {advantages.map((card) => {

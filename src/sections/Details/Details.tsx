@@ -23,7 +23,7 @@ const Details: FC<IDetails> = ({ id, list }) => {
         contentClassName={styles.content}
         titleWrapClassName={styles.titleWrap}
         title="Детали проекта"
-        titleColor="grey"
+        theme="dark"
       >
         <ul className={styles.inner}>
           {list.map((card) => {

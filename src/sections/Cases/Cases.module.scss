@@ -4,6 +4,8 @@
 .cases {
   width: 100%;
   padding: 0;
+  max-width: 1440px;
+  margin: 0 auto;
 
   @include mediaTablet {
   }
@@ -14,75 +16,63 @@
 
 .list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 400px 400px;
+  grid-template-columns: repeat(auto-fill, 1fr);
+  grid-template-areas:
+    "a b b"
+    "c c d";
   gap: 4px;
 
   @include mediaTablet {
-    grid-template-rows: 240px 240px;
   }
 
-  @include mediaLargeMobile {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 160px 160px;
+  @include mediaMobile {
+    grid-template-areas:
+      "a b"
+      "c d";
   }
 }
 
 .item {
   position: relative;
-  border-radius: 32px;
+  width: 100%;
   overflow: hidden;
+  border-radius: 32px;
+
+  @include mediaLaptop {
+  }
 
   @include mediaTablet {
     border-radius: 24px;
+    max-height: 240px;
   }
 
-  @include mediaLargeMobile {
+  @include mediaMobile {
+    max-height: 160px;
   }
 
   &:nth-child(1) {
-    grid-column: 1 / 2;
-
-    @include mediaLargeMobile {
-    }
+    grid-area: a;
   }
 
   &:nth-child(2) {
-    grid-column: 2 / 4;
-
-    @include mediaLargeMobile {
-      grid-column: 2 / 3;
-    }
+    grid-area: b;
   }
 
   &:nth-child(3) {
-    grid-column: 1 / 3;
-
-    @include mediaLargeMobile {
-      grid-column: 1 / 2;
-    }
+    grid-area: c;
   }
 
   &:nth-child(4) {
-    grid-column: 3 / 4;
-
-    @include mediaLargeMobile {
-      grid-column: 2 / 3;
-    }
+    grid-area: d;
   }
 
-  .image {
-    position: relative;
-    overflow: hidden;
+  picture {
     height: 100%;
-    width: 100%;
 
     img {
-      width: 100%;
-      height: 100%;
       object-fit: cover;
-      display: block;
-      max-width: none;
+      height: 100%;
+      width: 100%;
     }
   }
 }

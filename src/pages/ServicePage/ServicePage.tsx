@@ -4,7 +4,7 @@ import styles from "./ServicePage.module.scss";
 import {
   Intro,
   Contacts,
-  HowWeWork,
+  Steps,
   Examples,
   Partners,
 } from "../../sections/index";
@@ -38,7 +38,7 @@ const ServicePage: FC<IServicePage> = ({ id, onModalOpen }) => {
           title={currentService.servicePageData.intro.title}
           description={currentService.servicePageData.intro.description}
         />
-        <HowWeWork
+        <Steps
           title="Результаты и метрики"
           list={currentService.servicePageData.choice.list}
         />

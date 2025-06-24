@@ -1,25 +1,22 @@
 import type { FC } from "react";
 import { Section, SectionGrid, NumberCard } from "../../components/index";
-import classNames from "classnames/bind";
-import styles from "./HowWeWork.module.scss";
-import type { IWorkCard } from "../../components/NumberCard/NumberCard";
+import styles from "./Steps.module.scss";
+import type { INumberCard } from "../../components/NumberCard/NumberCard";
 
-const cx = classNames.bind(styles);
-
-interface IHowWeWork {
+interface ISteps {
   id?: string;
   title: string;
-  list: Array<IWorkCard>;
+  list: Array<INumberCard>;
 }
 
-const HowWeWork: FC<IHowWeWork> = ({ id, title, list }) => {
+const Steps: FC<ISteps> = ({ id, title, list }) => {
   return (
-    <Section className={cx(styles.howWeWork)} id={id}>
+    <Section className={styles.steps} theme="dark" id={id}>
       <SectionGrid
         contentClassName={styles.content}
         titleWrapClassName={styles.titleWrap}
         title={title}
-        titleColor="darkGrey"
+        theme="dark"
       >
         <ul className={styles.inner}>
           {list.map((card) => {
@@ -35,4 +32,4 @@ const HowWeWork: FC<IHowWeWork> = ({ id, title, list }) => {
   );
 };
 
-export default HowWeWork;
+export default Steps;

@@ -1,6 +1,6 @@
-import type { IWorkCard } from "../components/NumberCard/NumberCard";
+import type { INumberCard } from "../components/NumberCard/NumberCard";
 
-export const workCards: Array<IWorkCard> = [
+export const workCards: Array<INumberCard> = [
   {
     id: 1,
     number: "01",

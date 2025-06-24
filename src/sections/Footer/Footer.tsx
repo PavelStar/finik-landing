@@ -6,8 +6,8 @@ import { Link as RouterLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className={styles.header}>
-      <Section className={styles.inner} tag="div">
+    <Section className={styles.footer} theme="dark" tag="footer">
+      <div className={styles.inner}>
         <RouterLink to="/">
           <Logo />
         </RouterLink>
@@ -24,8 +24,8 @@ const Footer = () => {
             </Paragraph>
           </RouterLink>
         </div>
-      </Section>
-    </footer>
+      </div>
+    </Section>
   );
 };
 

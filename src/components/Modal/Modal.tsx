@@ -59,17 +59,6 @@ const Modal: React.FC<ModalProps> = ({
         onClick={(e) => e.stopPropagation()}
         role="document"
       >
-        {/* <header className={cx(styles.header)}>
-          <Title size="L" color="dark" weight="medium">
-            Анкета
-          </Title>
-          <button
-            className={cx(styles.closeBtn)}
-            aria-label="Закрыть модальное окно"
-            onClick={onClose}
-          >
-          </button>
-        </header> */}
         <button
           className={cx(styles.closeBtn)}
           aria-label="Закрыть модальное окно"

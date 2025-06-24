@@ -60,6 +60,14 @@
 }
 
 .marquee {
+  &:not(&:last-child) {
+    margin-bottom: 64px;
+
+    @include mediaTablet {
+      margin-bottom: 32px;
+    }
+  }
+
   img {
     @include mediaTablet {
       height: 160px;

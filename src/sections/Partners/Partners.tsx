@@ -8,7 +8,7 @@ const cx = classNames.bind(styles);
 
 const Partners = () => {
   return (
-    <Section className={cx(styles.partners)}>
+    <Section className={cx(styles.partners)} theme="dark" fullWidth>
       <Marquee
         className={cx(styles.marquee)}
         gradient={false}

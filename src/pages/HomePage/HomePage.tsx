@@ -4,15 +4,13 @@ import {
   Partners,
   Services,
   About,
-  HowWeWork,
+  Steps,
   Contacts,
   Career,
   Articles,
-  Gallery,
 } from "../../sections/index";
 import { ANCHORS } from "../../constants/anchors";
 import { type FC } from "react";
-import styles from "./HomePage.module.scss";
 import { workCards } from "../../constants/howWeWork";
 
 interface IHomePage {
@@ -29,19 +27,11 @@ const HomePage: FC<IHomePage> = ({ onModalOpen }) => {
       />
       <Cases id={ANCHORS.cases} />
       <Partners />
-      <div className={styles.wrapper}>
-        <Services id={ANCHORS.services} />
-      </div>
+      <Services id={ANCHORS.services} />
       <About id={ANCHORS.about} />
-      <Gallery id={ANCHORS.gallery} />
-      <HowWeWork
-        id={ANCHORS.howWeWork}
-        title="Как мы работаем"
-        list={workCards}
-      />
-      <div className={styles.wrapper}>
-        <Contacts id={ANCHORS.contacts} onClick={onModalOpen} />
-      </div>
+      {/* <Gallery id={ANCHORS.gallery} /> */}
+      <Steps id={ANCHORS.howWeWork} title="Как мы работаем" list={workCards} />
+      <Contacts id={ANCHORS.contacts} onClick={onModalOpen} />
       <Articles id={ANCHORS.articles} />
       <Career id={ANCHORS.career} />
     </>

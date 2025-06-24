@@ -7,7 +7,7 @@ import {
   Contacts,
   MainInfo,
   Details,
-  HowWeWork,
+  Steps,
   Results,
 } from "../../sections/index";
 import { useParams } from "react-router-dom";
@@ -37,25 +37,21 @@ const CasePage: FC<ICasePage> = ({ id, onModalOpen }) => {
           title={currentCase.casePageData.intro.title}
           description={currentCase.casePageData.intro.description}
         />
-        <Section>
+        <Section theme="dark">
           <Picture {...currentCase.casePageData.image} />
         </Section>
         <MainInfo
           title="Основная информация"
           list={currentCase.casePageData.mainInfo.list}
         />
-        <div className={styles.wrapper}>
-          <Details list={currentCase.casePageData.details.list} />
-        </div>
+        <Details list={currentCase.casePageData.details.list} />
         <Results />
-        <HowWeWork
+        <Steps
           title="Результаты и метрики"
           list={currentCase.casePageData.metrics.list}
         />
       </div>
-      <div className={styles.wrapper}>
-        <Contacts onClick={onModalOpen} />
-      </div>
+      <Contacts onClick={onModalOpen} />
     </>
   );
 };

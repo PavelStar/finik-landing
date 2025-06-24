@@ -22,8 +22,12 @@ const Header = () => {
   const logoColor = isMenuShown ? "dark" : "light";
 
   return (
-    <header className={cx(styles.header, headerBackground)}>
-      <Section className={styles.inner} tag="div">
+    <Section
+      className={cx(styles.header, headerBackground)}
+      fullWidth={isTablet ? true : false}
+      tag="header"
+    >
+      <div className={styles.inner}>
         <Link to="/">
           <Logo color={logoColor} />
         </Link>
@@ -36,8 +40,8 @@ const Header = () => {
             setIsMenuShown={setIsMenuShown}
           />
         )}
-      </Section>
-    </header>
+      </div>
+    </Section>
   );
 };
 

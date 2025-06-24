@@ -19,7 +19,7 @@ const Examples: FC<IExamples> = ({ id }) => {
         contentClassName={styles.content}
         titleWrapClassName={styles.titleWrap}
         title="Экраны"
-        titleColor="darkGrey"
+        theme="dark"
       >
         <div className={styles.textInner}>
           <Title level={2} size="L" weight="medium">
