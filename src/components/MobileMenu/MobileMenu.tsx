@@ -59,7 +59,12 @@ const MobileMenu: FC<IMenu> = ({
                     }, 200)
                   }
                 >
-                  <Paragraph size="S" textTransform="uppercase" weight="bold">
+                  <Paragraph
+                    size="S"
+                    textTransform="uppercase"
+                    weight="bold"
+                    color="dark"
+                  >
                     {item.text}
                   </Paragraph>
                 </RouterLink>
