@@ -23,7 +23,6 @@ const MainInfo: FC<IMainInfo> = ({ id, title, list }) => {
         contentClassName={styles.content}
         titleWrapClassName={styles.titleWrap}
         title={title}
-        theme="dark"
       >
         <div className={cx(styles.textWrap)}>
           <div className={cx(styles.textInner)}>

@@ -6,7 +6,7 @@ import {
   Title,
   Section,
   SectionGrid,
-  Button,
+  // Button,
 } from "../../components/index";
 import classNames from "classnames/bind";
 import styles from "./Career.module.scss";
@@ -24,11 +24,9 @@ interface ICareer {
 const Career: FC<ICareer> = ({ id, itemsType = "accordion" }) => {
   const [openItems, setOpenItems] = useState<Array<string>>([]);
 
-  const isBtnshown = !window.location.pathname.includes("career");
-
   return (
     <Section className={cx(styles.career)} theme="dark" id={id}>
-      <SectionGrid title="Карьера" theme="dark">
+      <SectionGrid title="Карьера">
         <ul className={cx(styles.items)}>
           {careerItems.map((career) => {
             if (itemsType === "link") {
@@ -98,11 +96,6 @@ const Career: FC<ICareer> = ({ id, itemsType = "accordion" }) => {
         </ul>
 
         <div className={cx(styles.contacts)}>
-          {isBtnshown && (
-            <RouterLink to="career" className={cx(styles.link)}>
-              <Button>К вакансиям</Button>
-            </RouterLink>
-          )}
           <Paragraph size="L" weight="medium">
             Хотите у нас работать?
           </Paragraph>

@@ -28,11 +28,7 @@ const VacancyPage: FC<IVacancyPage> = ({ id }) => {
   return (
     <Section className={cx(styles.vacancyPage)} id={id}>
       <Intro title={vacancy?.title || ""} />
-      <SectionGrid
-        title="Карьера"
-        theme="dark"
-        titleWrapClassName={styles.gridTitle}
-      >
+      <SectionGrid title="Карьера" titleWrapClassName={styles.gridTitle}>
         {vacancy && (
           <div className={styles.contentWrap}>
             <div className={styles.descriptionWrap}>

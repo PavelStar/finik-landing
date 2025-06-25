@@ -24,7 +24,6 @@ const About: FC<IAbout> = ({ id }) => {
           contentClassName={styles.content}
           titleWrapClassName={styles.titleWrap}
           title="О нас"
-          theme="dark"
         >
           <div className={cx(styles.textWrap)}>
             <div className={cx(styles.textInner)}>

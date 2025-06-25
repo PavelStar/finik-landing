@@ -12,6 +12,7 @@ import {
 import { ANCHORS } from "../../constants/anchors";
 import { type FC } from "react";
 import { workCards } from "../../constants/howWeWork";
+import { scrollToSection } from "../../utils/scroll";
 
 interface IHomePage {
   onModalOpen: () => void;
@@ -22,16 +23,25 @@ const HomePage: FC<IHomePage> = ({ onModalOpen }) => {
     <>
       <Intro
         title="Инновации, которые трансформируют бизнес"
-        buttonText="обсудить проект"
-        onClick={onModalOpen}
+        description="Создаем сайты, приложения, цифровые платформы"
+        buttonText="оставить заявку"
+        onClick={() => {
+          setTimeout(() => {
+            scrollToSection(`#${ANCHORS.contacts}`);
+          }, 200);
+        }}
       />
       <Cases id={ANCHORS.cases} />
       <Partners />
       <Services id={ANCHORS.services} />
       <About id={ANCHORS.about} />
-      <Steps id={ANCHORS.howWeWork} title="Как мы работаем" list={workCards} />
-      <Contacts id={ANCHORS.contacts} onClick={onModalOpen} />
+      <Steps
+        id={ANCHORS.howWeWork}
+        title="Как мы<br/> работаем"
+        list={workCards}
+      />
       <Articles id={ANCHORS.articles} />
+      <Contacts id={ANCHORS.contacts} onClick={onModalOpen} />
       <Career id={ANCHORS.career} />
     </>
   );

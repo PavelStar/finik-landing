@@ -7,7 +7,7 @@ const cx = classNames.bind(styles);
 
 interface ISectionGrid {
   title?: string;
-  theme?: "light" | "dark";
+  isBgTransparent?: boolean;
   children?: React.ReactNode;
   className?: string;
   titleWrapClassName?: string;
@@ -16,23 +16,23 @@ interface ISectionGrid {
 
 const SectionGrid: FC<ISectionGrid> = ({
   title = "",
-  theme = "light",
+  isBgTransparent = false,
   children,
   className,
   titleWrapClassName,
   contentClassName,
 }) => {
   return (
-    <div className={cx(styles.sectionGrid, theme, className)}>
+    <div
+      className={cx(
+        styles.sectionGrid,
+        { [styles.transparent]: isBgTransparent },
+        className
+      )}
+    >
       <div className={cx(styles.titleWrap, titleWrapClassName)}>
         {title && (
-          <Title
-            size="M"
-            color={theme === "light" ? "lightGrey" : "darkGrey"}
-            weight="regular"
-          >
-            {title}
-          </Title>
+          <Title size="M" weight="regular" color="darkGrey" text={title} />
         )}
       </div>
       <div className={cx(styles.contentWrap, contentClassName)}>{children}</div>

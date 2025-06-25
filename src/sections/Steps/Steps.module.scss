@@ -12,11 +12,11 @@
 .inner {
   display: flex;
   flex-wrap: wrap;
-  gap: 48px 24px;
+  gap: 64px 24px;
   width: 100%;
 
   @include mediaTablet {
-    gap: 24px 16px;
+    gap: 32px 16px;
   }
 
   @include mediaMobile {

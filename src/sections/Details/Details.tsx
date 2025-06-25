@@ -23,22 +23,16 @@ const Details: FC<IDetails> = ({ id, list }) => {
         contentClassName={styles.content}
         titleWrapClassName={styles.titleWrap}
         title="Детали проекта"
-        theme="dark"
       >
         <ul className={styles.inner}>
           {list.map((card) => {
             return (
               <li key={card.id} className={styles.cardWrap}>
-                <Title
-                  className={styles.title}
-                  color="dark"
-                  size="L"
-                  weight="medium"
-                >
+                <Title className={styles.title} size="L" weight="medium">
                   {card.title}
                 </Title>
                 {card.description && (
-                  <Paragraph className={styles.description} color="dark">
+                  <Paragraph className={styles.description}>
                     {card.description}
                   </Paragraph>
                 )}
@@ -47,7 +41,7 @@ const Details: FC<IDetails> = ({ id, list }) => {
                     {card.list.map((item) => {
                       return (
                         <li key={item} className={styles.listItem}>
-                          <Paragraph color="dark">{item}</Paragraph>
+                          <Paragraph>{item}</Paragraph>
                         </li>
                       );
                     })}

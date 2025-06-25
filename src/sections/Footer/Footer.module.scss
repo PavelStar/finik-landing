@@ -1,14 +1,14 @@
 @use "@styles/media" as *;
 
 .footer {
-  padding-top: 32px;
+  padding-top: 112px;
   padding-bottom: 32px;
 
   @include mediaTablet {
   }
 
   @include mediaMobile {
-    padding-top: 16px;
+    padding-top: 64px;
     padding-bottom: 24px;
   }
 }
@@ -30,5 +30,11 @@
   @include mediaMobile {
     flex-direction: column;
     gap: 24px;
+  }
+}
+
+.privacyLink {
+  &:hover {
+    text-decoration: none;
   }
 }

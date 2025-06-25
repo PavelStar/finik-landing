@@ -10,7 +10,6 @@ const cx = classNames.bind(styles);
 interface IParagraph {
   type?: "phone" | "mail";
   href?: string;
-  textColor?: "light" | "dark" | "grey";
   children: ReactNode;
   className?: string;
 }
@@ -18,7 +17,6 @@ interface IParagraph {
 const Contact: FC<IParagraph> = ({
   type = "phone",
   href,
-  textColor = "dark",
   children,
   className,
 }) => {
@@ -34,7 +32,7 @@ const Contact: FC<IParagraph> = ({
   return (
     <Link className={cx(styles.contact, className)} href={href || linkHref}>
       <Icon className={styles.icon} />
-      <Paragraph color={textColor} textDecoration="underline">
+      <Paragraph className={styles.text} textDecoration="underline">
         {children}
       </Paragraph>
     </Link>

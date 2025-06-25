@@ -22,7 +22,8 @@
     "react-imask": "^7.6.1",
     "react-responsive": "^10.0.1",
     "react-router-dom": "^7.6.1",
-    "sass": "^1.89.0"
+    "sass": "^1.89.0",
+    "use-react-router-breadcrumbs": "^4.0.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",

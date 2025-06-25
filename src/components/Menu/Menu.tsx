@@ -32,6 +32,7 @@ const Menu: FC<IMenu> = ({ className }) => {
               }
             >
               <Paragraph
+                className={styles.text}
                 tag="span"
                 size="S"
                 textTransform="uppercase"

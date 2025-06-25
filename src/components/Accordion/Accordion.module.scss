@@ -3,23 +3,11 @@
 
 .accordion {
   @include mediaTablet {
-    // padding: 16px 16px 16px 24px;
   }
 
   @include mediaMobile {
-    // padding: 0;
   }
 }
-
-// .items {
-//   display: flex;
-//   flex-direction: column;
-//   gap: 48px;
-
-//   @include mediaTablet {
-//     gap: 24px;
-//   }
-// }
 
 .itemWrapper {
   display: flex;
@@ -60,6 +48,21 @@
   width: 100%;
   max-width: 909px;
   gap: 24px;
+
+  &:hover,
+  &:active {
+    .triggerTitle {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .triggerButton {
+      background-color: rgba(255, 255, 255, 0.6);
+
+      svg {
+        color: #1a1a1a;
+      }
+    }
+  }
 }
 
 .content {

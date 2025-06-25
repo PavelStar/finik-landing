@@ -39,9 +39,7 @@ const Form: FC<IForm> = ({}) => {
   return (
     <form className={cx(styles.form)} onSubmit={handleSubmit(onSubmit)}>
       <header className={cx(styles.header)}>
-        <Title size="L" color="dark">
-          {title}
-        </Title>
+        <Title size="L">{title}</Title>
       </header>
       {!isSuccess && (
         <div>

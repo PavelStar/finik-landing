@@ -5,9 +5,10 @@ import classNames from "classnames/bind";
 const cx = classNames.bind(styles);
 
 interface ITitle {
-  children: ReactNode;
+  text?: string;
+  children?: ReactNode;
   level?: 1 | 2 | 3 | 4;
-  color?: "light" | "dark" | "lightGrey" | "darkGrey";
+  color?: "light" | "lightGrey" | "darkGrey";
   size?: "S" | "M" | "L" | "XL";
   weight?: "extraBold" | "bold" | "medium" | "regular";
   textTransform?: "uppercase" | "capitalize";
@@ -15,6 +16,7 @@ interface ITitle {
 }
 
 const Title: FC<ITitle> = ({
+  text,
   children,
   level = 2,
   color = "light",
@@ -24,6 +26,22 @@ const Title: FC<ITitle> = ({
   className,
 }) => {
   const Tag = `h${level}` as keyof JSX.IntrinsicElements;
+
+  if (text) {
+    return (
+      <Tag
+        className={cx(
+          styles.paragraph,
+          color,
+          size,
+          weight,
+          textTransform,
+          className
+        )}
+        {...(text ? { dangerouslySetInnerHTML: { __html: text } } : {})}
+      />
+    );
+  }
 
   return (
     <Tag

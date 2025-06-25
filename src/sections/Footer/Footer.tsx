@@ -19,7 +19,11 @@ const Footer = () => {
             </Link>
           </Paragraph>
           <RouterLink to="privacy">
-            <Paragraph textDecoration="underline" tag="span">
+            <Paragraph
+              className={styles.privacyLink}
+              textDecoration="underline"
+              tag="span"
+            >
               Политика конфиденциальности
             </Paragraph>
           </RouterLink>

@@ -27,7 +27,6 @@ const Results: FC<IResults> = ({ id }) => {
           contentClassName={styles.content}
           titleWrapClassName={styles.titleWrap}
           title="Экраны"
-          theme="dark"
         >
           <div className={styles.textInner}>
             <Title level={2} size="L">
@@ -63,7 +62,6 @@ const Results: FC<IResults> = ({ id }) => {
           className={cx(styles.grid)}
           contentClassName={styles.content}
           titleWrapClassName={styles.titleWrap}
-          theme="dark"
         >
           <div className={styles.textInner}>
             <Title level={2} size="L">

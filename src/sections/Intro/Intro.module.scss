@@ -20,10 +20,10 @@
 }
 
 .button {
-  margin-bottom: 32px;
+  margin-top: 48px;
 
   @include mediaTablet {
-    margin-bottom: 16px;
+    margin-top: 24px;
   }
 
   @include mediaMobile {
@@ -36,4 +36,24 @@
   @include mediaTablet {
     margin-bottom: 8px;
   }
+}
+
+.breadcrumbs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+
+  @include mediaTablet {
+    margin-bottom: 16px;
+  }
+
+  p,
+  span {
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+.breadcrumbsItem {
+  display: flex;
+  gap: 8px;
 }

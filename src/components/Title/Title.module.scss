@@ -14,9 +14,6 @@
 .light {
   color: $white;
 }
-.dark {
-  color: $black;
-}
 
 .lightGrey {
   color: $light-gray;
@@ -53,17 +50,17 @@
 
 .XL {
   font-size: 72px;
-  line-height: 86px;
-  font-weight: 700;
+  line-height: 80px;
+  font-weight: 800;
 
   @include mediaTablet {
     font-size: 32px;
-    line-height: 38px;
+    line-height: 36px;
   }
 
   @include mediaMobile {
     font-size: 24px;
-    line-height: 30px;
+    line-height: 26px;
   }
 }
 

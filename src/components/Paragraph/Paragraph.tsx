@@ -7,7 +7,7 @@ const cx = classNames.bind(styles);
 interface IParagraph {
   children: ReactNode;
   tag?: "span" | "p";
-  color?: "light" | "dark" | "grey" | "darkGrey";
+  color?: "light" | "grey" | "darkGrey";
   size?: "S" | "M" | "L" | "XL";
   weight?: "bold" | "medium" | "regular";
   textTransform?: "uppercase" | "capitalize";

@@ -6,7 +6,7 @@ import {
 } from "react";
 import styles from "./Accordion.module.scss";
 import classNames from "classnames/bind";
-import { Button, Title } from "../index";
+import { Title } from "../index";
 import {
   Root,
   Item,
@@ -15,7 +15,6 @@ import {
   Content,
 } from "@radix-ui/react-accordion";
 import AccordionButton from "./AccordionButton/AccordionButton";
-import { Link } from "react-router-dom";
 
 const cx = classNames.bind(styles);
 
@@ -52,22 +51,17 @@ const Accordion: FC<IAccordion> = ({
         <Item key={id} value={title} className={styles.item}>
           <Header className={styles.header}>
             <Trigger className={styles.trigger}>
-              <Title size="L" color={theme} level={3}>
+              <Title className={styles.triggerTitle} size="L" level={3}>
                 {title}
               </Title>
               <AccordionButton
+                className={styles.triggerButton}
                 isOpen={openItems.includes(title)}
-                theme={theme}
               />
             </Trigger>
           </Header>
 
-          <Content className={styles.content}>
-            {children}
-            <Link to={`/services/${id}`} className={styles.link}>
-              <Button>Подробнее</Button>
-            </Link>
-          </Content>
+          <Content className={styles.content}>{children}</Content>
         </Item>
       </div>
     </Root>

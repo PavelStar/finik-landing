@@ -5,7 +5,7 @@ import styles from "./Header.module.scss";
 import { useMediaQuery } from "react-responsive";
 import { BREAKPOINTS } from "../../constants/breakpoints";
 import { useLockBodyScroll } from "../../hooks/useLockBodyScroll";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const cx = classNames.bind(styles);
 
@@ -13,6 +13,7 @@ const Header = () => {
   const [isMenuShown, setIsMenuShown] = useState(false);
   const isTablet = useMediaQuery({ maxWidth: BREAKPOINTS.tablet });
   useLockBodyScroll(isMenuShown);
+  const location = useLocation();
 
   const handleClick = () => {
     setIsMenuShown(!isMenuShown);
@@ -20,6 +21,10 @@ const Header = () => {
 
   const headerBackground = isMenuShown ? styles.white : styles.transparent;
   const logoColor = isMenuShown ? "dark" : "light";
+
+  const HIDDEN_PATHS = ["/privacy"];
+
+  const isMenuHidden = HIDDEN_PATHS.includes(location.pathname) ? true : false;
 
   return (
     <Section
@@ -31,9 +36,9 @@ const Header = () => {
         <Link to="/">
           <Logo color={logoColor} />
         </Link>
-        {!isTablet ? (
-          <Menu />
-        ) : (
+        {!isTablet && !isMenuHidden && <Menu />}
+
+        {!isMenuHidden && isTablet && (
           <MobileMenu
             onButtonClick={handleClick}
             isMenuShown={isMenuShown}

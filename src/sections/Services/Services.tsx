@@ -23,7 +23,7 @@ const Services: FC<IServices> = ({ id }) => {
 
   return (
     <Section className={cx(styles.services)} id={id}>
-      <SectionGrid title="Услуги" theme="light">
+      <SectionGrid title="Услуги">
         <ul className={cx(styles.items)}>
           {services.map((service) => {
             const isImageShown = !isTablet && openItems.includes(service.title);
@@ -31,7 +31,6 @@ const Services: FC<IServices> = ({ id }) => {
             return (
               <li key={service.id}>
                 <Accordion
-                  theme="dark"
                   id={service.id}
                   title={service.title}
                   image={isImageShown ? service.image : undefined}
@@ -42,7 +41,7 @@ const Services: FC<IServices> = ({ id }) => {
                     {service.content.map((item) => {
                       return (
                         <li key={item}>
-                          <Paragraph color="dark">{item}</Paragraph>
+                          <Paragraph>{item}</Paragraph>
                         </li>
                       );
                     })}

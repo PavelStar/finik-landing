@@ -16,7 +16,6 @@ const Steps: FC<ISteps> = ({ id, title, list }) => {
         contentClassName={styles.content}
         titleWrapClassName={styles.titleWrap}
         title={title}
-        theme="dark"
       >
         <ul className={styles.inner}>
           {list.map((card) => {

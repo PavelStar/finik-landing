@@ -9,6 +9,11 @@
   width: 72px;
   height: 72px;
   border-radius: 48px;
+  background-color: $white;
+
+  .icon {
+    color: $black;
+  }
 
   @include mediaTablet {
     width: 48px;
@@ -16,22 +21,6 @@
   }
 
   @include mediaMobile {
-  }
-}
-
-.dark {
-  background-color: $black;
-
-  .icon {
-    color: $white;
-  }
-}
-
-.light {
-  background-color: $white;
-
-  .icon {
-    color: $black;
   }
 }
 

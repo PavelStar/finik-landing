@@ -12,7 +12,7 @@ interface InputPhoneProps {
 const Succsess: React.FC<InputPhoneProps> = ({ className = "" }) => {
   return (
     <div className={cx(styles.succsess, className)}>
-      <Paragraph color="dark">
+      <Paragraph>
         Благодарим вас за обращение в FINIK Design Lab. Мы внимательно изучим
         ваши задачи и свяжемся с вами в ближайшее время для уточнения деталей
       </Paragraph>
