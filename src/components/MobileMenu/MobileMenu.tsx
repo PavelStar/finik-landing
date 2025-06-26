@@ -1,4 +1,4 @@
-import { type FC } from "react";
+import { useEffect, type FC } from "react";
 import styles from "./MobileMenu.module.scss";
 import classNames from "classnames/bind";
 import { MobileMenuButton, Paragraph } from "../../components/index";
@@ -25,6 +25,25 @@ const MobileMenu: FC<IMenu> = ({
     setIsMenuShown(false);
     scrollToSection(href);
   };
+
+  useEffect(() => {
+    const header = document.querySelector("header");
+
+    if (isMenuShown) {
+      const scrollBarWidth =
+        window.innerWidth - document.documentElement.clientWidth;
+
+      if (!header) return;
+      header.style.paddingRight = `${scrollBarWidth}px`;
+    } else {
+      if (!header) return;
+      header.style.paddingRight = "";
+    }
+    return () => {
+      if (!header) return;
+      header.style.paddingRight = "";
+    };
+  }, [isMenuShown]);
 
   return (
     <>

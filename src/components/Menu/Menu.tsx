@@ -1,4 +1,4 @@
-import type { FC } from "react";
+import { type FC } from "react";
 import styles from "./Menu.module.scss";
 import classNames from "classnames/bind";
 import { Paragraph } from "../../components";

@@ -2,25 +2,73 @@
 @use "@styles/colors" as *;
 
 .header {
-  position: absolute;
+  position: fixed;
   z-index: 10;
-  padding-top: 32px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  top: 8px;
   width: 100%;
+  // background-color: red !important;
 
   @include mediaTablet {
-    padding-top: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 
   @include mediaMobile {
-    padding-top: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    top: 4px;
+  }
+}
+
+.fixed {
+  // backdrop-filter: blur(10px);
+  // -webkit-backdrop-filter: blur(10px);
+
+  .inner {
+    &::before {
+      content: "";
+      position: absolute;
+      width: calc(100% - 16px);
+      height: 100%;
+      max-width: 1424px;
+
+      left: 50%;
+      transform: translateX(-50%);
+      // background-color: red;
+      background-color: rgba(26, 26, 26, 0.1);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      z-index: -1;
+      border-radius: 24px;
+
+      @include mediaTablet {
+        // width: calc(100% - 32px);
+        // height: calc(100% - 32px);
+        border-radius: 16px;
+        height: 100%;
+      }
+
+      @include mediaMobile {
+        width: calc(100% - 8px);
+      }
+    }
+
+    &.deleteBg {
+      &::before {
+        display: none;
+      }
+    }
   }
 }
 
 .inner {
-  position: relative;
+  // position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  // background-color: blue;
 
   @include mediaTablet {
     padding-left: 32px;
@@ -39,4 +87,9 @@
 
 .transparent {
   background-color: transparent;
+}
+
+.shown {
+  top: 0;
+  padding-top: 24px;
 }

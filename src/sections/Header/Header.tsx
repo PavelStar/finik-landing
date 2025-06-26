@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Section, Menu, MobileMenu, Logo } from "../../components/index";
 import classNames from "classnames/bind";
 import styles from "./Header.module.scss";
@@ -10,6 +10,7 @@ import { Link, useLocation } from "react-router-dom";
 const cx = classNames.bind(styles);
 
 const Header = () => {
+  const [isMenuFixed, setIsMenuFixed] = useState(false);
   const [isMenuShown, setIsMenuShown] = useState(false);
   const isTablet = useMediaQuery({ maxWidth: BREAKPOINTS.tablet });
   useLockBodyScroll(isMenuShown);
@@ -19,6 +20,23 @@ const Header = () => {
     setIsMenuShown(!isMenuShown);
   };
 
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setIsMenuFixed(true);
+    } else {
+      setIsMenuFixed(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("scroll", handleScroll);
+    console.log(isMenuFixed);
+
+    return () => {
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, [isMenuFixed]);
+
   const headerBackground = isMenuShown ? styles.white : styles.transparent;
   const logoColor = isMenuShown ? "dark" : "light";
 
@@ -26,13 +44,20 @@ const Header = () => {
 
   const isMenuHidden = HIDDEN_PATHS.includes(location.pathname) ? true : false;
 
+  console.log("isTablet && isMenuFixed ", isTablet && isMenuFixed);
+
   return (
     <Section
-      className={cx(styles.header, headerBackground)}
+      className={cx(
+        styles.header,
+        { [styles.fixed]: isMenuFixed, [styles.shown]: isMenuShown },
+        headerBackground
+      )}
       fullWidth={isTablet ? true : false}
+      // fullWidth
       tag="header"
     >
-      <div className={styles.inner}>
+      <div className={cx(styles.inner, { [styles.deleteBg]: isMenuShown })}>
         <Link to="/">
           <Logo color={logoColor} />
         </Link>

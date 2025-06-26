@@ -20,7 +20,7 @@ export const menuItems = [
     href: "#how-we-work",
   },
   {
-    id: 7,
+    id: 5,
     text: "Мы в сми",
     href: "#articles",
   },
