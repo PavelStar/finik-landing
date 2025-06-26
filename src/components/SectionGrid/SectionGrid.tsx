@@ -32,7 +32,7 @@ const SectionGrid: FC<ISectionGrid> = ({
     >
       <div className={cx(styles.titleWrap, titleWrapClassName)}>
         {title && (
-          <Title size="M" weight="regular" color="darkGrey" text={title} />
+          <Title size="M" weight="regular" color="lightGrey" text={title} />
         )}
       </div>
       <div className={cx(styles.contentWrap, contentClassName)}>{children}</div>

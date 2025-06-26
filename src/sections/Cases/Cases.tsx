@@ -13,7 +13,7 @@ interface ICases {
 
 const Cases: FC<ICases> = ({ id }) => {
   return (
-    <Section className={cx(styles.cases)} theme="dark" fullWidth id={id}>
+    <Section className={cx(styles.cases)} theme="dark" id={id}>
       <ul className={cx(styles.list)}>
         {CASES.map((item) => {
           return (

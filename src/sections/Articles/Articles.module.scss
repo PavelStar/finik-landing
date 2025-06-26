@@ -12,14 +12,15 @@
 .list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 64px 24px;
+  gap: 72px 24px;
 
   @include mediaTablet {
-    gap: 32px 16px;
+    gap: 40px 16px;
   }
 
   @include mediaMobile {
     grid-template-columns: 1fr;
+    row-gap: 32px;
   }
 }
 

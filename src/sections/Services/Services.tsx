@@ -36,7 +36,7 @@ const Services: FC<IServices> = ({ id }) => {
                   <ul className={cx(styles.textList)}>
                     {service.content.map((item) => {
                       return (
-                        <li key={item}>
+                        <li key={item} className={cx(styles.textItem)}>
                           <Paragraph>{item}</Paragraph>
                         </li>
                       );
