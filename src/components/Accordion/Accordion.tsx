@@ -15,6 +15,7 @@ import {
   Content,
 } from "@radix-ui/react-accordion";
 import AccordionButton from "./AccordionButton/AccordionButton";
+import AnimateHeight from "react-animate-height";
 
 const cx = classNames.bind(styles);
 
@@ -37,6 +38,7 @@ const Accordion: FC<IAccordion> = ({
   theme = "light",
   setOpenItems,
 }) => {
+  console.log(openItems.includes(title));
   return (
     <Root
       type="multiple"
@@ -45,9 +47,14 @@ const Accordion: FC<IAccordion> = ({
       onValueChange={setOpenItems}
     >
       <div className={cx(styles.itemWrapper)} key={id}>
-        {image && (
-          <img className={cx(styles.imageWrapper)} src={image} alt="" />
-        )}
+        <AnimateHeight
+          duration={300}
+          height={openItems.includes(title) ? "auto" : 0}
+        >
+          {image && (
+            <img className={cx(styles.imageWrapper)} src={image} alt="" />
+          )}
+        </AnimateHeight>
         <Item key={id} value={title} className={styles.item}>
           <Header className={styles.header}>
             <Trigger className={styles.trigger}>
@@ -60,8 +67,12 @@ const Accordion: FC<IAccordion> = ({
               />
             </Trigger>
           </Header>
-
-          <Content className={styles.content}>{children}</Content>
+          <AnimateHeight
+            duration={300}
+            height={openItems.includes(title) ? "auto" : 0}
+          >
+            <Content className={styles.content}>{children}</Content>
+          </AnimateHeight>
         </Item>
       </div>
     </Root>
