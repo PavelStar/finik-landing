@@ -9,12 +9,48 @@
   }
 }
 
+.sectionTitleWrap {
+  display: flex;
+  align-items: end;
+  height: 44px;
+
+  @include mediaTablet {
+    height: 26px;
+  }
+}
+
 .items {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 64px;
 
   @include mediaTablet {
-    gap: 24px;
+    gap: 32px;
+  }
+}
+
+.item {
+  display: flex;
+  gap: 24px;
+
+  @include mediaTablet {
+    gap: 32px;
+  }
+
+  picture {
+    max-width: 210px;
+
+    img {
+    }
+  }
+}
+
+.textWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include mediaTablet {
+    gap: 8px;
   }
 }

@@ -32,3 +32,11 @@
     max-width: none;
   }
 }
+
+.titleWrap {
+  br {
+    @include mediaMobile {
+      display: none;
+    }
+  }
+}

@@ -23,6 +23,11 @@
   align-items: center;
 
   @include mediaTablet {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @include mediaMobile {
     padding-left: 16px;
     padding-right: 16px;
   }

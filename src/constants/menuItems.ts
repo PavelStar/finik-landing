@@ -20,14 +20,14 @@ export const menuItems = [
     href: "#how-we-work",
   },
   {
-    id: 5,
-    text: "Контакты",
-    href: "#contacts",
+    id: 7,
+    text: "Мы в сми",
+    href: "#articles",
   },
   {
     id: 6,
-    text: "Мы в сми",
-    href: "#articles",
+    text: "Контакты",
+    href: "#contacts",
   },
   {
     id: 7,

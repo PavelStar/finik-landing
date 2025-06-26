@@ -12,10 +12,10 @@
 .list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 48px 24px;
+  gap: 64px 24px;
 
   @include mediaTablet {
-    gap: 24px 16px;
+    gap: 32px 16px;
   }
 
   @include mediaMobile {

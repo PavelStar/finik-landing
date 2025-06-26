@@ -10,6 +10,13 @@
 }
 
 .titleWrap {
+  display: flex;
+  align-items: end;
+  height: 42px;
+
+  @include mediaTablet {
+    height: 25px;
+  }
 }
 
 .inner {
@@ -28,11 +35,11 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-bottom: 32px;
+  margin-bottom: 48px;
 
   @include mediaTablet {
     gap: 8px;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
   }
 }
 

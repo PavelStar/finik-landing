@@ -2,8 +2,6 @@
 @use "@styles/colors" as *;
 
 .about {
-  padding-bottom: 0;
-
   @include mediaTablet {
   }
 

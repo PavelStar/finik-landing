@@ -26,7 +26,7 @@ const Career: FC<ICareer> = ({ id, itemsType = "accordion" }) => {
 
   return (
     <Section className={cx(styles.career)} theme="dark" id={id}>
-      <SectionGrid title="Карьера">
+      <SectionGrid titleWrapClassName={styles.titleWrap} title="Карьера">
         <ul className={cx(styles.items)}>
           {careerItems.map((career) => {
             if (itemsType === "link") {
@@ -58,7 +58,7 @@ const Career: FC<ICareer> = ({ id, itemsType = "accordion" }) => {
                 >
                   <div className={styles.contentWrap}>
                     <div className={styles.descriptionWrap}>
-                      <Title className={styles.descriptionTitle}>
+                      <Title className={styles.descriptionTitle} weight="bold">
                         {career.content.description.title}
                       </Title>
                       <Paragraph className={styles.descriptionText}>
@@ -69,7 +69,7 @@ const Career: FC<ICareer> = ({ id, itemsType = "accordion" }) => {
                       {career.content.lists.map((item) => {
                         return (
                           <li key={item.title}>
-                            <Title>{item.title}</Title>
+                            <Title weight="bold">{item.title}</Title>
                             <ul className={styles.itemList}>
                               {item.items.map((item) => {
                                 return (
@@ -85,7 +85,10 @@ const Career: FC<ICareer> = ({ id, itemsType = "accordion" }) => {
                     </ul>
                     {career.content.outro && (
                       <Paragraph className={styles.itemOutro}>
-                        {career.content.outro}
+                        {career.content.outro}{" "}
+                        <Link textDecoration="underline">
+                          hello@finik-lab.ru
+                        </Link>
                       </Paragraph>
                     )}
                   </div>

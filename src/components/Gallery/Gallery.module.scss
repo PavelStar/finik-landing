@@ -18,6 +18,13 @@
   gap: 4px;
 
   li {
+    overflow: hidden;
+    border-radius: 32px;
+
+    @include mediaTablet {
+      border-radius: 24px;
+    }
+
     &:last-child {
       margin-right: 4px;
 

@@ -4,13 +4,14 @@ import service3 from "../assets/services/service-3.png";
 import service4 from "../assets/services/service-4.png";
 
 import servicePage1 from "../assets/services/service-page-1.png";
+import type { IPicture } from "../types/types";
 // import servicePage1Tablet from "../assets/services/service-page-1-tablet.png";
 // import servicePage1Mobile from "../assets/services/service-page-1-mobile.png";
 import type { ISlide } from "./slider";
 
 export interface IService {
   id: number;
-  image?: string;
+  image: IPicture;
   title: string;
   content: Array<string>;
 }
@@ -18,7 +19,17 @@ export interface IService {
 export const services: Array<IService> = [
   {
     id: 1,
-    image: service1,
+    image: {
+      alt: "Продуктовый дизайн",
+      images: {
+        desktop: service1,
+        desktop2x: service1,
+        tablet: service1,
+        tablet2x: service1,
+        mobile: service1,
+        mobile2x: service1,
+      },
+    },
     title: "Продуктовый дизайн",
     content: [
       "Интерфейсы сложных систем",
@@ -31,7 +42,17 @@ export const services: Array<IService> = [
   },
   {
     id: 2,
-    image: service2,
+    image: {
+      alt: "Коммуникационный дизайн",
+      images: {
+        desktop: service2,
+        desktop2x: service2,
+        tablet: service2,
+        tablet2x: service2,
+        mobile: service2,
+        mobile2x: service2,
+      },
+    },
     title: "Коммуникационный дизайн",
     content: [
       "Оформление интерфейсов сайтов и приложений",
@@ -41,7 +62,17 @@ export const services: Array<IService> = [
   },
   {
     id: 3,
-    image: service3,
+    image: {
+      alt: "UX-исследования",
+      images: {
+        desktop: service3,
+        desktop2x: service3,
+        tablet: service3,
+        tablet2x: service3,
+        mobile: service3,
+        mobile2x: service3,
+      },
+    },
     title: "UX-исследования",
     content: [
       "Аудит продукта",
@@ -52,7 +83,17 @@ export const services: Array<IService> = [
   },
   {
     id: 4,
-    image: service4,
+    image: {
+      alt: "Копирайтинг и UX-райтинг",
+      images: {
+        desktop: service4,
+        desktop2x: service4,
+        tablet: service4,
+        tablet2x: service4,
+        mobile: service4,
+        mobile2x: service4,
+      },
+    },
     title: "Копирайтинг и UX-райтинг",
     content: [
       "Создание и редактура текстов сервисов и интерфейсов",

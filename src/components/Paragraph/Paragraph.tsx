@@ -5,7 +5,8 @@ import classNames from "classnames/bind";
 const cx = classNames.bind(styles);
 
 interface IParagraph {
-  children: ReactNode;
+  text?: string;
+  children?: ReactNode;
   tag?: "span" | "p";
   color?: "light" | "dark" | "grey" | "darkGrey";
   size?: "S" | "M" | "L" | "XL";
@@ -16,6 +17,7 @@ interface IParagraph {
 }
 
 const Paragraph: FC<IParagraph> = ({
+  text,
   children,
   tag = "p",
   color = "light",
@@ -26,6 +28,22 @@ const Paragraph: FC<IParagraph> = ({
   className,
 }) => {
   const Tag = tag as keyof JSX.IntrinsicElements;
+
+  if (text) {
+    return (
+      <Tag
+        className={cx(
+          styles.paragraph,
+          color,
+          size,
+          weight,
+          textTransform,
+          className
+        )}
+        {...(text ? { dangerouslySetInnerHTML: { __html: text } } : {})}
+      />
+    );
+  }
 
   return (
     <Tag

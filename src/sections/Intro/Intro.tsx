@@ -70,7 +70,7 @@ const Intro: FC<IIntro> = ({ title, description, buttonText, onClick }) => {
       )}
       {buttonText && (
         <Button className={styles.button} onClick={onClick}>
-          Обсудить проект
+          Оставить заявку
         </Button>
       )}
     </Section>

@@ -17,6 +17,13 @@
   align-items: center;
   justify-content: center;
 
+  &:hover,
+  &:active {
+    span {
+      background: rgba(255, 255, 255, 0.6);
+    }
+  }
+
   @include mediaTablet {
   }
 

@@ -16,9 +16,7 @@ const WorkCard: FC<INumberCard> = ({ number, title, className }) => {
   return (
     <div className={cx(styles.numberCard, className)}>
       <Paragraph color="darkGrey">{number}</Paragraph>
-      <Paragraph size="L" weight="medium">
-        {title}
-      </Paragraph>
+      <Paragraph size="L" weight="medium" text={title} />
     </div>
   );
 };

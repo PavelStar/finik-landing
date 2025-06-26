@@ -19,20 +19,30 @@
   }
 }
 
+.titleWrap {
+  display: flex;
+  align-items: end;
+  height: 57px;
+
+  @include mediaTablet {
+    height: 34px;
+  }
+}
+
 .contentWrap {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-bottom: 96px;
+  margin-bottom: 48px;
 
   @include mediaTablet {
-    margin-bottom: 48px;
+    margin-bottom: 24px;
   }
 }
 
-.descriptionWrap {
-  // margin-bottom: 24px;
-}
+// .descriptionWrap {
+//   margin-bottom: 24px;
+// }
 
 .listsWrap {
   display: flex;
@@ -68,10 +78,10 @@
 }
 
 .items {
-  margin-bottom: 64px;
+  margin-bottom: 96px;
 
   @include mediaTablet {
-    margin-bottom: 32px;
+    margin-bottom: 48px;
   }
 }
 

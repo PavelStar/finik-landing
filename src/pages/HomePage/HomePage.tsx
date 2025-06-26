@@ -37,7 +37,7 @@ const HomePage: FC<IHomePage> = ({ onModalOpen }) => {
       <About id={ANCHORS.about} />
       <Steps
         id={ANCHORS.howWeWork}
-        title="Как мы<br/> работаем"
+        title="Как<br/> мы работаем"
         list={workCards}
       />
       <Articles id={ANCHORS.articles} />
