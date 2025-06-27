@@ -38,7 +38,6 @@ const Accordion: FC<IAccordion> = ({
   theme = "light",
   setOpenItems,
 }) => {
-  console.log(openItems.includes(title));
   return (
     <Root
       type="multiple"

@@ -6,5 +6,17 @@
   }
 }
 
+.intro {
+  padding-top: 196px;
+
+  @include mediaTablet {
+    padding-top: 118px;
+  }
+
+  @include mediaMobile {
+    padding-top: 110px;
+  }
+}
+
 .wrapper {
 }

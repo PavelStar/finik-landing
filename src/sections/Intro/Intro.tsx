@@ -1,17 +1,27 @@
 import type { FC } from "react";
 import { Section, Button, Title, Paragraph } from "../../components/index";
 import styles from "./Intro.module.scss";
+import classNames from "classnames/bind";
 import { Link, useLocation } from "react-router-dom";
 import useBreadcrumbs from "use-react-router-breadcrumbs";
+
+const cx = classNames.bind(styles);
 
 interface IIntro {
   title: string;
   description?: string;
   buttonText?: string;
   onClick?: () => void;
+  className?: string;
 }
 
-const Intro: FC<IIntro> = ({ title, description, buttonText, onClick }) => {
+const Intro: FC<IIntro> = ({
+  title,
+  description,
+  buttonText,
+  onClick,
+  className,
+}) => {
   const location = useLocation();
 
   const routes = [
@@ -24,7 +34,7 @@ const Intro: FC<IIntro> = ({ title, description, buttonText, onClick }) => {
   const isBreadcrumbsHidden = location.pathname === "/" ? true : false;
 
   return (
-    <Section className={styles.intro} theme="transparent">
+    <Section className={cx(styles.intro, className)} theme="transparent">
       {!isBreadcrumbsHidden && (
         <nav className={styles.breadcrumbs}>
           {breadcrumbs.map(({ breadcrumb, match }, index) => {
@@ -32,14 +42,18 @@ const Intro: FC<IIntro> = ({ title, description, buttonText, onClick }) => {
 
             return (
               <div className={styles.breadcrumbsItem} key={match.pathname}>
-                {index > 0 && <Paragraph tag="span">/</Paragraph>}
+                {index > 0 && (
+                  <Paragraph tag="span" size="S">
+                    /
+                  </Paragraph>
+                )}
                 {isLast ? (
-                  <Paragraph tag="span" textDecoration="underline">
+                  <Paragraph tag="span" size="S">
                     {breadcrumb}
                   </Paragraph>
                 ) : (
                   <Link to={match.pathname}>
-                    <Paragraph tag="span" textDecoration="underline">
+                    <Paragraph tag="span" textDecoration="underline" size="S">
                       {breadcrumb}
                     </Paragraph>
                   </Link>

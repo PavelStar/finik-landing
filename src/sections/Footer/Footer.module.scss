@@ -5,11 +5,11 @@
   padding-bottom: 32px;
 
   @include mediaTablet {
+    padding-top: 64px;
+    padding-bottom: 24px;
   }
 
   @include mediaMobile {
-    padding-top: 64px;
-    padding-bottom: 24px;
   }
 }
 

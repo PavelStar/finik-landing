@@ -92,4 +92,8 @@
 .shown {
   top: 0;
   padding-top: 24px;
+
+  @include mediaMobile {
+    padding-top: 12px;
+  }
 }

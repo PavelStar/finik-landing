@@ -4,7 +4,7 @@ import { privacyData } from "../../constants/privacy";
 
 const Privacy = () => {
   return (
-    <Section className={styles.privacy}>
+    <Section className={styles.privacy} theme="transparent">
       <ul className={styles.privacyList}>
         {privacyData.map((privacyItem) => {
           return (

@@ -1,9 +1,10 @@
 import { Intro, Privacy } from "../../sections/index";
+import styles from "./PrivacyPage.module.scss";
 
 const PrivacyPage = () => {
   return (
     <>
-      <Intro title="политика конфиденциальности" />
+      <Intro className={styles.intro} title="политика конфиденциальности" />
       <Privacy />
     </>
   );

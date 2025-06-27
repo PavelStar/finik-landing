@@ -2,7 +2,10 @@
 @use "../../styles/colors" as *;
 
 .privacy {
+  padding-top: 64px;
+
   @include mediaTablet {
+    padding-top: 32px;
   }
 
   @include mediaMobile {
@@ -22,7 +25,6 @@
   }
 
   @include mediaMobile {
-    gap: 16px;
   }
 }
 

@@ -30,7 +30,6 @@ const Header = () => {
 
   useEffect(() => {
     document.addEventListener("scroll", handleScroll);
-    console.log(isMenuFixed);
 
     return () => {
       document.removeEventListener("scroll", handleScroll);
@@ -44,8 +43,6 @@ const Header = () => {
 
   const isMenuHidden = HIDDEN_PATHS.includes(location.pathname) ? true : false;
 
-  console.log("isTablet && isMenuFixed ", isTablet && isMenuFixed);
-
   return (
     <Section
       className={cx(
@@ -54,7 +51,6 @@ const Header = () => {
         headerBackground
       )}
       fullWidth={isTablet ? true : false}
-      // fullWidth
       tag="header"
     >
       <div className={cx(styles.inner, { [styles.deleteBg]: isMenuShown })}>

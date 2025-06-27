@@ -14,7 +14,7 @@ import { Form, Modal, ScrollToTop } from "./components/index";
 import { useState } from "react";
 
 function App() {
-  console.log("finik version 1.0.1");
+  console.log("finik version 1.0.2");
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 

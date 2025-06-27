@@ -25,7 +25,6 @@ const ServicePage: FC<IServicePage> = ({ id, onModalOpen }) => {
   const currentService = servicesData.find(
     (item) => item.id === Number(serviceId)
   );
-  console.log(11, serviceId);
 
   if (!currentService) {
     return null;
