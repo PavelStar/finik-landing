@@ -16,6 +16,11 @@
 
   background-repeat: no-repeat;
   background-size: 100% 672px;
+
+  @include mediaTablet {
+    background-size: 1440px 672px;
+    background-position: top 0 right 0;
+  }
 }
 
 .content {

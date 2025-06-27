@@ -46,6 +46,7 @@
 
   @include mediaTablet {
     margin-bottom: 16px;
+    gap: 4px;
   }
 
   p,
@@ -57,4 +58,8 @@
 .breadcrumbsItem {
   display: flex;
   gap: 8px;
+
+  @include mediaTablet {
+    gap: 4px;
+  }
 }

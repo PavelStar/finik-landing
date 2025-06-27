@@ -83,8 +83,12 @@
   top: 24px;
   z-index: 1;
 
-  @include mediaLargeMobile {
-    left: 16px;
-    top: 8px;
+  @include mediaTablet {
+    left: 24px;
+    top: 16px;
+  }
+
+  @include mediaMobile {
+    max-width: 145px;
   }
 }

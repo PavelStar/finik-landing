@@ -62,9 +62,9 @@ export const CASES: ICaseItem[] = [
   },
   {
     id: 3,
-    title: "Сбер-бизнес",
+    title: "Сбер Бизнес",
     image: {
-      alt: "Сбер-бизнес",
+      alt: "Сбер Бизнес",
       images: {
         desktop: sberBusiness,
         desktop2x: sberBusiness,
@@ -340,7 +340,7 @@ export const casesData = [
         },
       },
       intro: {
-        title: "Сбер-бизнес",
+        title: "Сбер Бизнес",
         description:
           "Коротко о главном: как мы помогли [клиенту] решить [проблему] и добиться [результата]",
       },

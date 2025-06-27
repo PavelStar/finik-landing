@@ -17,10 +17,14 @@
   align-items: center;
   justify-content: center;
 
-  &:hover,
-  &:active {
+  &:hover:not(&.open),
+  &:active:not(&.open) {
     span {
-      background: rgba(255, 255, 255, 0.6);
+      background: rgba(255, 255, 255, 0.6) !important;
+
+      &:nth-child(3) {
+        background-color: transparent !important;
+      }
     }
   }
 

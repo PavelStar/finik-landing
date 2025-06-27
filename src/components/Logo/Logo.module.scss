@@ -14,17 +14,24 @@
   @include mediaMobile {
   }
 
-  &:hover,
-  &:active {
-    path {
-      color: rgba(255, 255, 255, 0.6);
-    }
-  }
-
   &.light {
     color: $white;
+
+    &:hover,
+    &:active {
+      path {
+        color: rgba(255, 255, 255, 0.6);
+      }
+    }
   }
   &.dark {
     color: $black;
+
+    &:hover,
+    &:active {
+      path {
+        color: rgba(26, 26, 26, 0.6);
+      }
+    }
   }
 }
