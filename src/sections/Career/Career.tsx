@@ -73,7 +73,10 @@ const Career: FC<ICareer> = ({ id, itemsType = "accordion" }) => {
                             <ul className={styles.itemList}>
                               {item.items.map((item) => {
                                 return (
-                                  <li className={styles.itemListItem}>
+                                  <li
+                                    key={item}
+                                    className={styles.itemListItem}
+                                  >
                                     <Paragraph>{item}</Paragraph>
                                   </li>
                                 );

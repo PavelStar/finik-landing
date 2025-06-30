@@ -31,7 +31,7 @@ import type { IArticleCard } from "../components/ArticleCard/ArticleCard";
 export const articlesData: Array<IArticleCard> = [
   {
     id: 1,
-    href: "",
+    href: "https://dsgners.ru/finikdesignlab/7489-dizayn-interfeysa-v-chernuyu-pyatnitsu-kak-vyidelitsya-sredi-konkurentov-i-pozabotitsya-o-polzovatelyah",
     image: {
       alt: "Сбер",
       images: {
@@ -49,7 +49,7 @@ export const articlesData: Array<IArticleCard> = [
   },
   {
     id: 2,
-    href: "",
+    href: "https://adindex.ru/publication/opinion/digital/2024/10/8/326290.phtml",
     image: {
       alt: "Сбер",
       images: {
@@ -67,7 +67,7 @@ export const articlesData: Array<IArticleCard> = [
   },
   {
     id: 3,
-    href: "",
+    href: "https://vc.ru/design/1293713-keis-slozhnye-interfeisy-dlya-promyshlennogo-oborudovaniya-i-dizain-sistema-za-7-mesyacev",
     image: {
       alt: "Сбер",
       images: {
@@ -85,7 +85,7 @@ export const articlesData: Array<IArticleCard> = [
   },
   {
     id: 4,
-    href: "",
+    href: "https://netology.ru/blog/11-2022-inclusive-interface",
     image: {
       alt: "Сбер",
       images: {

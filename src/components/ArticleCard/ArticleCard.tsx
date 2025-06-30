@@ -23,7 +23,11 @@ const ArticleCard: FC<IArticleCard> = ({
   className,
 }) => {
   return (
-    <a className={cx(styles.articleCard, className)} href={href}>
+    <a
+      className={cx(styles.articleCard, className)}
+      href={href}
+      target="_blank"
+    >
       <Picture {...image} />
       <div className={styles.textWrap}>
         <Paragraph className={styles.date} color="light">
