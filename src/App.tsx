@@ -29,6 +29,7 @@ function App() {
   return (
     <div className={styles.app}>
       <BrowserRouter basename="/finik-landing">
+        {/* <BrowserRouter basename="/new"> */}
         <ScrollToTop />
         <Header />
         <Modal

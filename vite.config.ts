@@ -5,6 +5,7 @@ import path from "path";
 
 export default defineConfig({
   base: "/finik-landing/",
+  // base: "/new/",
   plugins: [react(), svgr()],
   resolve: {
     alias: {

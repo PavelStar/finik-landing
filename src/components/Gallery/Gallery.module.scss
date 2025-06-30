@@ -40,6 +40,7 @@
 .marquee {
   img {
     height: 400px;
+    width: auto;
 
     @include mediaTablet {
       height: 160px;
