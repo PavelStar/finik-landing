@@ -2,19 +2,23 @@ import type { FC } from "react";
 import { Section, Title, Picture } from "../../components/index";
 import classNames from "classnames/bind";
 import styles from "./Cases.module.scss";
-import { CASES } from "../../constants/cases";
+import type { ICases } from "../../types/types";
 
 const cx = classNames.bind(styles);
 
-interface ICases {
-  id?: string;
+interface ICasesProps {
+  className?: string;
 }
 
-const Cases: FC<ICases> = ({ id }) => {
+const Cases: FC<ICases & ICasesProps> = ({ id, list, className }) => {
   return (
-    <Section className={cx(styles.cases)} theme="transparent" id={id}>
+    <Section
+      className={cx(styles.cases, className)}
+      theme="transparent"
+      id={id}
+    >
       <ul className={cx(styles.list)}>
-        {CASES.map((item) => {
+        {list.map((item) => {
           return (
             <li key={item.id} className={cx(styles.item)}>
               <Title

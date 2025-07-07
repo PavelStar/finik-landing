@@ -10,25 +10,30 @@ import {
 } from "../../components/index";
 import classNames from "classnames/bind";
 import styles from "./Career.module.scss";
-import { careerItems } from "../../constants/career";
 import { Link as RouterLink } from "react-router-dom";
 import ArrowIcon from "../../assets/arrow-icon.svg?react";
+import type { ICareer } from "../../types/types";
 
 const cx = classNames.bind(styles);
 
-interface ICareer {
-  id?: string;
+interface ICareerProps {
   itemsType?: "accordion" | "link";
 }
 
-const Career: FC<ICareer> = ({ id, itemsType = "accordion" }) => {
+const Career: FC<ICareerProps & ICareer> = ({
+  id,
+  itemsType = "accordion",
+  title,
+  list,
+  outro,
+}) => {
   const [openItems, setOpenItems] = useState<Array<string>>([]);
 
   return (
     <Section className={cx(styles.career)} theme="dark" id={id}>
-      <SectionGrid titleWrapClassName={styles.titleWrap} title="Карьера">
+      <SectionGrid titleWrapClassName={styles.titleWrap} title={title}>
         <ul className={cx(styles.items)}>
-          {careerItems.map((career) => {
+          {list.map((career) => {
             if (itemsType === "link") {
               return (
                 <li key={career.id}>
@@ -57,14 +62,19 @@ const Career: FC<ICareer> = ({ id, itemsType = "accordion" }) => {
                   setOpenItems={setOpenItems}
                 >
                   <div className={styles.contentWrap}>
-                    <div className={styles.descriptionWrap}>
-                      <Title className={styles.descriptionTitle} weight="bold">
-                        {career.content.description.title}
-                      </Title>
-                      <Paragraph className={styles.descriptionText}>
-                        {career.content.description.text}
-                      </Paragraph>
-                    </div>
+                    {career.content.description && (
+                      <div className={styles.descriptionWrap}>
+                        <Title
+                          className={styles.descriptionTitle}
+                          weight="bold"
+                        >
+                          {career.content.description.title}
+                        </Title>
+                        <Paragraph className={styles.descriptionText}>
+                          {career.content.description.text}
+                        </Paragraph>
+                      </div>
+                    )}
                     <ul className={styles.listsWrap}>
                       {career.content.lists.map((item) => {
                         return (
@@ -101,15 +111,17 @@ const Career: FC<ICareer> = ({ id, itemsType = "accordion" }) => {
           })}
         </ul>
 
-        <div className={cx(styles.contacts)}>
-          <Paragraph size="L" weight="medium">
-            Хотите у нас работать?
-          </Paragraph>
-          <Paragraph>
-            Присылайте резюме на{" "}
-            <Link textDecoration="underline">hello@finik-lab.ru</Link>
-          </Paragraph>
-        </div>
+        {outro && (
+          <div className={cx(styles.contacts)}>
+            <Paragraph size="L" weight="medium">
+              {outro.title}
+            </Paragraph>
+            <Paragraph>
+              {outro.title}{" "}
+              <Link textDecoration="underline">{outro.description.link}</Link>
+            </Paragraph>
+          </div>
+        )}
       </SectionGrid>
     </Section>
   );

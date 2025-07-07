@@ -1,14 +1,21 @@
 import { Section } from "../../components/index";
 import classNames from "classnames/bind";
 import styles from "./Partners.module.scss";
-import { partners } from "../../constants/partners";
 import Marquee from "react-fast-marquee";
+import type { IPartners } from "../../types/types";
+import {
+  useEffect,
+  useState,
+  type FC,
+  type FunctionComponent,
+  type SVGProps,
+} from "react";
 
 const cx = classNames.bind(styles);
 
-const Partners = () => {
+const Partners: FC<IPartners> = ({ id, list }) => {
   return (
-    <Section className={cx(styles.partners)} theme="dark" fullWidth>
+    <Section className={cx(styles.partners)} id={id} theme="dark" fullWidth>
       <Marquee
         className={cx(styles.marquee)}
         gradient={false}
@@ -17,10 +24,10 @@ const Partners = () => {
         autoFill={true}
       >
         <ul className={cx(styles.list)}>
-          {partners.map((partner, index) => {
+          {list.map((partner, index) => {
             return (
               <li key={index}>
-                <partner.icon className={cx(styles.logo)} />
+                <PartnerIcon iconName={partner.icon} />
               </li>
             );
           })}
@@ -31,3 +38,21 @@ const Partners = () => {
 };
 
 export default Partners;
+
+export const PartnerIcon = ({ iconName }: { iconName: string }) => {
+  const [Icon, setIcon] = useState<FunctionComponent<
+    SVGProps<SVGSVGElement>
+  > | null>(null);
+
+  useEffect(() => {
+    import(/* @vite-ignore */ `../../assets/partners/${iconName}?react`).then(
+      (mod) => {
+        if (mod) {
+          setIcon(() => mod.default);
+        }
+      }
+    );
+  }, []);
+
+  return <>{Icon && <Icon />}</>;
+};

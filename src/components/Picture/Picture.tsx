@@ -1,8 +1,11 @@
 import type { FC } from "react";
 import styles from "./Picture.module.scss";
 import type { IPicture } from "../../types/types";
+import { resolveImagePaths } from "../../utils/resolveImagePaths";
 
-const Picture: FC<IPicture> = ({ ...item }) => {
+const Picture: FC<IPicture> = ({ ...picture }) => {
+  const item = resolveImagePaths(picture);
+
   return (
     <picture className={styles.picture}>
       {item.images.mobile && item.images.mobile2x && (

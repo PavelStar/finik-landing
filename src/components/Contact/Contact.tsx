@@ -1,4 +1,4 @@
-import type { FC, ReactNode } from "react";
+import type { FC } from "react";
 import { Paragraph, Link } from "../../components/index";
 import styles from "./Contact.module.scss";
 import classNames from "classnames/bind";
@@ -10,30 +10,24 @@ const cx = classNames.bind(styles);
 interface IParagraph {
   type?: "phone" | "mail";
   href?: string;
-  children: ReactNode;
+  text: string;
   className?: string;
 }
 
-const Contact: FC<IParagraph> = ({
-  type = "phone",
-  href,
-  children,
-  className,
-}) => {
+const Contact: FC<IParagraph> = ({ type = "phone", href, text, className }) => {
   const icons = {
     phone: Phone,
     mail: Mail,
   };
 
   const Icon = icons[`${type}`];
-  const linkHref =
-    type == "phone" ? "tel:+74959883738" : "mailto:hello@finik-lab.ru";
+  const linkHref = type == "phone" ? `tel:${text}` : `mailto:${text}`;
 
   return (
     <Link className={cx(styles.contact, className)} href={href || linkHref}>
       <Icon className={styles.icon} />
       <Paragraph className={styles.text} textDecoration="underline">
-        {children}
+        {text}
       </Paragraph>
     </Link>
   );

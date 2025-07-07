@@ -4,24 +4,19 @@ import styles from "./Intro.module.scss";
 import classNames from "classnames/bind";
 import { Link, useLocation } from "react-router-dom";
 import useBreadcrumbs from "use-react-router-breadcrumbs";
+import type { IButton } from "../../types/types";
+import { scrollToSection } from "../../utils/scroll";
 
 const cx = classNames.bind(styles);
 
-interface IIntro {
-  title: string;
+interface IIntroProps {
+  title?: string;
   description?: string;
-  buttonText?: string;
-  onClick?: () => void;
+  button?: IButton;
   className?: string;
 }
 
-const Intro: FC<IIntro> = ({
-  title,
-  description,
-  buttonText,
-  onClick,
-  className,
-}) => {
+const Intro: FC<IIntroProps> = ({ title, description, button, className }) => {
   const location = useLocation();
 
   const routes = [
@@ -32,6 +27,10 @@ const Intro: FC<IIntro> = ({
   const breadcrumbs = useBreadcrumbs(routes);
 
   const isBreadcrumbsHidden = location.pathname === "/" ? true : false;
+
+  const handleClick = () => {
+    scrollToSection(`#${button?.scrollId}`);
+  };
 
   return (
     <Section className={cx(styles.intro, className)} theme="transparent">
@@ -63,15 +62,17 @@ const Intro: FC<IIntro> = ({
           })}
         </nav>
       )}
-      <Title
-        className={styles.title}
-        level={1}
-        size="XL"
-        weight="extraBold"
-        textTransform="uppercase"
-      >
-        {title}
-      </Title>
+      {title && (
+        <Title
+          className={styles.title}
+          level={1}
+          size="XL"
+          weight="extraBold"
+          textTransform="uppercase"
+        >
+          {title}
+        </Title>
+      )}
       {description && (
         <Paragraph
           className={styles.description}
@@ -82,9 +83,9 @@ const Intro: FC<IIntro> = ({
           {description}
         </Paragraph>
       )}
-      {buttonText && (
-        <Button className={styles.button} onClick={onClick}>
-          Оставить заявку
+      {button && (
+        <Button className={styles.button} onClick={handleClick}>
+          {button.text}
         </Button>
       )}
     </Section>

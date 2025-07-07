@@ -8,24 +8,25 @@ import {
 } from "../../components/index";
 import classNames from "classnames/bind";
 import styles from "./Services.module.scss";
-import { services } from "../../constants/services";
+// import { services } from "../../constants/services";
 import { BREAKPOINTS } from "../../constants/breakpoints";
 import { useMediaQuery } from "react-responsive";
+import type { IServices } from "../../types/types";
 
 const cx = classNames.bind(styles);
 
-interface IServices {
+interface IServicesProps {
   id?: string;
 }
 
-const Services: FC<IServices> = ({ id }) => {
+const Services: FC<IServicesProps & IServices> = ({ id, title, list }) => {
   const isTablet = useMediaQuery({ maxWidth: BREAKPOINTS.tablet });
 
   return (
     <Section className={cx(styles.services)} id={id}>
-      <SectionGrid titleWrapClassName={styles.sectionTitleWrap} title="Услуги">
+      <SectionGrid titleWrapClassName={styles.sectionTitleWrap} title={title}>
         <ul className={cx(styles.items)}>
-          {services.map((service) => {
+          {list.map((service) => {
             return (
               <li className={cx(styles.item)} key={service.id}>
                 {!isTablet && <Picture {...service.image} />}
@@ -34,7 +35,7 @@ const Services: FC<IServices> = ({ id }) => {
                     {service.title}
                   </Title>
                   <ul className={cx(styles.textList)}>
-                    {service.content.map((item) => {
+                    {service.list.map((item) => {
                       return (
                         <li key={item} className={cx(styles.textItem)}>
                           <Paragraph>{item}</Paragraph>

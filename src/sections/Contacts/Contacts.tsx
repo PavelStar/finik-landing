@@ -7,33 +7,40 @@ import {
 } from "../../components/index";
 import classNames from "classnames/bind";
 import styles from "./Contacts.module.scss";
+import type { IContacts } from "../../types/types";
 
 const cx = classNames.bind(styles);
 
-interface IContacts {
-  id?: string;
+interface IContactsProps {
   onClick: () => void;
 }
 
-const Contacts: FC<IContacts> = ({ id }) => {
+const Contacts: FC<IContactsProps & IContacts> = ({ id, title, content }) => {
   return (
     <Section className={cx(styles.contacts)} id={id}>
       <SectionGrid
         contentClassName={styles.content}
         titleWrapClassName={styles.titleWrap}
-        title="Контакты"
+        title={title}
       >
         <div className={styles.inner}>
           <div className={styles.textBlock}>
             <Paragraph size="L" weight="medium">
-              Давайте сотрудничать!
+              {content.title}
             </Paragraph>
-            <Paragraph>Свяжитесь с нами любым удобным способом</Paragraph>
+            <Paragraph>{content.description}</Paragraph>
           </div>
 
           <div className={styles.contactsBlock}>
-            <Contact type="mail">hello@finik-lab.ru</Contact>
-            <Contact>+7 (495) 988-37-38</Contact>
+            {content.list.map((contact) => {
+              return (
+                <Contact
+                  key={contact.id}
+                  type={contact.type}
+                  text={contact.text}
+                />
+              );
+            })}
           </div>
         </div>
       </SectionGrid>

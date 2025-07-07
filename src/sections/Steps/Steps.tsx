@@ -1,13 +1,7 @@
 import type { FC } from "react";
 import { Section, SectionGrid, NumberCard } from "../../components/index";
 import styles from "./Steps.module.scss";
-import type { INumberCard } from "../../components/NumberCard/NumberCard";
-
-interface ISteps {
-  id?: string;
-  title: string;
-  list: Array<INumberCard>;
-}
+import type { ISteps } from "../../types/types";
 
 const Steps: FC<ISteps> = ({ id, title, list }) => {
   return (
