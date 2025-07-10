@@ -5,7 +5,7 @@ import {
   Title,
   Section,
   SectionGrid,
-  Button,
+  // Button,
 } from "../../components/index";
 import classNames from "classnames/bind";
 import styles from "./Services.module.scss";
@@ -13,7 +13,7 @@ import styles from "./Services.module.scss";
 import { BREAKPOINTS } from "../../constants/breakpoints";
 import { useMediaQuery } from "react-responsive";
 import type { IServices } from "../../types/types";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const cx = classNames.bind(styles);
 
