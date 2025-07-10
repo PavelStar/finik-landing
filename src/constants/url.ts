@@ -1,7 +1,24 @@
-export const URL_PREFIX = "/finik-landing/data/";
-export const PATH_PREFIX = "/finik-landing/";
-export const SVG_PATH_PREFIX = "../../";
+type TMode = "gh-pages" | "test" | "dev";
+const mode: TMode = "gh-pages";
 
-// export const URL_PREFIX = "/new/data/";
-// export const PATH_PREFIX = "/new/";
-// export const SVG_PATH_PREFIX = "";
+const CONFIG = {
+  "gh-pages": {
+    URL_PREFIX: "/finik-landing/data/",
+    PATH_PREFIX: "/finik-landing/",
+    SVG_PATH_PREFIX: "",
+  },
+  dev: {
+    URL_PREFIX: "/finik-landing/data/",
+    PATH_PREFIX: "/finik-landing/",
+    SVG_PATH_PREFIX: "../../",
+  },
+  test: {
+    URL_PREFIX: "/new/data/",
+    PATH_PREFIX: "/new/",
+    SVG_PATH_PREFIX: "",
+  },
+} as const;
+
+export const URL_PREFIX = CONFIG[mode].URL_PREFIX;
+export const PATH_PREFIX = CONFIG[mode].PATH_PREFIX;
+export const SVG_PATH_PREFIX = CONFIG[mode].SVG_PATH_PREFIX;
