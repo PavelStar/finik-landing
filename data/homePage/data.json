@@ -1,0 +1,431 @@
+{
+  "intro": {
+    "id": "intro",
+    "title": "Инновации, которые трансформируют бизнес",
+    "description": "Создаем сайты, приложения, цифровые платформы",
+    "button": {
+      "text": "Оставить заявку",
+      "scrollId": "contacts"
+    }
+  },
+  "cases": {
+    "id": "cases",
+    "list": [
+      {
+        "id": 1,
+        "title": "Сбер",
+        "image": {
+          "alt": "Сбер",
+          "images": {
+            "desktop": "sber.png",
+            "desktop2x": "sber.png",
+            "tablet": "sber-tablet.png",
+            "tablet2x": "sber-tablet.png",
+            "mobile": "sber-tablet.png",
+            "mobile2x": "sber-tablet.png"
+          }
+        }
+      },
+      {
+        "id": 2,
+        "title": "Т2",
+        "image": {
+          "alt": "Т2 логотип",
+          "images": {
+            "desktop": "t2.png",
+            "desktop2x": "t2.png",
+            "tablet": "t2-tablet.png",
+            "tablet2x": "t2-tablet.png",
+            "mobile": "t2-tablet.png",
+            "mobile2x": "t2-tablet.png"
+          }
+        }
+      },
+      {
+        "id": 3,
+        "title": "Сбер Бизнес",
+        "image": {
+          "alt": "Сбер Бизнес логотип",
+          "images": {
+            "desktop": "sber-business.png",
+            "desktop2x": "sber-business.png",
+            "tablet": "sber-business-tablet.png",
+            "tablet2x": "sber-business-tablet.png",
+            "mobile": "sber-business-tablet.png",
+            "mobile2x": "sber-business-tablet.png"
+          }
+        }
+      },
+      {
+        "id": 4,
+        "title": "rostelekom",
+        "image": {
+          "alt": "rostelekom лого",
+          "images": {
+            "desktop": "rostelekom.png",
+            "desktop2x": "rostelekom.png",
+            "tablet": "rostelekom-tablet.png",
+            "tablet2x": "rostelekom-tablet.png",
+            "mobile": "rostelekom-tablet.png",
+            "mobile2x": "rostelekom-tablet.png"
+          }
+        }
+      }
+    ]
+  },
+  "partners": {
+    "id": "partners",
+    "list": [
+      {
+        "id": 1,
+        "icon": "sber.svg",
+        "href": null
+      },
+      {
+        "id": 2,
+        "icon": "t2.svg",
+        "href": null
+      },
+      {
+        "id": 3,
+        "icon": "mvideo.svg",
+        "href": null
+      },
+      {
+        "id": 4,
+        "icon": "akrihin.svg",
+        "href": null
+      },
+      {
+        "id": 5,
+        "icon": "gazprom.svg",
+        "href": null
+      },
+      {
+        "id": 6,
+        "icon": "nrb.svg",
+        "href": null
+      },
+      {
+        "id": 7,
+        "icon": "rosbank.svg",
+        "href": null
+      },
+      {
+        "id": 8,
+        "icon": "rostelekom.svg",
+        "href": null
+      }
+    ]
+  },
+  "services": {
+    "id": "services",
+    "title": "Услуги",
+    "list": [
+      {
+        "id": 1,
+        "title": "Продуктовый дизайн",
+        "image": {
+          "alt": "Картинка услуги",
+          "images": {
+            "desktop": "service-1.png",
+            "desktop2x": "service-1.png",
+            "tablet": "service-1.png",
+            "tablet2x": "service-1.png",
+            "mobile": "service-1.png",
+            "mobile2x": "service-1.png"
+          }
+        },
+        "list": [
+          "Интерфейсы сложных систем",
+          "Сайты, веб-порталы",
+          "Дизайн-системы",
+          "Мобильные приложения",
+          "Продуктовые каталоги",
+          "Маркетплейсы"
+        ],
+        "button": {
+          "text": "Подробнее",
+          "href": "product-design"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Коммуникационный дизайн",
+        "image": {
+          "alt": "Картинка услуги",
+          "images": {
+            "desktop": "service-2.png",
+            "desktop2x": "service-2.png",
+            "tablet": "service-2.png",
+            "tablet2x": "service-2.png",
+            "mobile": "service-2.png",
+            "mobile2x": "service-2.png"
+          }
+        },
+        "list": [
+          "Оформление интерфейсов сайтов и приложений",
+          "Создание промоматериалов",
+          "Позиционирование и продвижение бренда визуальными средствами"
+        ],
+        "button": {
+          "text": "Подробнее",
+          "href": "communication-design"
+        }
+      },
+      {
+        "id": 3,
+        "title": "UX-исследования",
+        "image": {
+          "alt": "Картинка услуги",
+          "images": {
+            "desktop": "service-3.png",
+            "desktop2x": "service-3.png",
+            "tablet": "service-3.png",
+            "tablet2x": "service-3.png",
+            "mobile": "service-3.png",
+            "mobile2x": "service-3.png"
+          }
+        },
+        "list": [
+          "Аудит продукта",
+          "Организация и проведение исследований",
+          "Подготовка подробных отчетов",
+          "Доработка продукта по итогам исследования"
+        ],
+        "button": {
+          "text": "Подробнее",
+          "href": "ux-research"
+        }
+      },
+      {
+        "id": 4,
+        "title": "Копирайтинг и UX-райтинг",
+        "image": {
+          "alt": "Картинка услуги",
+          "images": {
+            "desktop": "service-4.png",
+            "desktop2x": "service-4.png",
+            "tablet": "service-4.png",
+            "tablet2x": "service-4.png",
+            "mobile": "service-4.png",
+            "mobile2x": "service-4.png"
+          }
+        },
+        "list": [
+          "Создание и редактура текстов сервисов и интерфейсов",
+          "Подготовка email-рассылок",
+          "Разработка гайдов и редполитики"
+        ],
+        "button": {
+          "text": "Подробнее",
+          "href": "copywriting"
+        }
+      }
+    ]
+  },
+  "about": {
+    "id": "about",
+    "list": [
+      "FINIK Design Lab (входит в Лигу Цифровой Экономики) создает интерфейсы сложных систем и приложений для клиентов из разных сфер",
+      "Работаем как с существующими решениями, так и создаем их с нуля. Опираемся на данные и метрики, проводим UX-аудиты и исследования",
+      "Готовы подключиться к проекту на любой стадии или реализовать амбициозный замысел с нуля"
+    ],
+    "slides": [
+      {
+        "id": 2,
+        "image": {
+          "alt": "Слайд 2",
+          "images": {
+            "desktop": "slide-2.png",
+            "desktop2x": "slide-2.png",
+            "tablet": "slide-2.png",
+            "tablet2x": "slide-2.png",
+            "mobile": "slide-2.png",
+            "mobile2x": "slide-2.png"
+          }
+        }
+      },
+      {
+        "id": 3,
+        "image": {
+          "alt": "Слайд 3",
+          "images": {
+            "desktop": "slide-3.png",
+            "desktop2x": "slide-3.png",
+            "tablet": "slide-3.png",
+            "tablet2x": "slide-3.png",
+            "mobile": "slide-3.png",
+            "mobile2x": "slide-3.png"
+          }
+        }
+      },
+      {
+        "id": 4,
+        "image": {
+          "alt": "Слайд 4",
+          "images": {
+            "desktop": "slide-4.png",
+            "desktop2x": "slide-4.png",
+            "tablet": "slide-4.png",
+            "tablet2x": "slide-4.png",
+            "mobile": "slide-4.png",
+            "mobile2x": "slide-4.png"
+          }
+        }
+      }
+    ]
+  },
+  "howWeWork": {
+    "id": "how-we-work",
+    "title": "Как<br/> мы работаем",
+    "list": [
+      {
+        "id": 1,
+        "number": "01",
+        "title": "Понимаем запрос бизнеса и&nbsp;решаем его"
+      },
+      {
+        "id": 2,
+        "number": "02",
+        "title": "Создаем эстетичные решения, привлекающие клиентов"
+      },
+      {
+        "id": 3,
+        "number": "03",
+        "title": "Помогаем выделиться среди конкурентов"
+      },
+      {
+        "id": 4,
+        "number": "04",
+        "title": "Сопровождаем продукт от&nbsp;начала до&nbsp;реализации, а&nbsp;также берем на&nbsp;себя поддержку после"
+      }
+    ]
+  },
+  "articles": {
+    "id": "articles",
+    "title": "Мы в СМИ",
+    "list": [
+      {
+        "id": 1,
+        "href": "https://dsgners.ru/finikdesignlab/7489-dizayn-interfeysa-v-chernuyu-pyatnitsu-kak-vyidelitsya-sredi-konkurentov-i-pozabotitsya-o-polzovatelyah",
+        "date": "26 ноября 2024",
+        "title": "Дизайн интерфейса в&nbsp;&laquo;черную пятницу&raquo;: как&nbsp;выделиться среди конкурентов и&nbsp;позаботиться о&nbsp;пользователях",
+        "image": {
+          "alt": "Картинка статьи 1",
+          "images": {
+            "desktop": "article1.png",
+            "desktop2x": "article1_2x.png",
+            "tablet": "article1_tablet.png",
+            "tablet2x": "article1_tablet_2x.png",
+            "mobile": "article1_mobile.png",
+            "mobile2x": "article1_mobile_2x.png"
+          }
+        }
+      },
+      {
+        "id": 2,
+        "href": "https://adindex.ru/publication/opinion/digital/2024/10/8/326290.phtml",
+        "date": "10 октября 2024",
+        "title": "Понятный интерфейс: чего&nbsp;избегать, чтобы&nbsp;не&nbsp;запутать пользователя",
+        "image": {
+          "alt": "Картинка статьи 2",
+          "images": {
+            "desktop": "article2.png",
+            "desktop2x": "article2_2x.png",
+            "tablet": "article2_tablet.png",
+            "tablet2x": "article2_tablet_2x.png",
+            "mobile": "article2_mobile.png",
+            "mobile2x": "article2_mobile_2x.png"
+          }
+        }
+      }
+    ],
+    "button": {
+      "text": "Посмотреть все статьи",
+      "href": "articles"
+    }
+  },
+  "career": {
+    "id": "career",
+    "title": "Карьера",
+    "list": [
+      {
+        "id": 1,
+        "title": "Старший UX/UI-дизайнер",
+        "content": {
+          "description": {
+            "title": "Мы ищем:",
+            "text": "Опытного и вдохновленного Старшего UX/UI-дизайнера, который не просто создает интерфейсы, а проектирует цифровые впечатления. Ты будешь лидировать в разработке продуктов, которые сочетают эстетику, юзабилити и бизнес-цели."
+          },
+          "lists": [
+            {
+              "title": "Что предстоит делать:",
+              "items": [
+                "Проектировать логичные и красивые интерфейсы для веба и мобильных приложений.",
+                "Проводить исследования, тестирования и анализировать поведение пользователей.",
+                "Создавать прототипы, дизайн-системы и анимации интерфейсов.",
+                "Работать в команде с продукт-менеджерами и разработчиками, отстаивая интересы пользователей.",
+                "Наставлять младших дизайнеров и участвовать в формировании процессов студии."
+              ]
+            },
+            {
+              "title": "Что мы ждем от тебя:",
+              "items": [
+                "5+ лет опыта в UX/UI, сильное портфолио с кейсами.",
+                "Глубокое понимание HCD, юзабилити-принципов и трендов.",
+                "Владение Figma, Adobe Suite, Principle (или аналогами).",
+                "Опыт работы с дизайн-системами и компонентным подходом.",
+                "Умение презентовать идеи и аргументировать решения."
+              ]
+            },
+            {
+              "title": "Что мы предлагаем:",
+              "items": [
+                "Возможность влиять на продукты миллионов пользователей.",
+                "Гибкий график и крутой офис (или работу из любой точки мира).",
+                "Профессиональное развитие за счет студии.",
+                "Дружную команду и проекты без рутины."
+              ]
+            }
+          ],
+          "outro": "Давай делать цифровой мир удобнее и красивее вместе! Присылай резюме на "
+        }
+      },
+      {
+        "id": 2,
+        "title": "Дизайнер презентаций",
+        "content": {
+          "description": {
+            "title": "Мы ищем:",
+            "text": "Опытного и вдохновленного Старшего UX/UI-дизайнера, который не просто создает интерфейсы, а проектирует цифровые впечатления. Ты будешь лидировать в разработке продуктов, которые сочетают эстетику, юзабилити и бизнес-цели."
+          },
+          "lists": [
+            {
+              "title": "Что предстоит делать:",
+              "items": [
+                "Проектировать логичные и красивые интерфейсы для веба и мобильных приложений.",
+                "Проводить исследования, тестирования и анализировать поведение пользователей.",
+                "Создавать прототипы, дизайн-системы и анимации интерфейсов.",
+                "Работать в команде с продукт-менеджерами и разработчиками, отстаивая интересы пользователей.",
+                "Наставлять младших дизайнеров и участвовать в формировании процессов студии."
+              ]
+            }
+          ],
+          "outro": "Давай делать цифровой мир удобнее и красивее вместе! Присылай резюме на hello@finik-lab.ru"
+        }
+      }
+    ],
+    "outro": {
+      "title": "Хотите у нас работать?",
+      "description": {
+        "text": "Присылайте резюме на",
+        "link": "hello@finik-lab.ru"
+      },
+      "button": {
+        "text": "посмотреть все вакансии",
+        "href": "career"
+      }
+    }
+  }
+}
