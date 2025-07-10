@@ -47,13 +47,13 @@ const Services: FC<IServicesProps & IServices> = ({ id, title, list }) => {
                       );
                     })}
                   </ul>
-                  {service.button && (
+                  {/* {service.button && (
                     <Link to={`/${service.button.href}`}>
                       <Button className={styles.button}>
                         {service.button.text}
                       </Button>
                     </Link>
-                  )}
+                  )} */}
                 </div>
               </li>
             );

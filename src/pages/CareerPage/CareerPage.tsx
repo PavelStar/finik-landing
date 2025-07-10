@@ -35,7 +35,12 @@ const CareerPage: FC<ICareerPageProps> = ({ id }) => {
   console.log("data.intro", data);
 
   return (
-    <Section className={cx(styles.career)} theme="transparent" id={id}>
+    <Section
+      className={cx(styles.career)}
+      theme="transparent"
+      id={id}
+      fullWidth
+    >
       <Intro {...data.intro} />
       <Advantages {...data.advantages} />
       <Career itemsType="link" {...data.career} />

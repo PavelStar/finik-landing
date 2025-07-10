@@ -39,7 +39,7 @@ const Header = () => {
   const headerBackground = isMenuShown ? styles.white : styles.transparent;
   const logoColor = isMenuShown ? "dark" : "light";
 
-  const HIDDEN_PATHS = ["/privacy"];
+  const HIDDEN_PATHS = ["/privacy", "/articles"];
 
   const isMenuHidden = HIDDEN_PATHS.includes(location.pathname) ? true : false;
 
