@@ -10,6 +10,7 @@ import {
   type FunctionComponent,
   type SVGProps,
 } from "react";
+import { SVG_PATH_PREFIX } from "../../constants/url";
 
 const cx = classNames.bind(styles);
 
@@ -80,13 +81,14 @@ export const PartnerIcon = ({ iconName }: { iconName: string }) => {
   > | null>(null);
 
   useEffect(() => {
-    import(/* @vite-ignore */ `../../assets/partners/${iconName}?react`).then(
-      (mod) => {
-        if (mod) {
-          setIcon(() => mod.default);
-        }
+    // import(/* @vite-ignore */ `../../assets/partners/${iconName}?react`).then(
+    import(
+      /* @vite-ignore */ `${SVG_PATH_PREFIX}assets/partners/${iconName}?react`
+    ).then((mod) => {
+      if (mod) {
+        setIcon(() => mod.default);
       }
-    );
+    });
   }, []);
 
   return <>{Icon && <Icon />}</>;
