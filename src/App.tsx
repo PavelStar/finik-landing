@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import { Header, Footer } from "./sections/index";
 import {
   HomePage,
@@ -30,7 +30,8 @@ function App() {
 
   return (
     <div className={styles.app}>
-      <BrowserRouter basename={PATH_PREFIX}>
+      <HashRouter>
+        {/* <BrowserRouter basename={PATH_PREFIX}> */}
         <ScrollToTop />
         <Header />
         <Modal
@@ -64,7 +65,8 @@ function App() {
         </div>
 
         <Footer />
-      </BrowserRouter>
+        {/* </BrowserRouter> */}
+      </HashRouter>
     </div>
   );
 }
