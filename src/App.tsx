@@ -13,6 +13,7 @@ import {
 import styles from "./App.module.scss";
 import { Form, Modal, ScrollToTop } from "./components/index";
 import { useState } from "react";
+import { PATH_PREFIX } from "./constants/url";
 
 function App() {
   console.log("finik version 1.0.2");
@@ -29,8 +30,7 @@ function App() {
 
   return (
     <div className={styles.app}>
-      <BrowserRouter basename="/finik-landing">
-        {/* <BrowserRouter basename="/new"> */}
+      <BrowserRouter basename={PATH_PREFIX}>
         <ScrollToTop />
         <Header />
         <Modal
