@@ -5,7 +5,7 @@ const CONFIG = {
   "gh-pages": {
     URL_PREFIX: "/finik-landing/data/",
     PATH_PREFIX: "/finik-landing/",
-    SVG_PATH_PREFIX: "",
+    SVG_PATH_PREFIX: "/finik-landing/",
   },
   dev: {
     URL_PREFIX: "/finik-landing/data/",
