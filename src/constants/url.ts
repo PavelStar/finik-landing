@@ -5,20 +5,16 @@ const CONFIG = {
   "gh-pages": {
     URL_PREFIX: "/finik-landing/data/",
     PATH_PREFIX: "/finik-landing/",
-    SVG_PATH_PREFIX: "../../",
   },
   dev: {
     URL_PREFIX: "/finik-landing/data/",
     PATH_PREFIX: "/finik-landing/",
-    SVG_PATH_PREFIX: "../../",
   },
   test: {
     URL_PREFIX: "/new/data/",
     PATH_PREFIX: "/new/",
-    SVG_PATH_PREFIX: "",
   },
 } as const;
 
 export const URL_PREFIX = CONFIG[mode].URL_PREFIX;
 export const PATH_PREFIX = CONFIG[mode].PATH_PREFIX;
-export const SVG_PATH_PREFIX = CONFIG[mode].SVG_PATH_PREFIX;

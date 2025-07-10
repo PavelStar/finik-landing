@@ -136,6 +136,7 @@ export interface IPartners {
 export interface IPartner {
   id: number;
   icon: string;
+  image: IPicture;
   href?: string;
 }
 

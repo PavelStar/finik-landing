@@ -79,41 +79,129 @@
       {
         "id": 1,
         "icon": "sber.svg",
+        "image": {
+          "alt": "Сбер",
+          "images": {
+            "desktop": "sber.svg",
+            "desktop2x": "sber.svg",
+            "tablet": "sber.svg",
+            "tablet2x": "sber.svg",
+            "mobile": "sber.svg",
+            "mobile2x": "sber.svg"
+          }
+        },
         "href": null
       },
       {
         "id": 2,
         "icon": "t2.svg",
+        "image": {
+          "alt": "Сбер",
+          "images": {
+            "desktop": "t2.svg",
+            "desktop2x": "t2.svg",
+            "tablet": "t2.svg",
+            "tablet2x": "t2.svg",
+            "mobile": "t2.svg",
+            "mobile2x": "t2.svg"
+          }
+        },
         "href": null
       },
       {
         "id": 3,
         "icon": "mvideo.svg",
+        "image": {
+          "alt": "Сбер",
+          "images": {
+            "desktop": "mvideo.svg",
+            "desktop2x": "mvideo.svg",
+            "tablet": "mvideo.svg",
+            "tablet2x": "mvideo.svg",
+            "mobile": "mvideo.svg",
+            "mobile2x": "mvideo.svg"
+          }
+        },
         "href": null
       },
       {
         "id": 4,
         "icon": "akrihin.svg",
+        "image": {
+          "alt": "Сбер",
+          "images": {
+            "desktop": "akrihin.svg",
+            "desktop2x": "akrihin.svg",
+            "tablet": "akrihin.svg",
+            "tablet2x": "akrihin.svg",
+            "mobile": "akrihin.svg",
+            "mobile2x": "akrihin.svg"
+          }
+        },
         "href": null
       },
       {
         "id": 5,
         "icon": "gazprom.svg",
+        "image": {
+          "alt": "Сбер",
+          "images": {
+            "desktop": "gazprom.svg",
+            "desktop2x": "gazprom.svg",
+            "tablet": "gazprom.svg",
+            "tablet2x": "gazprom.svg",
+            "mobile": "gazprom.svg",
+            "mobile2x": "gazprom.svg"
+          }
+        },
         "href": null
       },
       {
         "id": 6,
         "icon": "nrb.svg",
+        "image": {
+          "alt": "Сбер",
+          "images": {
+            "desktop": "nrb.svg",
+            "desktop2x": "nrb.svg",
+            "tablet": "nrb.svg",
+            "tablet2x": "nrb.svg",
+            "mobile": "nrb.svg",
+            "mobile2x": "nrb.svg"
+          }
+        },
         "href": null
       },
       {
         "id": 7,
         "icon": "rosbank.svg",
+        "image": {
+          "alt": "Сбер",
+          "images": {
+            "desktop": "rosbank.svg",
+            "desktop2x": "rosbank.svg",
+            "tablet": "rosbank.svg",
+            "tablet2x": "rosbank.svg",
+            "mobile": "rosbank.svg",
+            "mobile2x": "rosbank.svg"
+          }
+        },
         "href": null
       },
       {
         "id": 8,
         "icon": "rostelekom.svg",
+        "image": {
+          "alt": "Сбер",
+          "images": {
+            "desktop": "rostelekom.svg",
+            "desktop2x": "rostelekom.svg",
+            "tablet": "rostelekom.svg",
+            "tablet2x": "rostelekom.svg",
+            "mobile": "rostelekom.svg",
+            "mobile2x": "rostelekom.svg"
+          }
+        },
         "href": null
       }
     ]

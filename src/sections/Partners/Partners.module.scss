@@ -41,6 +41,15 @@
       @include mediaMobile {
       }
     }
+
+    img {
+      height: 100px;
+      max-height: 32px;
+
+      @include mediaTablet {
+        max-height: 24px;
+      }
+    }
   }
 }
 

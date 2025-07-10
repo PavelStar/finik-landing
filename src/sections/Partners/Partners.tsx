@@ -1,16 +1,9 @@
-import { Section, SectionGrid } from "../../components/index";
+import { Picture, Section, SectionGrid } from "../../components/index";
 import classNames from "classnames/bind";
 import styles from "./Partners.module.scss";
 import Marquee from "react-fast-marquee";
 import type { IPartners } from "../../types/types";
-import {
-  useEffect,
-  useState,
-  type FC,
-  type FunctionComponent,
-  type SVGProps,
-} from "react";
-import { SVG_PATH_PREFIX } from "../../constants/url";
+import { type FC } from "react";
 
 const cx = classNames.bind(styles);
 
@@ -40,7 +33,7 @@ const Partners: FC<IPartnersProps & IPartners> = ({
             {list.map((partner, index) => {
               return (
                 <li key={index} className={cx(styles.listItem)}>
-                  <PartnerIcon iconName={partner.icon} />
+                  <Picture className={styles.picture} {...partner.image} />
                 </li>
               );
             })}
@@ -63,7 +56,7 @@ const Partners: FC<IPartnersProps & IPartners> = ({
           {list.map((partner, index) => {
             return (
               <li key={index}>
-                <PartnerIcon iconName={partner.icon} />
+                <Picture className={styles.picture} {...partner.image} />
               </li>
             );
           })}
@@ -74,22 +67,3 @@ const Partners: FC<IPartnersProps & IPartners> = ({
 };
 
 export default Partners;
-
-export const PartnerIcon = ({ iconName }: { iconName: string }) => {
-  const [Icon, setIcon] = useState<FunctionComponent<
-    SVGProps<SVGSVGElement>
-  > | null>(null);
-
-  useEffect(() => {
-    // import(/* @vite-ignore */ `../../assets/partners/${iconName}?react`).then(
-    import(
-      /* @vite-ignore */ `${SVG_PATH_PREFIX}assets/partners/${iconName}?react`
-    ).then((mod) => {
-      if (mod) {
-        setIcon(() => mod.default);
-      }
-    });
-  }, []);
-
-  return <>{Icon && <Icon />}</>;
-};
