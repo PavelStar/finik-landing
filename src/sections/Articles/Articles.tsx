@@ -12,13 +12,13 @@ import { Link } from "react-router-dom";
 
 const cx = classNames.bind(styles);
 
-const Articles: FC<IArticles> = ({ sectionId, sectionTitle, list, button }) => {
+const Articles: FC<IArticles> = ({ id, title, list, button }) => {
   return (
-    <Section className={cx(styles.articles)} theme="dark" id={sectionId}>
+    <Section className={cx(styles.articles)} theme="dark" id={id}>
       <SectionGrid
         contentClassName={styles.content}
         titleWrapClassName={styles.titleWrap}
-        title={sectionTitle}
+        title={title}
       >
         <ul className={cx(styles.list)}>
           {list.map((article) => {

@@ -2,11 +2,11 @@ import { Intro } from "../../sections/index";
 import styles from "./ArticlesPage.module.scss";
 import { ArticleCard, Section } from "../../components/index";
 import { useEffect, useState } from "react";
-import type { IArticles } from "../../types/types";
+import type { IArticlesPage } from "../../types/types";
 import { URL_PREFIX } from "../../constants/url";
 
 const ArticlesPage = () => {
-  const [data, setData] = useState<IArticles | null>(null);
+  const [data, setData] = useState<IArticlesPage | null>(null);
 
   useEffect(() => {
     fetch(`${URL_PREFIX}/articlesPage/data.json`)

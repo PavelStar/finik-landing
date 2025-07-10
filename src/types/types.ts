@@ -16,8 +16,14 @@ export interface IButton {
   href?: string;
 }
 
-export interface IArticles {
+export interface IArticlesPage {
   intro: IIntro;
+  list: Array<IArticle>;
+}
+
+export interface IArticles {
+  id: string;
+  title: string;
   list: Array<IArticle>;
   button?: IButton;
 }

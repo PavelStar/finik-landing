@@ -303,8 +303,8 @@
     ]
   },
   "articles": {
-    "sectionId": "articles",
-    "sectionTitle": "Мы в СМИ",
+    "id": "articles",
+    "title": "Мы в СМИ",
     "list": [
       {
         "id": 1,
