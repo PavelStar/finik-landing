@@ -1,13 +1,19 @@
 import type { FC } from "react";
 import styles from "./Picture.module.scss";
+import classNames from "classnames/bind";
 import type { IPicture } from "../../types/types";
 import { resolveImagePaths } from "../../utils/resolveImagePaths";
 
-const Picture: FC<IPicture> = ({ ...picture }) => {
+const cx = classNames.bind(styles);
+interface IPictureProps {
+  className?: string;
+}
+
+const Picture: FC<IPicture & IPictureProps> = ({ className, ...picture }) => {
   const item = resolveImagePaths(picture);
 
   return (
-    <picture className={styles.picture}>
+    <picture className={cx(styles.picture, className)}>
       {item.images.mobile && item.images.mobile2x && (
         <source
           srcSet={`${item.images.mobile} 1x, ${item.images.mobile2x} 2x`}

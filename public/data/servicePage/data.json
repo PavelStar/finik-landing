@@ -1,0 +1,524 @@
+{
+  "list": [
+    {
+      "id": "product-design",
+      "intro": {
+        "title": "Продуктовый дизайн",
+        "description": "Коммуникационный дизайн — это не просто красивая картинка, а продуманная система визуальных сообщений. Мы разрабатываем фирменный стиль, упаковку, рекламные материалы и цифровые продукты, которые помогают брендам говорить с клиентами на одном языке"
+      },
+      "choice": {
+        "title": "Почему выбирают&nbsp;нас?",
+        "list": [
+          {
+            "id": 1,
+            "number": "01",
+            "title": "Проводим глубокий анализ целевой аудитории"
+          },
+          {
+            "id": 2,
+            "number": "02",
+            "title": "Работаем с любыми носителями: от печати до digital"
+          },
+          {
+            "id": 3,
+            "number": "03",
+            "title": "Упор на функциональность, а не только на эстетику"
+          },
+          {
+            "id": 4,
+            "number": "04",
+            "title": "Гибкие условия сотрудничества"
+          }
+        ]
+      },
+      "examples": {
+        "id": "examples",
+        "title": "Примеры работ",
+        "content": {
+          "title": "Сфера – приложение для торговых представителей",
+          "description": "Мы создали коммуникационные материалы для презентации приложения потенциальным заказчикам, а также разработали промоматериалы для выставок и мероприятий",
+          "slides": [
+            {
+              "id": 1,
+              "image": {
+                "alt": "Картинка услуги",
+                "images": {
+                  "desktop": "service-page-1.png",
+                  "desktop2x": "service-page-1.png",
+                  "tablet": "service-page-1.png",
+                  "tablet2x": "service-page-1.png",
+                  "mobile": "service-page-1.png",
+                  "mobile2x": "service-page-1.png"
+                }
+              }
+            },
+            {
+              "id": 2,
+              "image": {
+                "alt": "Картинка услуги",
+                "images": {
+                  "desktop": "service-page-1.png",
+                  "desktop2x": "service-page-1.png",
+                  "tablet": "service-page-1.png",
+                  "tablet2x": "service-page-1.png",
+                  "mobile": "service-page-1.png",
+                  "mobile2x": "service-page-1.png"
+                }
+              }
+            },
+            {
+              "id": 3,
+              "image": {
+                "alt": "Картинка услуги",
+                "images": {
+                  "desktop": "service-page-1.png",
+                  "desktop2x": "service-page-1.png",
+                  "tablet": "service-page-1.png",
+                  "tablet2x": "service-page-1.png",
+                  "mobile": "service-page-1.png",
+                  "mobile2x": "service-page-1.png"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "partners": {
+        "id": "partners",
+        "title": "Заказчики",
+        "list": [
+          {
+            "id": 1,
+            "icon": "sber.svg",
+            "href": null
+          },
+          {
+            "id": 2,
+            "icon": "t2.svg",
+            "href": null
+          },
+          {
+            "id": 3,
+            "icon": "mvideo.svg",
+            "href": null
+          },
+          {
+            "id": 4,
+            "icon": "akrihin.svg",
+            "href": null
+          },
+          {
+            "id": 5,
+            "icon": "gazprom.svg",
+            "href": null
+          },
+          {
+            "id": 6,
+            "icon": "nrb.svg",
+            "href": null
+          },
+          {
+            "id": 7,
+            "icon": "rosbank.svg",
+            "href": null
+          },
+          {
+            "id": 8,
+            "icon": "rostelekom.svg",
+            "href": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "communication-design",
+      "intro": {
+        "title": "Коммуникационный дизайн",
+        "description": "Коммуникационный дизайн — это не просто красивая картинка, а продуманная система визуальных сообщений. Мы разрабатываем фирменный стиль, упаковку, рекламные материалы и цифровые продукты, которые помогают брендам говорить с клиентами на одном языке"
+      },
+      "choice": {
+        "title": "Почему выбирают&nbsp;нас?",
+        "list": [
+          {
+            "id": 1,
+            "number": "01",
+            "title": "Проводим глубокий анализ целевой аудитории"
+          },
+          {
+            "id": 2,
+            "number": "02",
+            "title": "Работаем с любыми носителями: от печати до digital"
+          },
+          {
+            "id": 3,
+            "number": "03",
+            "title": "Упор на функциональность, а не только на эстетику"
+          },
+          {
+            "id": 4,
+            "number": "04",
+            "title": "Гибкие условия сотрудничества"
+          }
+        ]
+      },
+      "examples": {
+        "id": "examples",
+        "title": "Примеры работ",
+        "content": {
+          "title": "Сфера – приложение для торговых представителей",
+          "description": "Мы создали коммуникационные материалы для презентации приложения потенциальным заказчикам, а также разработали промоматериалы для выставок и мероприятий",
+          "slides": [
+            {
+              "id": 1,
+              "image": {
+                "alt": "Картинка услуги",
+                "images": {
+                  "desktop": "service-page-1.png",
+                  "desktop2x": "service-page-1.png",
+                  "tablet": "service-page-1.png",
+                  "tablet2x": "service-page-1.png",
+                  "mobile": "service-page-1.png",
+                  "mobile2x": "service-page-1.png"
+                }
+              }
+            },
+            {
+              "id": 2,
+              "image": {
+                "alt": "Картинка услуги",
+                "images": {
+                  "desktop": "service-page-1.png",
+                  "desktop2x": "service-page-1.png",
+                  "tablet": "service-page-1.png",
+                  "tablet2x": "service-page-1.png",
+                  "mobile": "service-page-1.png",
+                  "mobile2x": "service-page-1.png"
+                }
+              }
+            },
+            {
+              "id": 3,
+              "image": {
+                "alt": "Картинка услуги",
+                "images": {
+                  "desktop": "service-page-1.png",
+                  "desktop2x": "service-page-1.png",
+                  "tablet": "service-page-1.png",
+                  "tablet2x": "service-page-1.png",
+                  "mobile": "service-page-1.png",
+                  "mobile2x": "service-page-1.png"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "partners": {
+        "id": "partners",
+        "title": "Заказчики",
+        "list": [
+          {
+            "id": 1,
+            "icon": "sber.svg",
+            "href": null
+          },
+          {
+            "id": 2,
+            "icon": "t2.svg",
+            "href": null
+          },
+          {
+            "id": 3,
+            "icon": "mvideo.svg",
+            "href": null
+          },
+          {
+            "id": 4,
+            "icon": "akrihin.svg",
+            "href": null
+          },
+          {
+            "id": 5,
+            "icon": "gazprom.svg",
+            "href": null
+          },
+          {
+            "id": 6,
+            "icon": "nrb.svg",
+            "href": null
+          },
+          {
+            "id": 7,
+            "icon": "rosbank.svg",
+            "href": null
+          },
+          {
+            "id": 8,
+            "icon": "rostelekom.svg",
+            "href": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "ux-research",
+      "intro": {
+        "title": "UX-исследования",
+        "description": "Коммуникационный дизайн — это не просто красивая картинка, а продуманная система визуальных сообщений. Мы разрабатываем фирменный стиль, упаковку, рекламные материалы и цифровые продукты, которые помогают брендам говорить с клиентами на одном языке"
+      },
+      "choice": {
+        "title": "Почему выбирают&nbsp;нас?",
+        "list": [
+          {
+            "id": 1,
+            "number": "01",
+            "title": "Проводим глубокий анализ целевой аудитории"
+          },
+          {
+            "id": 2,
+            "number": "02",
+            "title": "Работаем с любыми носителями: от печати до digital"
+          },
+          {
+            "id": 3,
+            "number": "03",
+            "title": "Упор на функциональность, а не только на эстетику"
+          },
+          {
+            "id": 4,
+            "number": "04",
+            "title": "Гибкие условия сотрудничества"
+          }
+        ]
+      },
+      "examples": {
+        "id": "examples",
+        "title": "Примеры работ",
+        "content": {
+          "title": "Сфера – приложение для торговых представителей",
+          "description": "Мы создали коммуникационные материалы для презентации приложения потенциальным заказчикам, а также разработали промоматериалы для выставок и мероприятий",
+          "slides": [
+            {
+              "id": 1,
+              "image": {
+                "alt": "Картинка услуги",
+                "images": {
+                  "desktop": "service-page-1.png",
+                  "desktop2x": "service-page-1.png",
+                  "tablet": "service-page-1.png",
+                  "tablet2x": "service-page-1.png",
+                  "mobile": "service-page-1.png",
+                  "mobile2x": "service-page-1.png"
+                }
+              }
+            },
+            {
+              "id": 2,
+              "image": {
+                "alt": "Картинка услуги",
+                "images": {
+                  "desktop": "service-page-1.png",
+                  "desktop2x": "service-page-1.png",
+                  "tablet": "service-page-1.png",
+                  "tablet2x": "service-page-1.png",
+                  "mobile": "service-page-1.png",
+                  "mobile2x": "service-page-1.png"
+                }
+              }
+            },
+            {
+              "id": 3,
+              "image": {
+                "alt": "Картинка услуги",
+                "images": {
+                  "desktop": "service-page-1.png",
+                  "desktop2x": "service-page-1.png",
+                  "tablet": "service-page-1.png",
+                  "tablet2x": "service-page-1.png",
+                  "mobile": "service-page-1.png",
+                  "mobile2x": "service-page-1.png"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "partners": {
+        "id": "partners",
+        "title": "Заказчики",
+        "list": [
+          {
+            "id": 1,
+            "icon": "sber.svg",
+            "href": null
+          },
+          {
+            "id": 2,
+            "icon": "t2.svg",
+            "href": null
+          },
+          {
+            "id": 3,
+            "icon": "mvideo.svg",
+            "href": null
+          },
+          {
+            "id": 4,
+            "icon": "akrihin.svg",
+            "href": null
+          },
+          {
+            "id": 5,
+            "icon": "gazprom.svg",
+            "href": null
+          },
+          {
+            "id": 6,
+            "icon": "nrb.svg",
+            "href": null
+          },
+          {
+            "id": 7,
+            "icon": "rosbank.svg",
+            "href": null
+          },
+          {
+            "id": 8,
+            "icon": "rostelekom.svg",
+            "href": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "copywriting",
+      "intro": {
+        "title": "Копирайтинг и UX-райтинг",
+        "description": "Коммуникационный дизайн — это не просто красивая картинка, а продуманная система визуальных сообщений. Мы разрабатываем фирменный стиль, упаковку, рекламные материалы и цифровые продукты, которые помогают брендам говорить с клиентами на одном языке"
+      },
+      "choice": {
+        "title": "Почему выбирают&nbsp;нас?",
+        "list": [
+          {
+            "id": 1,
+            "number": "01",
+            "title": "Проводим глубокий анализ целевой аудитории"
+          },
+          {
+            "id": 2,
+            "number": "02",
+            "title": "Работаем с любыми носителями: от печати до digital"
+          },
+          {
+            "id": 3,
+            "number": "03",
+            "title": "Упор на функциональность, а не только на эстетику"
+          },
+          {
+            "id": 4,
+            "number": "04",
+            "title": "Гибкие условия сотрудничества"
+          }
+        ]
+      },
+      "examples": {
+        "id": "examples",
+        "title": "Примеры работ",
+        "content": {
+          "title": "Сфера – приложение для торговых представителей",
+          "description": "Мы создали коммуникационные материалы для презентации приложения потенциальным заказчикам, а также разработали промоматериалы для выставок и мероприятий",
+          "slides": [
+            {
+              "id": 1,
+              "image": {
+                "alt": "Картинка услуги",
+                "images": {
+                  "desktop": "service-page-1.png",
+                  "desktop2x": "service-page-1.png",
+                  "tablet": "service-page-1.png",
+                  "tablet2x": "service-page-1.png",
+                  "mobile": "service-page-1.png",
+                  "mobile2x": "service-page-1.png"
+                }
+              }
+            },
+            {
+              "id": 2,
+              "image": {
+                "alt": "Картинка услуги",
+                "images": {
+                  "desktop": "service-page-1.png",
+                  "desktop2x": "service-page-1.png",
+                  "tablet": "service-page-1.png",
+                  "tablet2x": "service-page-1.png",
+                  "mobile": "service-page-1.png",
+                  "mobile2x": "service-page-1.png"
+                }
+              }
+            },
+            {
+              "id": 3,
+              "image": {
+                "alt": "Картинка услуги",
+                "images": {
+                  "desktop": "service-page-1.png",
+                  "desktop2x": "service-page-1.png",
+                  "tablet": "service-page-1.png",
+                  "tablet2x": "service-page-1.png",
+                  "mobile": "service-page-1.png",
+                  "mobile2x": "service-page-1.png"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "partners": {
+        "id": "partners",
+        "title": "Заказчики",
+        "list": [
+          {
+            "id": 1,
+            "icon": "sber.svg",
+            "href": null
+          },
+          {
+            "id": 2,
+            "icon": "t2.svg",
+            "href": null
+          },
+          {
+            "id": 3,
+            "icon": "mvideo.svg",
+            "href": null
+          },
+          {
+            "id": 4,
+            "icon": "akrihin.svg",
+            "href": null
+          },
+          {
+            "id": 5,
+            "icon": "gazprom.svg",
+            "href": null
+          },
+          {
+            "id": 6,
+            "icon": "nrb.svg",
+            "href": null
+          },
+          {
+            "id": 7,
+            "icon": "rosbank.svg",
+            "href": null
+          },
+          {
+            "id": 8,
+            "icon": "rostelekom.svg",
+            "href": null
+          }
+        ]
+      }
+    }
+  ]
+}

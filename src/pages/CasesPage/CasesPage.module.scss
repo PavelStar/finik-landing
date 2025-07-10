@@ -1,0 +1,43 @@
+@use "../../styles/media" as *;
+@use "../../styles/colors" as *;
+
+.casesPage {
+  @include mediaTablet {
+  }
+
+  @include mediaMobile {
+  }
+}
+
+.section {
+  @include mediaTablet {
+  }
+
+  @include mediaMobile {
+  }
+}
+
+.cardWrap {
+  @include mediaTablet {
+    flex: auto;
+  }
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 72px 24px;
+
+  @include mediaLaptop {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include mediaTablet {
+    // grid-template-columns: 1fr 1fr;
+    gap: 40px 16px;
+  }
+
+  @include mediaMobile {
+    grid-template-columns: 1fr;
+  }
+}

@@ -8,6 +8,7 @@ import {
   VacancyPage,
   CasePage,
   ServicePage,
+  CasesPage,
 } from "./pages/index";
 import styles from "./App.module.scss";
 import { Form, Modal, ScrollToTop } from "./components/index";
@@ -46,6 +47,7 @@ function App() {
               path="/"
               element={<HomePage onModalOpen={handleModalOpen} />}
             />
+            <Route path="/cases" element={<CasesPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />
             <Route path="/articles" element={<ArticlesPage />} />
             <Route path="/career" element={<CareerPage />} />
@@ -55,7 +57,7 @@ function App() {
               element={<CasePage onModalOpen={handleModalOpen} />}
             />
             <Route
-              path="/services/:serviceId"
+              path="/:serviceId"
               element={<ServicePage onModalOpen={handleModalOpen} />}
             />
           </Routes>

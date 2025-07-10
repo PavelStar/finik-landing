@@ -2,10 +2,12 @@
 @use "@styles/colors" as *;
 
 .partners {
-  margin: 0;
-  padding: 48px 0;
-  width: 100%;
-  max-width: none;
+  &:not(.partnersTypeList) {
+    margin: 0;
+    padding: 48px 0;
+    width: 100%;
+    max-width: none;
+  }
 
   @include mediaTablet {
     padding: 24px 0;
@@ -50,5 +52,38 @@
   }
 
   @include mediaMobile {
+  }
+}
+
+.partnersTypeList {
+  .listStatic {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    max-width: 909px;
+    margin-left: auto;
+    row-gap: 64px;
+    column-gap: 96px;
+
+    @include mediaTablet {
+      row-gap: 32px;
+      column-gap: 48px;
+      // max-width: 524px;
+    }
+
+    @include mediaMobile {
+    }
+
+    li {
+      // margin-right: 96px;
+
+      svg {
+        width: max-content;
+
+        @include mediaTablet {
+          height: 24px;
+        }
+      }
+    }
   }
 }

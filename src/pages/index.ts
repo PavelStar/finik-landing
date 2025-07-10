@@ -5,3 +5,4 @@ export { default as CareerPage } from "./CareerPage/CareerPage";
 export { default as VacancyPage } from "./VacancyPage/VacancyPage";
 export { default as CasePage } from "./CasePage/CasePage";
 export { default as ServicePage } from "./ServicePage/ServicePage";
+export { default as CasesPage } from "./CasesPage/CasesPage";

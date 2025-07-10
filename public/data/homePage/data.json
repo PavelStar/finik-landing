@@ -143,7 +143,11 @@
           "Мобильные приложения",
           "Продуктовые каталоги",
           "Маркетплейсы"
-        ]
+        ],
+        "button": {
+          "text": "Подробнее",
+          "href": "product-design"
+        }
       },
       {
         "id": 2,
@@ -163,7 +167,11 @@
           "Оформление интерфейсов сайтов и приложений",
           "Создание промоматериалов",
           "Позиционирование и продвижение бренда визуальными средствами"
-        ]
+        ],
+        "button": {
+          "text": "Подробнее",
+          "href": "communication-design"
+        }
       },
       {
         "id": 3,
@@ -184,7 +192,11 @@
           "Организация и проведение исследований",
           "Подготовка подробных отчетов",
           "Доработка продукта по итогам исследования"
-        ]
+        ],
+        "button": {
+          "text": "Подробнее",
+          "href": "ux-research"
+        }
       },
       {
         "id": 4,
@@ -204,7 +216,11 @@
           "Создание и редактура текстов сервисов и интерфейсов",
           "Подготовка email-рассылок",
           "Разработка гайдов и редполитики"
-        ]
+        ],
+        "button": {
+          "text": "Подробнее",
+          "href": "copywriting"
+        }
       }
     ]
   },
@@ -323,61 +339,11 @@
             "mobile2x": "article2_mobile_2x.png"
           }
         }
-      },
-      {
-        "id": 3,
-        "href": "https://vc.ru/design/1293713-keis-slozhnye-interfeisy-dlya-promyshlennogo-oborudovaniya-i-dizain-sistema-za-7-mesyacev",
-        "date": "9 июля 2024",
-        "title": "Кейс: сложные интерфейсы для&nbsp;промышленного оборудования и&nbsp;дизайн-система за&nbsp;7&nbsp;месяцев",
-        "image": {
-          "alt": "Картинка статьи 3",
-          "images": {
-            "desktop": "article3.png",
-            "desktop2x": "article3_2x.png",
-            "tablet": "article3_tablet.png",
-            "tablet2x": "article3_tablet_2x.png",
-            "mobile": "article3_mobile.png",
-            "mobile2x": "article3_mobile_2x.png"
-          }
-        }
-      },
-      {
-        "id": 4,
-        "href": "https://netology.ru/blog/11-2022-inclusive-interface",
-        "date": "8 ноября 2022",
-        "title": "Как сделать интерфейс доступным для людей с&nbsp;ограниченными возможностями здоровья",
-        "image": {
-          "alt": "Картинка статьи 4",
-          "images": {
-            "desktop": "article4.png",
-            "desktop2x": "article4_2x.png",
-            "tablet": "article4_tablet.png",
-            "tablet2x": "article4_tablet_2x.png",
-            "mobile": "article4_mobile.png",
-            "mobile2x": "article4_mobile_2x.png"
-          }
-        }
       }
-    ]
-  },
-  "contacts": {
-    "id": "contacts",
-    "title": "Контакты",
-    "content": {
-      "title": "Давайте сотрудничать!",
-      "description": "Свяжитесь с нами любым удобным способом",
-      "list": [
-        {
-          "id": 1,
-          "type": "mail",
-          "text": "hello@finik-lab.ru"
-        },
-        {
-          "id": 2,
-          "type": "phone",
-          "text": "+7 (495) 988-37-38"
-        }
-      ]
+    ],
+    "button": {
+      "text": "Посмотреть все статьи",
+      "href": "articles"
     }
   },
   "career": {
@@ -455,6 +421,10 @@
       "description": {
         "text": "Присылайте резюме на",
         "link": "hello@finik-lab.ru"
+      },
+      "button": {
+        "text": "посмотреть все вакансии",
+        "href": "career"
       }
     }
   }

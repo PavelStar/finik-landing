@@ -5,7 +5,7 @@ import type { ISteps } from "../../types/types";
 
 const Steps: FC<ISteps> = ({ id, title, list }) => {
   return (
-    <Section className={styles.steps} theme="dark" id={id}>
+    <Section className={styles.steps} theme="transparent" id={id}>
       <SectionGrid
         contentClassName={styles.content}
         titleWrapClassName={styles.titleWrap}

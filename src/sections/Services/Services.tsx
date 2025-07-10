@@ -5,6 +5,7 @@ import {
   Title,
   Section,
   SectionGrid,
+  Button,
 } from "../../components/index";
 import classNames from "classnames/bind";
 import styles from "./Services.module.scss";
@@ -12,6 +13,7 @@ import styles from "./Services.module.scss";
 import { BREAKPOINTS } from "../../constants/breakpoints";
 import { useMediaQuery } from "react-responsive";
 import type { IServices } from "../../types/types";
+import { Link } from "react-router-dom";
 
 const cx = classNames.bind(styles);
 
@@ -29,7 +31,9 @@ const Services: FC<IServicesProps & IServices> = ({ id, title, list }) => {
           {list.map((service) => {
             return (
               <li className={cx(styles.item)} key={service.id}>
-                {!isTablet && <Picture {...service.image} />}
+                {!isTablet && (
+                  <Picture className={cx(styles.picture)} {...service.image} />
+                )}
                 <div className={cx(styles.textWrap)}>
                   <Title className={cx(styles.title)} size="L" level={3}>
                     {service.title}
@@ -43,6 +47,13 @@ const Services: FC<IServicesProps & IServices> = ({ id, title, list }) => {
                       );
                     })}
                   </ul>
+                  {service.button && (
+                    <Link to={`/${service.button.href}`}>
+                      <Button className={styles.button}>
+                        {service.button.text}
+                      </Button>
+                    </Link>
+                  )}
                 </div>
               </li>
             );

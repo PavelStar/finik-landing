@@ -1,42 +1,22 @@
-import { Section, Title, Paragraph } from "../../components/index";
+import { Section, Paragraph } from "../../components/index";
 import styles from "./Privacy.module.scss";
-import { privacyData } from "../../constants/privacy";
+// import { privacyData } from "../../constants/privacy";
+import type { FC } from "react";
 
-const Privacy = () => {
+interface IPrivacyProps {
+  intro: string;
+  list: Array<string>;
+}
+
+const Privacy: FC<IPrivacyProps> = ({ intro, list }) => {
   return (
     <Section className={styles.privacy} theme="transparent">
+      <Paragraph>{intro}</Paragraph>
       <ul className={styles.privacyList}>
-        {privacyData.map((privacyItem) => {
+        {list.map((privacyItem) => {
           return (
-            <li className={styles.privacyListItem} key={privacyItem.id}>
-              <Title level={3} size="L">
-                {privacyItem.title}
-              </Title>
-              <ul>
-                {privacyItem.list.map((listItem, index) => {
-                  if (typeof listItem === "string") {
-                    return (
-                      <li key={index}>
-                        <Paragraph tag="span">{listItem}</Paragraph>
-                      </li>
-                    );
-                  }
-
-                  return (
-                    <li key={index}>
-                      <ul>
-                        {listItem.list?.map((item, index) => {
-                          return (
-                            <li key={index}>
-                              <Paragraph tag="span">{item}</Paragraph>
-                            </li>
-                          );
-                        })}
-                      </ul>
-                    </li>
-                  );
-                })}
-              </ul>
+            <li className={styles.privacyListItem} key={privacyItem}>
+              <Paragraph tag="span" text={privacyItem} />
             </li>
           );
         })}

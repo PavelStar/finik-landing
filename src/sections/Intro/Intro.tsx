@@ -22,6 +22,7 @@ const Intro: FC<IIntroProps> = ({ title, description, button, className }) => {
   const routes = [
     { path: "/", breadcrumb: "Главная" },
     { path: "/privacy", breadcrumb: "Политика конфиденциальности" },
+    { path: "/career", breadcrumb: "Карьера" },
   ];
 
   const breadcrumbs = useBreadcrumbs(routes);
@@ -48,7 +49,8 @@ const Intro: FC<IIntroProps> = ({ title, description, button, className }) => {
                 )}
                 {isLast ? (
                   <Paragraph tag="span" size="S">
-                    {breadcrumb}
+                    {/* {breadcrumb} */}
+                    {title}
                   </Paragraph>
                 ) : (
                   <Link to={match.pathname}>

@@ -13,12 +13,21 @@ export interface IPicture {
 export interface IButton {
   text: string;
   scrollId?: string;
+  href?: string;
 }
 
 export interface IArticles {
-  sectionId: string;
-  sectionTitle: string;
-  list: [];
+  intro: IIntro;
+  list: Array<IArticle>;
+  button?: IButton;
+}
+
+export interface IArticle {
+  id: number;
+  href: string;
+  date: string;
+  title: string;
+  image: IPicture;
 }
 
 export interface IIntro {
@@ -26,6 +35,18 @@ export interface IIntro {
   title?: string;
   description?: string;
   button?: IButton;
+}
+
+export interface ICasesPage {
+  intro: IIntro;
+  list: Array<ICasesPageItem>;
+}
+
+export interface ICasesPageItem {
+  id: number;
+  title?: string;
+  description: string;
+  image: IPicture;
 }
 
 export interface ICases {
@@ -39,6 +60,53 @@ export interface ICase {
   image: IPicture;
 }
 
+export interface ICasePage {
+  list: Array<ICasePageItem>;
+}
+
+export interface ICasePageItem {
+  id: number;
+  intro: IIntro;
+  cover: {
+    id: number;
+    title: string;
+    image: IPicture;
+  };
+  mainInfo: {
+    title: string;
+    list: Array<{
+      id: number;
+      title: string;
+      description: string;
+    }>;
+  };
+  details: {
+    id?: string;
+    title: string;
+    list: Array<{
+      id: number;
+      title: string;
+      description?: string;
+      list: Array<string>;
+    }>;
+  };
+  results: {
+    id: string;
+    list: Array<{
+      title: string;
+      content: {
+        title: string;
+        description: string;
+        slides: Array<ISlide>;
+      };
+    }>;
+  };
+  metrics: {
+    id: string;
+    list: Array<IStep>;
+  };
+}
+
 export interface IServices {
   id?: string;
   title: string;
@@ -50,10 +118,12 @@ export interface IService {
   title: string;
   image: IPicture;
   list: Array<string>;
+  button?: IButton;
 }
 
 export interface IPartners {
   id: string;
+  title?: string;
   list: Array<IPartner>;
 }
 
@@ -102,6 +172,16 @@ export interface Icontact {
   text: string;
 }
 
+export interface IAdvantages {
+  id: string;
+  title: string;
+  list: Array<{
+    id: number;
+    title: string;
+    description: string;
+  }>;
+}
+
 export interface ICareer {
   id: string;
   title: string;
@@ -112,10 +192,11 @@ export interface ICareer {
       text: string;
       link: string;
     };
+    button?: IButton;
   };
 }
 
-interface ICareerItem {
+export interface ICareerItem {
   id: number;
   title: string;
   content: {
@@ -128,5 +209,50 @@ interface ICareerItem {
       items: Array<string>;
     }>;
     outro: string;
+  };
+}
+
+export interface IExamples {
+  id: string;
+  title: string;
+  content: {
+    title: string;
+    description: string;
+    slides: Array<ISlide>;
+  };
+}
+
+export interface ISlide {
+  id: number;
+  image: IPicture;
+}
+
+export interface IVacancyPage {
+  list: Array<IVacancyItem>;
+}
+
+export interface IVacancyItem {
+  id: number;
+  title: string;
+  content: IVacancyContent;
+}
+
+export interface IVacancyContent {
+  description: {
+    title: string;
+    text: string;
+  };
+  lists: Array<{
+    title: string;
+    items: Array<string>;
+  }>;
+  outro: string;
+}
+
+export interface IPrivacyPage {
+  intro: IIntro;
+  content: {
+    intro: string;
+    list: Array<string>;
   };
 }

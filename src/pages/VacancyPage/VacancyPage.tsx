@@ -1,32 +1,43 @@
-import { type FC } from "react";
-import {
-  Section,
-  Title,
-  Paragraph,
-  SectionGrid,
-  Button,
-} from "../../components/index";
+import { useEffect, useState, type FC } from "react";
+import { Section, Title, Paragraph, SectionGrid } from "../../components/index";
 import classNames from "classnames/bind";
 import styles from "./VacancyPage.module.scss";
 import { Intro } from "../../sections/index";
-import { careerItems } from "../../constants/career";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import type { IVacancyPage } from "../../types/types";
+import { URL_PREFIX } from "../../constants/url";
 
 const cx = classNames.bind(styles);
 
-interface IVacancyPage {
+interface IVacancyPageProps {
   id?: string;
 }
 
-const VacancyPage: FC<IVacancyPage> = ({ id }) => {
-  const navigate = useNavigate();
+const VacancyPage: FC<IVacancyPageProps> = ({ id }) => {
   const params = useParams();
   const jobId = params.jobId;
 
-  const vacancy = careerItems.find((item) => item.id === Number(jobId));
+  const [data, setData] = useState<IVacancyPage | null>(null);
+
+  useEffect(() => {
+    fetch(`${URL_PREFIX}/vacancyPage/data.json`)
+      .then((res) => {
+        return res.json();
+      })
+      .then(setData)
+      .catch(console.error);
+  }, []);
+
+  if (!data) return;
+
+  const vacancy = data.list.find((item) => item.id === Number(jobId));
+
+  if (!vacancy) {
+    return null;
+  }
 
   return (
-    <Section className={cx(styles.vacancyPage)} id={id}>
+    <Section className={cx(styles.vacancyPage)} theme="transparent" id={id}>
       <Intro title={vacancy?.title || ""} />
       <SectionGrid title="Карьера" titleWrapClassName={styles.gridTitle}>
         {vacancy && (
@@ -47,7 +58,7 @@ const VacancyPage: FC<IVacancyPage> = ({ id }) => {
                     <ul className={styles.itemList}>
                       {item.items.map((item) => {
                         return (
-                          <li className={styles.itemListItem}>
+                          <li key={item} className={styles.itemListItem}>
                             <Paragraph>{item}</Paragraph>
                           </li>
                         );
@@ -64,13 +75,6 @@ const VacancyPage: FC<IVacancyPage> = ({ id }) => {
             )}
           </div>
         )}
-        <Button
-          onClick={() => {
-            navigate(-1);
-          }}
-        >
-          Назад к вакансиям
-        </Button>
       </SectionGrid>
     </Section>
   );

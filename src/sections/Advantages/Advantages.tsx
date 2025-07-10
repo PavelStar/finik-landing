@@ -2,25 +2,29 @@ import type { FC } from "react";
 import { Section, SectionGrid, Title, Paragraph } from "../../components/index";
 import classNames from "classnames/bind";
 import styles from "./Advantages.module.scss";
-import { advantages } from "../../constants/advantages";
+import type { IAdvantages } from "../../types/types";
 
 const cx = classNames.bind(styles);
 
-interface IAdvantages {
+interface IAdvantagesProps {
   id?: string;
 }
 
-const Advantages: FC<IAdvantages> = ({ id }) => {
+const Advantages: FC<IAdvantagesProps & IAdvantages> = ({
+  id,
+  title,
+  list,
+}) => {
   return (
-    <Section className={cx(styles.advantages)} theme="dark" id={id}>
+    <Section className={cx(styles.advantages)} theme="transparent" id={id}>
       <SectionGrid
         className={cx(styles.grid)}
         contentClassName={styles.content}
         titleWrapClassName={styles.titleWrap}
-        title="Почему мы?"
+        title={title}
       >
         <ul className={styles.inner}>
-          {advantages.map((card) => {
+          {list.map((card) => {
             return (
               <li key={card.id} className={styles.cardWrap}>
                 <Title

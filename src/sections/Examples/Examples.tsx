@@ -10,15 +10,16 @@ import {
 import classNames from "classnames/bind";
 import styles from "./Examples.module.scss";
 import Marquee from "react-fast-marquee";
-import { slides } from "../../constants/services";
+import type { IExamples } from "../../types/types";
+// import { slides } from "../../constants/services";
 
 const cx = classNames.bind(styles);
 
-interface IExamples {
+interface IExamplesProps {
   id?: string;
 }
 
-const Examples: FC<IExamples> = ({ id }) => {
+const Examples: FC<IExamplesProps & IExamples> = ({ id, title, content }) => {
   return (
     <Section className={cx(styles.examples)} fullWidth theme="dark" id={id}>
       <Container>
@@ -26,17 +27,11 @@ const Examples: FC<IExamples> = ({ id }) => {
           className={cx(styles.grid)}
           contentClassName={styles.content}
           titleWrapClassName={styles.titleWrap}
-          title="Экраны"
+          title={title}
         >
           <div className={styles.textInner}>
-            <Title level={2} size="L">
-              Сфера – приложение для торговых представителей
-            </Title>
-            <Paragraph>
-              Мы создали коммуникационные материалы для презентации приложения
-              потенциальным заказчикам, а также разработали промоматериалы для
-              выставок и мероприятий
-            </Paragraph>
+            <Title level={2} size="L" text={content.title} />
+            <Paragraph text={content.description} />
           </div>
         </SectionGrid>
       </Container>
@@ -48,7 +43,7 @@ const Examples: FC<IExamples> = ({ id }) => {
         autoFill={true}
       >
         <ul className={cx(styles.list)}>
-          {slides.map((slide) => {
+          {content.slides.map((slide) => {
             return (
               <li key={slide.id}>
                 <Picture {...slide.image} />

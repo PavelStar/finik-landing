@@ -1,0 +1,20 @@
+{
+  "id": "contacts",
+  "title": "Контакты",
+  "content": {
+    "title": "Давайте сотрудничать!",
+    "description": "Свяжитесь с нами любым удобным способом",
+    "list": [
+      {
+        "id": 1,
+        "type": "mail",
+        "text": "hello@finik-lab.ru"
+      },
+      {
+        "id": 2,
+        "type": "phone",
+        "text": "+7 (495) 988-37-38"
+      }
+    ]
+  }
+}

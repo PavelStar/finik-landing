@@ -5,24 +5,25 @@ import styles from "./Details.module.scss";
 
 const cx = classNames.bind(styles);
 
-interface IDetails {
+interface IDetailsProps {
   id?: string;
+  title: string;
   list: Array<{
-    id: number | string;
+    id: number;
     title: string;
     description?: string;
-    list?: Array<string>;
+    list: Array<string>;
   }>;
 }
 
-const Details: FC<IDetails> = ({ id, list }) => {
+const Details: FC<IDetailsProps> = ({ id, title, list }) => {
   return (
     <Section className={cx(styles.details)} id={id}>
       <SectionGrid
         className={cx(styles.grid)}
         contentClassName={styles.content}
         titleWrapClassName={styles.titleWrap}
-        title="Детали проекта"
+        title={title}
       >
         <ul className={styles.inner}>
           {list.map((card) => {

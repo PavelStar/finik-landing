@@ -1,30 +1,47 @@
-import { type FC } from "react";
+import { useEffect, useState, type FC } from "react";
 import { Container, Picture } from "../../components/index";
 import classNames from "classnames/bind";
 import styles from "./CasePage.module.scss";
 import {
   Intro,
-  Contacts,
+  // Contacts,
   MainInfo,
   Details,
-  Steps,
+  // Steps,
   Results,
 } from "../../sections/index";
 import { useParams } from "react-router-dom";
-import { casesData } from "../../constants/cases";
+import type { ICasePage } from "../../types/types";
+import { URL_PREFIX } from "../../constants/url";
 
 const cx = classNames.bind(styles);
 
-interface ICasePage {
+interface ICasePageProps {
   id?: string;
   onModalOpen: () => void;
 }
 
-const CasePage: FC<ICasePage> = ({ id, onModalOpen }) => {
+const CasePage: FC<ICasePageProps> = ({
+  id,
+  // onModalOpen
+}) => {
   const params = useParams();
   const caseId = params.caseId;
 
-  const currentCase = casesData.find((item) => item.id === Number(caseId));
+  const [data, setData] = useState<ICasePage | null>(null);
+
+  useEffect(() => {
+    fetch(`${URL_PREFIX}/casePage/data.json`)
+      .then((res) => {
+        return res.json();
+      })
+      .then(setData)
+      .catch(console.error);
+  }, []);
+
+  if (!data) return;
+
+  const currentCase = data.list.find((item) => item.id === Number(caseId));
 
   if (!currentCase) {
     return null;
@@ -33,25 +50,19 @@ const CasePage: FC<ICasePage> = ({ id, onModalOpen }) => {
   return (
     <>
       <div className={cx(styles.casePage)} id={id}>
-        <Intro
-          title={currentCase.casePageData.intro.title}
-          description={currentCase.casePageData.intro.description}
-        />
+        <Intro {...currentCase.intro} />
         <Container>
-          <Picture {...currentCase.casePageData.image} />
+          <Picture {...currentCase.cover.image} />
         </Container>
-        <MainInfo
-          title="Основная информация"
-          list={currentCase.casePageData.mainInfo.list}
-        />
-        <Details list={currentCase.casePageData.details.list} />
-        <Results />
-        <Steps
+        <MainInfo {...currentCase.mainInfo} />
+        <Details {...currentCase.details} />
+        <Results {...currentCase.results} />
+        {/* <Steps
           title="Результаты и метрики"
           list={currentCase.casePageData.metrics.list}
-        />
+        /> */}
       </div>
-      <Contacts onClick={onModalOpen} />
+      {/* <Contacts onClick={onModalOpen} /> */}
     </>
   );
 };

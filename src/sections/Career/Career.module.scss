@@ -88,13 +88,21 @@
 .contacts {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  // gap: 16px;
   max-width: 909px;
   width: 100%;
   margin-left: auto;
 
   @include mediaTablet {
-    gap: 8px;
+    // gap: 8px;
+  }
+}
+
+.contactsTitle {
+  margin-bottom: 16px;
+
+  @include mediaTablet {
+    margin-bottom: 8px;
   }
 }
 
@@ -115,6 +123,10 @@
   @include mediaMobile {
   }
 
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+
   .icon {
     color: $black;
 
@@ -132,4 +144,15 @@
   width: 100%;
   max-width: 909px;
   gap: 24px;
+}
+
+.outroButton {
+  margin-top: 32px;
+
+  @include mediaTablet {
+    margin-top: 24px;
+  }
+
+  @include mediaMobile {
+  }
 }

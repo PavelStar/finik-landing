@@ -37,10 +37,12 @@
     gap: 32px;
   }
 
-  picture {
+  .picture {
     max-width: 210px;
+    height: 100%;
 
     img {
+      height: 100%;
     }
   }
 }
@@ -48,10 +50,18 @@
 .textWrap {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  // gap: 16px;
 
   @include mediaTablet {
-    gap: 8px;
+    // gap: 8px;
+  }
+}
+
+.title {
+  margin-bottom: 16px;
+
+  @include mediaTablet {
+    margin-bottom: 8px;
   }
 }
 
@@ -79,5 +89,13 @@
       left: 8px;
       top: 8px;
     }
+  }
+}
+
+.button {
+  margin-top: 32px;
+
+  @include mediaTablet {
+    margin-top: 24px;
   }
 }

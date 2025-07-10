@@ -6,11 +6,12 @@ import {
   Title,
   Section,
   SectionGrid,
+  Button,
   // Button,
 } from "../../components/index";
 import classNames from "classnames/bind";
 import styles from "./Career.module.scss";
-import { Link as RouterLink } from "react-router-dom";
+import { Link as RouterLink, useLocation } from "react-router-dom";
 import ArrowIcon from "../../assets/arrow-icon.svg?react";
 import type { ICareer } from "../../types/types";
 
@@ -27,6 +28,7 @@ const Career: FC<ICareerProps & ICareer> = ({
   list,
   outro,
 }) => {
+  const { pathname } = useLocation();
   const [openItems, setOpenItems] = useState<Array<string>>([]);
 
   return (
@@ -38,7 +40,11 @@ const Career: FC<ICareerProps & ICareer> = ({
               return (
                 <li key={career.id}>
                   <RouterLink
-                    to={`${career.id}`}
+                    to={
+                      pathname.includes("career")
+                        ? `${career.id}`
+                        : `career/${career.id}`
+                    }
                     className={cx(styles.itemLink)}
                   >
                     <Title size="L" color="light" level={3}>
@@ -113,13 +119,24 @@ const Career: FC<ICareerProps & ICareer> = ({
 
         {outro && (
           <div className={cx(styles.contacts)}>
-            <Paragraph size="L" weight="medium">
+            <Paragraph
+              className={cx(styles.contactsTitle)}
+              size="L"
+              weight="medium"
+            >
               {outro.title}
             </Paragraph>
             <Paragraph>
               {outro.title}{" "}
               <Link textDecoration="underline">{outro.description.link}</Link>
             </Paragraph>
+            {outro.button && (
+              <RouterLink to={outro.button.href || ""}>
+                <Button className={styles.outroButton}>
+                  {outro.button.text}
+                </Button>
+              </RouterLink>
+            )}
           </div>
         )}
       </SectionGrid>

@@ -1,0 +1,71 @@
+{
+  "intro": {
+    "title": "Кейсы"
+  },
+  "list": [
+    {
+      "id": 1,
+      "title": "Сбер",
+      "description": "Коротко о главном: как мы помогли [клиенту] решить [проблему] и добиться [результата]",
+      "image": {
+        "alt": "Сбер",
+        "images": {
+          "desktop": "cases-page-sber.png",
+          "desktop2x": "cases-page-sber.png",
+          "tablet": "cases-page-sber-tablet.png",
+          "tablet2x": "cases-page-sber-tablet.png",
+          "mobile": "cases-page-sber-tablet.png",
+          "mobile2x": "cases-page-sber-tablet.png"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "title": "Т2",
+      "description": "Коротко о главном: как мы помогли [клиенту] решить [проблему] и добиться [результата]",
+      "image": {
+        "alt": "Т2 логотип",
+        "images": {
+          "desktop": "cases-page-t2.png",
+          "desktop2x": "cases-page-t2.png",
+          "tablet": "cases-page-t2-tablet.png",
+          "tablet2x": "cases-page-t2-tablet.png",
+          "mobile": "cases-page-t2-tablet.png",
+          "mobile2x": "cases-page-t2-tablet.png"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "title": "Сбер Бизнес",
+      "description": "Коротко о главном: как мы помогли [клиенту] решить [проблему] и добиться [результата]",
+      "image": {
+        "alt": "Сбер Бизнес логотип",
+        "images": {
+          "desktop": "cases-page-sber-business.png",
+          "desktop2x": "cases-page-sber-business.png",
+          "tablet": "cases-page-sber-business-tablet.png",
+          "tablet2x": "cases-page-sber-business-tablet.png",
+          "mobile": "cases-page-sber-business-tablet.png",
+          "mobile2x": "cases-page-sber-business-tablet.png"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "title": "rostelekom",
+      "description": "Коротко о главном: как мы помогли [клиенту] решить [проблему] и добиться [результата]",
+      "image": {
+        "alt": "rostelekom лого",
+        "images": {
+          "desktop": "cases-page-rostelekom.png",
+          "desktop2x": "cases-page-rostelekom.png",
+          "tablet": "cases-page-rostelekom-tablet.png",
+          "tablet2x": "cases-page-rostelekom-tablet.png",
+          "mobile": "cases-page-rostelekom-tablet.png",
+          "mobile2x": "cases-page-rostelekom-tablet.png"
+        }
+      }
+    }
+  ]
+}

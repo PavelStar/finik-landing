@@ -9,20 +9,18 @@ import {
   Career,
   Articles,
 } from "../../sections/index";
-import { ANCHORS } from "../../constants/anchors";
 import { useEffect, useState, type FC } from "react";
 import type {
   IAbout,
   IArticles,
   ICareer,
   ICases,
-  IContacts,
   IIntro,
   IPartners,
   IServices,
   ISteps,
 } from "../../types/types";
-// import { scrollToSection } from "../../utils/scroll";
+import { URL_PREFIX } from "../../constants/url";
 
 interface IHomePage {
   onModalOpen: () => void;
@@ -36,7 +34,6 @@ interface IHomePageData {
   about: IAbout;
   howWeWork: ISteps;
   articles: IArticles;
-  contacts: IContacts;
   career: ICareer;
 }
 
@@ -44,8 +41,7 @@ const HomePage: FC<IHomePage> = ({ onModalOpen }) => {
   const [data, setData] = useState<IHomePageData | null>(null);
 
   useEffect(() => {
-    fetch(`/finik-landing/data/homePage/data.json`)
-      // fetch(`/new/data/homePage/data.json`)
+    fetch(`${URL_PREFIX}/homePage/data.json`)
       .then((res) => {
         return res.json();
       })
@@ -64,8 +60,8 @@ const HomePage: FC<IHomePage> = ({ onModalOpen }) => {
       <About {...data.about} />
       <Steps {...data.howWeWork} />
       <Articles {...data.articles} />
-      <Contacts {...data.contacts} onClick={onModalOpen} />
-      <Career {...data.career} />
+      <Contacts onClick={onModalOpen} />
+      <Career {...data.career} itemsType="link" />
     </>
   );
 };
