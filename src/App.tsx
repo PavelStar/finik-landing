@@ -1,4 +1,9 @@
-import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
+import {
+  // BrowserRouter,
+  Routes,
+  Route,
+  HashRouter,
+} from "react-router-dom";
 import { Header, Footer } from "./sections/index";
 import {
   HomePage,
@@ -13,7 +18,7 @@ import {
 import styles from "./App.module.scss";
 import { Form, Modal, ScrollToTop } from "./components/index";
 import { useState } from "react";
-import { PATH_PREFIX } from "./constants/url";
+// import { PATH_PREFIX } from "./constants/url";
 
 function App() {
   console.log("finik version 1.0.2");
