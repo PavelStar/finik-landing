@@ -17,7 +17,7 @@ interface ICareerPage {
   career: ICareer;
 }
 
-const CareerPage: FC<ICareerPageProps> = ({ id }) => {
+const CareerPage: FC<ICareerPageProps> = () => {
   const [data, setData] = useState<ICareerPage | null>(null);
 
   useEffect(() => {
