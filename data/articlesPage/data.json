@@ -1,6 +1,6 @@
 {
   "intro": {
-    "title": "мы в сми"
+    "title": "Мы в СМИ"
   },
   "list": [
     {
@@ -11,12 +11,12 @@
       "image": {
         "alt": "Сбер",
         "images": {
-          "desktop": "article1.png",
-          "desktop2x": "article1_2x.png",
-          "tablet": "article1_tablet.png",
-          "tablet2x": "article1_tablet_2x.png",
-          "mobile": "article1_mobile.png",
-          "mobile2x": "article1_mobile_2x.png"
+          "desktop": "articles-page-1.png",
+          "desktop2x": "articles-page-1.png",
+          "tablet": "articles-page-1-tablet.png",
+          "tablet2x": "articles-page-1-tablet.png",
+          "mobile": "articles-page-1-tablet.png",
+          "mobile2x": "articles-page-1-tablet.png"
         }
       }
     },
@@ -26,12 +26,12 @@
       "image": {
         "alt": "Сбер",
         "images": {
-          "desktop": "article2.png",
-          "desktop2x": "article2_2x.png",
-          "tablet": "article2_tablet.png",
-          "tablet2x": "article2_tablet_2x.png",
-          "mobile": "article2_mobile.png",
-          "mobile2x": "article2_mobile_2x.png"
+          "desktop": "articles-page-2.png",
+          "desktop2x": "articles-page-2.png",
+          "tablet": "articles-page-2-tablet.png",
+          "tablet2x": "articles-page-2-tablet.png",
+          "mobile": "articles-page-2-tablet.png",
+          "mobile2x": "articles-page-2-tablet.png"
         }
       },
       "date": "10 октября 2024",
@@ -43,12 +43,12 @@
       "image": {
         "alt": "Сбер",
         "images": {
-          "desktop": "article3.png",
-          "desktop2x": "article3_2x.png",
-          "tablet": "article3_tablet.png",
-          "tablet2x": "article3_tablet_2x.png",
-          "mobile": "article3_mobile.png",
-          "mobile2x": "article3_mobile_2x.png"
+          "desktop": "articles-page-3.png",
+          "desktop2x": "articles-page-3.png",
+          "tablet": "articles-page-3-tablet.png",
+          "tablet2x": "articles-page-3-tablet.png",
+          "mobile": "articles-page-3-tablet.png",
+          "mobile2x": "articles-page-3-tablet.png"
         }
       },
       "date": "9 июля 2024",
@@ -60,12 +60,12 @@
       "image": {
         "alt": "Сбер",
         "images": {
-          "desktop": "article4.png",
-          "desktop2x": "article4_2x.png",
-          "tablet": "article4_tablet.png",
-          "tablet2x": "article4_tablet_2x.png",
-          "mobile": "article4_mobile.png",
-          "mobile2x": "article4_mobile_2x.png"
+          "desktop": "articles-page-4.png",
+          "desktop2x": "articles-page-4.png",
+          "tablet": "articles-page-4-tablet.png",
+          "tablet2x": "articles-page-4-tablet.png",
+          "mobile": "articles-page-4-tablet.png",
+          "mobile2x": "articles-page-4-tablet.png"
         }
       },
       "date": "8 ноября 2022",
