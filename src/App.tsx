@@ -1,8 +1,8 @@
 import {
-  // BrowserRouter,
+  BrowserRouter,
   Routes,
   Route,
-  HashRouter,
+  // HashRouter,
 } from "react-router-dom";
 import { Header, Footer } from "./sections/index";
 import {
@@ -18,7 +18,7 @@ import {
 import styles from "./App.module.scss";
 import { Form, Modal, ScrollToTop } from "./components/index";
 import { useState } from "react";
-// import { PATH_PREFIX } from "./constants/url";
+import { PATH_PREFIX } from "./constants/url";
 
 function App() {
   console.log("finik version 1.0.3");
@@ -35,8 +35,8 @@ function App() {
 
   return (
     <div className={styles.app}>
-      <HashRouter>
-        {/* <BrowserRouter basename={PATH_PREFIX}> */}
+      {/* <HashRouter> */}
+      <BrowserRouter basename={PATH_PREFIX}>
         <ScrollToTop />
         <Header />
         <Modal
@@ -70,8 +70,8 @@ function App() {
         </div>
 
         <Footer />
-        {/* </BrowserRouter> */}
-      </HashRouter>
+      </BrowserRouter>
+      {/* </HashRouter> */}
     </div>
   );
 }
