@@ -83,6 +83,12 @@
   @include mediaTablet {
     margin-bottom: 48px;
   }
+
+  &Links {
+    width: 100%;
+    max-width: 909px;
+    align-self: end;
+  }
 }
 
 .contacts {
@@ -120,7 +126,9 @@
   border-radius: 48px;
   background-color: $white;
 
-  @include mediaMobile {
+  @include mediaTablet {
+    width: 48px;
+    height: 48px;
   }
 
   &:hover {
@@ -148,6 +156,7 @@
 
 .outroButton {
   margin-top: 32px;
+  // width: 100% !important;
 
   @include mediaTablet {
     margin-top: 24px;

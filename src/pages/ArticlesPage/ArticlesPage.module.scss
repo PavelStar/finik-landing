@@ -9,8 +9,23 @@
   }
 }
 
-.section {
+.intro {
+  padding-top: 196px;
+
   @include mediaTablet {
+    padding-top: 118px;
+  }
+
+  @include mediaMobile {
+    padding-top: 110px;
+  }
+}
+
+.section {
+  padding-top: 64px;
+
+  @include mediaTablet {
+    padding-top: 32px;
   }
 
   @include mediaMobile {
@@ -39,5 +54,6 @@
 
   @include mediaMobile {
     grid-template-columns: 1fr;
+    gap: 32px 16px;
   }
 }

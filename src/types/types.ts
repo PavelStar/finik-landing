@@ -235,6 +235,7 @@ export interface ISlide {
 }
 
 export interface IVacancyPage {
+  title: string;
   list: Array<IVacancyItem>;
 }
 
@@ -253,7 +254,10 @@ export interface IVacancyContent {
     title: string;
     items: Array<string>;
   }>;
-  outro: string;
+  outro?: {
+    text: string;
+    link: string;
+  };
 }
 
 export interface IPrivacyPage {

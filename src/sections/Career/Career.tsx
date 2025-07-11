@@ -33,7 +33,7 @@ const Career: FC<ICareerProps & ICareer> = ({
   return (
     <Section className={cx(styles.career)} theme="dark" id={id}>
       <SectionGrid titleWrapClassName={styles.titleWrap} title={title}>
-        <ul className={cx(styles.items)}>
+        <ul className={cx(styles.items, styles.itemsLinks)}>
           {list.map((career) => {
             if (itemsType === "link") {
               return (
@@ -126,7 +126,7 @@ const Career: FC<ICareerProps & ICareer> = ({
               {outro.title}
             </Paragraph>
             <Paragraph>
-              {outro.title}{" "}
+              {outro.description.text}{" "}
               <Link textDecoration="underline">{outro.description.link}</Link>
             </Paragraph>
             {outro.button && (

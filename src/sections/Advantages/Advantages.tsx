@@ -32,12 +32,14 @@ const Advantages: FC<IAdvantagesProps & IAdvantages> = ({
                   color="light"
                   size="L"
                   weight="medium"
-                >
-                  {card.title}
-                </Title>
-                <Paragraph className={styles.sescription} color="light">
-                  {card.description}
-                </Paragraph>
+                  text={card.title}
+                />
+
+                <Paragraph
+                  className={styles.sescription}
+                  color="light"
+                  text={card.description}
+                />
               </li>
             );
           })}

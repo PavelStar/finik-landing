@@ -21,7 +21,7 @@ const ArticlesPage = () => {
 
   return (
     <div className={styles.articlesPage}>
-      <Intro {...data.intro} />
+      <Intro className={styles.intro} {...data.intro} />
       <Section className={styles.section} theme="transparent">
         <ul className={styles.list}>
           {data.list.map((article) => {

@@ -39,9 +39,14 @@ const Header = () => {
   const headerBackground = isMenuShown ? styles.white : styles.transparent;
   const logoColor = isMenuShown ? "dark" : "light";
 
-  const HIDDEN_PATHS = ["/privacy", "/articles"];
+  const HIDDEN_PATHS = ["privacy", "articles", "career"];
 
-  const isMenuHidden = HIDDEN_PATHS.includes(location.pathname) ? true : false;
+  // const isMenuHidden = HIDDEN_PATHS.includes(location.pathname) ? true : false;
+  const isMenuHidden = HIDDEN_PATHS.includes(location.pathname.split("/")[1])
+    ? true
+    : false;
+
+  // console.log(location.pathname.split("/")[1]);
 
   return (
     <Section

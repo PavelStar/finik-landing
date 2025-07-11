@@ -2,10 +2,10 @@
 @use "@styles/colors" as *;
 
 .advantages {
-  @include mediaTablet {
-  }
+  padding-top: 64px;
 
-  @include mediaMobile {
+  @include mediaTablet {
+    padding-top: 32px;
   }
 }
 

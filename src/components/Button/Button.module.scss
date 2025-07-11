@@ -45,6 +45,11 @@
       padding: 15px 24px 15px 24px;
       height: 48px;
     }
+
+    @include mediaMobile {
+      padding: 15px 24px 15px 24px;
+      // padding: 15px 0 15px 24px;
+    }
   }
 
   .iconWrap {

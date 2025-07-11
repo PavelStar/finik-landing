@@ -1,5 +1,4 @@
 import { useEffect, useState, type FC } from "react";
-import { Section } from "../../components/index";
 import classNames from "classnames/bind";
 import styles from "./CareerPage.module.scss";
 import { Career, Intro, Advantages } from "../../sections/index";
@@ -32,19 +31,12 @@ const CareerPage: FC<ICareerPageProps> = ({ id }) => {
 
   if (!data) return;
 
-  console.log("data.intro", data);
-
   return (
-    <Section
-      className={cx(styles.career)}
-      theme="transparent"
-      id={id}
-      fullWidth
-    >
+    <div className={cx(styles.career)}>
       <Intro {...data.intro} />
       <Advantages {...data.advantages} />
       <Career itemsType="link" {...data.career} />
-    </Section>
+    </div>
   );
 };
 
