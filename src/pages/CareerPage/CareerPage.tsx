@@ -33,7 +33,7 @@ const CareerPage: FC<ICareerPageProps> = () => {
 
   return (
     <div className={cx(styles.career)}>
-      <Intro {...data.intro} />
+      <Intro className={styles.intro} {...data.intro} />
       <Advantages {...data.advantages} />
       <Career itemsType="link" {...data.career} />
     </div>

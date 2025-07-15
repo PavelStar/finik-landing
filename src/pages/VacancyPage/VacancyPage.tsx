@@ -42,8 +42,6 @@ const VacancyPage: FC<IVacancyPageProps> = ({ id }) => {
     return null;
   }
 
-  console.log(vacancy.content.outro);
-
   return (
     <Section
       className={cx(styles.vacancyPage)}
@@ -89,7 +87,10 @@ const VacancyPage: FC<IVacancyPageProps> = ({ id }) => {
               {vacancy.content.outro && (
                 <Paragraph>
                   {vacancy.content.outro.text}{" "}
-                  <Link textDecoration="underline">
+                  <Link
+                    href={`mailto:${vacancy.content.outro.link}`}
+                    textDecoration="underline"
+                  >
                     {vacancy.content.outro.link}
                   </Link>
                 </Paragraph>

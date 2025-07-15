@@ -21,6 +21,7 @@ import type {
   ISteps,
 } from "../../types/types";
 import { URL_PREFIX } from "../../constants/url";
+import styles from "./HomePage.module.scss";
 
 interface IHomePage {
   onModalOpen: () => void;
@@ -53,7 +54,7 @@ const HomePage: FC<IHomePage> = ({ onModalOpen }) => {
 
   return (
     <>
-      <Intro {...data.intro} />
+      <Intro className={styles.intro} {...data.intro} />
       <Cases {...data.cases} />
       <Partners {...data.partners} />
       <Services {...data.services} />

@@ -7,15 +7,18 @@
   justify-content: end;
   align-items: start;
   padding-top: 240px;
+  padding-top: 196px;
   padding-bottom: 64px;
 
   @include mediaTablet {
     padding-top: 152px;
+    padding-top: 118px;
     padding-bottom: 32px;
   }
 
   @include mediaMobile {
-    padding-top: 144px;
+    padding-top: 110px;
+    // padding-top: 144px;
   }
 }
 

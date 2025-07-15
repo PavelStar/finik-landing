@@ -31,7 +31,7 @@ const Career: FC<ICareerProps & ICareer> = ({
   const [openItems, setOpenItems] = useState<Array<string>>([]);
 
   return (
-    <Section className={cx(styles.career)} theme="dark" id={id}>
+    <Section className={styles.career} theme="dark" id={id}>
       <SectionGrid titleWrapClassName={styles.titleWrap} title={title}>
         <ul className={cx(styles.items, styles.itemsLinks)}>
           {list.map((career) => {
