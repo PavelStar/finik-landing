@@ -2,11 +2,23 @@
 @use "@styles/colors" as *;
 
 .vacancyPage {
-  padding-top: 0;
+  padding: 0;
   @include mediaTablet {
   }
 
   @include mediaMobile {
+  }
+}
+
+.intro {
+  padding-top: 196px;
+
+  @include mediaTablet {
+    padding-top: 118px;
+  }
+
+  @include mediaMobile {
+    padding-top: 110px;
   }
 }
 
@@ -46,6 +58,10 @@
   display: flex;
   flex-direction: column;
   gap: 64px;
+
+  @include mediaTablet {
+    gap: 32px;
+  }
 }
 
 .itemListItem {

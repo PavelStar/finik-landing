@@ -42,6 +42,8 @@ const VacancyPage: FC<IVacancyPageProps> = ({ id }) => {
     return null;
   }
 
+  console.log(vacancy.content.outro);
+
   return (
     <Section
       className={cx(styles.vacancyPage)}
@@ -50,7 +52,7 @@ const VacancyPage: FC<IVacancyPageProps> = ({ id }) => {
       fullWidth
       tag="div"
     >
-      <Intro title={vacancy?.title || ""} />
+      <Intro className={styles.intro} title={vacancy?.title || ""} />
       <Section className={cx(styles.content)} theme="transparent">
         <SectionGrid title={data.title} titleWrapClassName={styles.gridTitle}>
           {vacancy && (
