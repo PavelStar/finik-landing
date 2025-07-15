@@ -9,7 +9,7 @@ interface PrivacyProps {
 
 const Privacy: FC<PrivacyProps> = ({ list }) => {
   return (
-    <Section className={styles.privacy}>
+    <Section className={styles.privacy} theme="transparent">
       <ul className={styles.privacyList}>
         {list.map((privacyItem) => {
           return (
