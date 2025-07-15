@@ -18,11 +18,11 @@
           "alt": "Сбер",
           "images": {
             "desktop": "sber.png",
-            "desktop2x": "sber.png",
+            "desktop2x": "sber@2x.png",
             "tablet": "sber-tablet.png",
-            "tablet2x": "sber-tablet.png",
-            "mobile": "sber-tablet.png",
-            "mobile2x": "sber-tablet.png"
+            "tablet2x": "sber-tablet@2x.png",
+            "mobile": "sber-mobile.png",
+            "mobile2x": "sber-mobile@2x.png"
           }
         }
       },
@@ -33,11 +33,11 @@
           "alt": "Т2 логотип",
           "images": {
             "desktop": "t2.png",
-            "desktop2x": "t2.png",
+            "desktop2x": "t2@2x.png",
             "tablet": "t2-tablet.png",
-            "tablet2x": "t2-tablet.png",
-            "mobile": "t2-tablet.png",
-            "mobile2x": "t2-tablet.png"
+            "tablet2x": "t2-tablet@2x.png",
+            "mobile": "t2-mobile.png",
+            "mobile2x": "t2-mobile@2x.png"
           }
         }
       },
@@ -47,27 +47,27 @@
         "image": {
           "alt": "Сбер Бизнес логотип",
           "images": {
-            "desktop": "sber-business.png",
-            "desktop2x": "sber-business.png",
-            "tablet": "sber-business-tablet.png",
-            "tablet2x": "sber-business-tablet.png",
-            "mobile": "sber-business-tablet.png",
-            "mobile2x": "sber-business-tablet.png"
+            "desktop": "business.png",
+            "desktop2x": "business@2x.png",
+            "tablet": "business-tablet.png",
+            "tablet2x": "business-tablet@2x.png",
+            "mobile": "business-mobile.png",
+            "mobile2x": "business-mobile@2x.png"
           }
         }
       },
       {
         "id": 4,
-        "title": "Ростелеком",
+        "title": "Эльдорадо",
         "image": {
-          "alt": "rostelekom лого",
+          "alt": "eldorado лого",
           "images": {
-            "desktop": "rostelekom.png",
-            "desktop2x": "rostelekom.png",
-            "tablet": "rostelekom-tablet.png",
-            "tablet2x": "rostelekom-tablet.png",
-            "mobile": "rostelekom-tablet.png",
-            "mobile2x": "rostelekom-tablet.png"
+            "desktop": "eldorado.png",
+            "desktop2x": "eldorado@2x.png",
+            "tablet": "eldorado-tablet.png",
+            "tablet2x": "eldorado-tablet@2x.png",
+            "mobile": "eldorado-mobile.png",
+            "mobile2x": "eldorado-mobile@2x.png"
           }
         }
       }
@@ -200,6 +200,134 @@
             "tablet2x": "rostelekom.svg",
             "mobile": "rostelekom.svg",
             "mobile2x": "rostelekom.svg"
+          }
+        },
+        "href": null
+      },
+      {
+        "id": 9,
+        "icon": "gorzdrav.svg",
+        "image": {
+          "alt": "Горздрав",
+          "images": {
+            "desktop": "gorzdrav.svg",
+            "desktop2x": "gorzdrav.svg",
+            "tablet": "gorzdrav.svg",
+            "tablet2x": "gorzdrav.svg",
+            "mobile": "gorzdrav.svg",
+            "mobile2x": "gorzdrav.svg"
+          }
+        },
+        "href": null
+      },
+      {
+        "id": 10,
+        "icon": "36.svg",
+        "image": {
+          "alt": "36.6 аптеки",
+          "images": {
+            "desktop": "36.svg",
+            "desktop2x": "36.svg",
+            "tablet": "36.svg",
+            "tablet2x": "36.svg",
+            "mobile": "36.svg",
+            "mobile2x": "36.svg"
+          }
+        },
+        "href": null
+      },
+      {
+        "id": 11,
+        "icon": "shopping-live.svg",
+        "image": {
+          "alt": "shopping-live",
+          "images": {
+            "desktop": "shopping-live.svg",
+            "desktop2x": "shopping-live.svg",
+            "tablet": "shopping-live.svg",
+            "tablet2x": "shopping-live.svg",
+            "mobile": "shopping-live.svg",
+            "mobile2x": "shopping-live.svg"
+          }
+        },
+        "href": null
+      },
+      {
+        "id": 12,
+        "icon": "alpha-strahovanie.svg",
+        "image": {
+          "alt": "alpha-strahovanie",
+          "images": {
+            "desktop": "alpha-strahovanie.svg",
+            "desktop2x": "alpha-strahovanie.svg",
+            "tablet": "alpha-strahovanie.svg",
+            "tablet2x": "alpha-strahovanie.svg",
+            "mobile": "alpha-strahovanie.svg",
+            "mobile2x": "alpha-strahovanie.svg"
+          }
+        },
+        "href": null
+      },
+      {
+        "id": 13,
+        "icon": "x5-group.svg",
+        "image": {
+          "alt": "x5-group",
+          "images": {
+            "desktop": "x5-group.svg",
+            "desktop2x": "x5-group.svg",
+            "tablet": "x5-group.svg",
+            "tablet2x": "x5-group.svg",
+            "mobile": "x5-group.svg",
+            "mobile2x": "x5-group.svg"
+          }
+        },
+        "href": null
+      },
+      {
+        "id": 14,
+        "icon": "vtb.svg",
+        "image": {
+          "alt": "vtb",
+          "images": {
+            "desktop": "vtb.svg",
+            "desktop2x": "vtb.svg",
+            "tablet": "vtb.svg",
+            "tablet2x": "vtb.svg",
+            "mobile": "vtb.svg",
+            "mobile2x": "vtb.svg"
+          }
+        },
+        "href": null
+      },
+      {
+        "id": 15,
+        "icon": "trans-container.svg",
+        "image": {
+          "alt": "trans-container",
+          "images": {
+            "desktop": "trans-container.svg",
+            "desktop2x": "trans-container.svg",
+            "tablet": "trans-container.svg",
+            "tablet2x": "trans-container.svg",
+            "mobile": "trans-container.svg",
+            "mobile2x": "trans-container.svg"
+          }
+        },
+        "href": null
+      },
+      {
+        "id": 16,
+        "icon": "fosagro.svg",
+        "image": {
+          "alt": "fosagro",
+          "images": {
+            "desktop": "fosagro.svg",
+            "desktop2x": "fosagro.svg",
+            "tablet": "fosagro.svg",
+            "tablet2x": "fosagro.svg",
+            "mobile": "fosagro.svg",
+            "mobile2x": "fosagro.svg"
           }
         },
         "href": null
