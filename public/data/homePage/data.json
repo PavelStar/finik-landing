@@ -449,16 +449,30 @@
     ],
     "slides": [
       {
+        "id": 1,
+        "image": {
+          "alt": "Слайд 1",
+          "images": {
+            "desktop": "slide-1.png",
+            "desktop2x": "slide-1.png",
+            "tablet": "slide-1.png",
+            "tablet2x": "slide-1.png",
+            "mobile": "slide-1.png",
+            "mobile2x": "slide-1.png"
+          }
+        }
+      },
+      {
         "id": 2,
         "image": {
           "alt": "Слайд 2",
           "images": {
             "desktop": "slide-2.png",
             "desktop2x": "slide-2.png",
-            "tablet": "slide-2.png",
-            "tablet2x": "slide-2.png",
-            "mobile": "slide-2.png",
-            "mobile2x": "slide-2.png"
+            "tablet": "slide-2-mobile.png",
+            "tablet2x": "slide-2-mobile.png",
+            "mobile": "slide-2-mobile.png",
+            "mobile2x": "slide-2-mobile.png"
           }
         }
       },
@@ -469,10 +483,10 @@
           "images": {
             "desktop": "slide-3.png",
             "desktop2x": "slide-3.png",
-            "tablet": "slide-3.png",
-            "tablet2x": "slide-3.png",
-            "mobile": "slide-3.png",
-            "mobile2x": "slide-3.png"
+            "tablet": "slide-3-mobile.png",
+            "tablet2x": "slide-3-mobile.png",
+            "mobile": "slide-3-mobile.png",
+            "mobile2x": "slide-3-mobile.png"
           }
         }
       },
@@ -483,10 +497,136 @@
           "images": {
             "desktop": "slide-4.png",
             "desktop2x": "slide-4.png",
-            "tablet": "slide-4.png",
-            "tablet2x": "slide-4.png",
-            "mobile": "slide-4.png",
-            "mobile2x": "slide-4.png"
+            "tablet": "slide-4-mobile.png",
+            "tablet2x": "slide-4-mobile.png",
+            "mobile": "slide-4-mobile.png",
+            "mobile2x": "slide-4-mobile.png"
+          }
+        }
+      },
+      {
+        "id": 5,
+        "image": {
+          "alt": "Слайд 5",
+          "images": {
+            "desktop": "slide-5.png",
+            "desktop2x": "slide-5.png",
+            "tablet": "slide-5-mobile.png",
+            "tablet2x": "slide-5-mobile.png",
+            "mobile": "slide-5-mobile.png",
+            "mobile2x": "slide-5-mobile.png"
+          }
+        }
+      },
+      {
+        "id": 6,
+        "image": {
+          "alt": "Слайд 6",
+          "images": {
+            "desktop": "slide-6.png",
+            "desktop2x": "slide-6.png",
+            "tablet": "slide-6-mobile.png",
+            "tablet2x": "slide-6-mobile.png",
+            "mobile": "slide-6-mobile.png",
+            "mobile2x": "slide-6-mobile.png"
+          }
+        }
+      },
+      {
+        "id": 7,
+        "image": {
+          "alt": "Слайд 7",
+          "images": {
+            "desktop": "slide-7.png",
+            "desktop2x": "slide-7.png",
+            "tablet": "slide-7-mobile.png",
+            "tablet2x": "slide-7-mobile.png",
+            "mobile": "slide-7-mobile.png",
+            "mobile2x": "slide-7-mobile.png"
+          }
+        }
+      },
+      {
+        "id": 8,
+        "image": {
+          "alt": "Слайд 8",
+          "images": {
+            "desktop": "slide-8.png",
+            "desktop2x": "slide-8.png",
+            "tablet": "slide-8-mobile.png",
+            "tablet2x": "slide-8-mobile.png",
+            "mobile": "slide-8-mobile.png",
+            "mobile2x": "slide-8-mobile.png"
+          }
+        }
+      },
+      {
+        "id": 9,
+        "image": {
+          "alt": "Слайд 9",
+          "images": {
+            "desktop": "slide-9.png",
+            "desktop2x": "slide-9.png",
+            "tablet": "slide-9-mobile.png",
+            "tablet2x": "slide-9-mobile.png",
+            "mobile": "slide-9-mobile.png",
+            "mobile2x": "slide-9-mobile.png"
+          }
+        }
+      },
+      {
+        "id": 10,
+        "image": {
+          "alt": "Слайд 10",
+          "images": {
+            "desktop": "slide-10.png",
+            "desktop2x": "slide-10.png",
+            "tablet": "slide-10-mobile.png",
+            "tablet2x": "slide-10-mobile.png",
+            "mobile": "slide-10-mobile.png",
+            "mobile2x": "slide-10-mobile.png"
+          }
+        }
+      },
+      {
+        "id": 11,
+        "image": {
+          "alt": "Слайд 11",
+          "images": {
+            "desktop": "slide-11.png",
+            "desktop2x": "slide-11.png",
+            "tablet": "slide-11-mobile.png",
+            "tablet2x": "slide-11-mobile.png",
+            "mobile": "slide-11-mobile.png",
+            "mobile2x": "slide-11-mobile.png"
+          }
+        }
+      },
+      {
+        "id": 12,
+        "image": {
+          "alt": "Слайд 12",
+          "images": {
+            "desktop": "slide-12.png",
+            "desktop2x": "slide-12.png",
+            "tablet": "slide-12-mobile.png",
+            "tablet2x": "slide-12-mobile.png",
+            "mobile": "slide-12-mobile.png",
+            "mobile2x": "slide-12-mobile.png"
+          }
+        }
+      },
+      {
+        "id": 13,
+        "image": {
+          "alt": "Слайд 13",
+          "images": {
+            "desktop": "slide-13.png",
+            "desktop2x": "slide-13.png",
+            "tablet": "slide-13-mobile.png",
+            "tablet2x": "slide-13-mobile.png",
+            "mobile": "slide-13-mobile.png",
+            "mobile2x": "slide-13-mobile.png"
           }
         }
       }

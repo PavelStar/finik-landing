@@ -11,8 +11,6 @@ interface ICasesProps {
 }
 
 const Cases: FC<ICases & ICasesProps> = ({ id, list, className }) => {
-  console.log(list);
-
   return (
     <Section
       className={cx(styles.cases, className)}

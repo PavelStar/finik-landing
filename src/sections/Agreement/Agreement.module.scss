@@ -1,0 +1,39 @@
+@use "../../styles/media" as *;
+@use "../../styles/colors" as *;
+
+.agreement {
+  padding-top: 64px;
+
+  @include mediaTablet {
+    padding-top: 32px;
+  }
+
+  @include mediaMobile {
+  }
+}
+
+.wrapper {
+}
+
+.agreementList {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+
+  @include mediaTablet {
+    gap: 32px;
+  }
+
+  @include mediaMobile {
+  }
+}
+
+.agreementListItem {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @include mediaTablet {
+    gap: 16px;
+  }
+}

@@ -101,14 +101,14 @@ const Career: FC<ICareerProps & ICareer> = ({
                         );
                       })}
                     </ul>
-                    {career.content.outro && (
+                    {/* {career.content.outro && (
                       <Paragraph className={styles.itemOutro}>
                         {career.content.outro}{" "}
                         <Link textDecoration="underline">
                           hello@finik-lab.ru
                         </Link>
                       </Paragraph>
-                    )}
+                    )} */}
                   </div>
                 </Accordion>
               </li>
@@ -127,7 +127,12 @@ const Career: FC<ICareerProps & ICareer> = ({
             </Paragraph>
             <Paragraph>
               {outro.description.text}{" "}
-              <Link textDecoration="underline">{outro.description.link}</Link>
+              <Link
+                href={`mailto:${outro.description.link}`}
+                textDecoration="underline"
+              >
+                {outro.description.link}
+              </Link>
             </Paragraph>
             {outro.button && (
               <RouterLink to={outro.button.href || ""}>

@@ -262,6 +262,22 @@ export interface IVacancyContent {
 
 export interface IPrivacyPage {
   intro: IIntro;
+  list: Array<IPrivacyItem>;
+}
+
+export interface IPrivacyItem {
+  id: number;
+  title: string;
+  list: Array<string | IPrivacyInnerItem>;
+}
+
+export interface IPrivacyInnerItem {
+  title: string;
+  list: Array<string>;
+}
+
+export interface IAgreementPage {
+  intro: IIntro;
   content: {
     intro: string;
     list: Array<string>;

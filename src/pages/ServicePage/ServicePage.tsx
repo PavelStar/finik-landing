@@ -49,8 +49,6 @@ const ServicePage: FC<IServicePage> = ({ id, onModalOpen }) => {
 
   if (!data) return;
 
-  console.log("data ", data.list[0]);
-
   // const currentService = servicesData.find((item) => item.id === serviceId);
   const currentService = data.list.find((item) => item.id === serviceId);
 

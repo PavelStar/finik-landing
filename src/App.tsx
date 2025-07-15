@@ -14,6 +14,7 @@ import {
   CasePage,
   ServicePage,
   CasesPage,
+  AgreementPage,
 } from "./pages/index";
 import styles from "./App.module.scss";
 import { Form, Modal, ScrollToTop } from "./components/index";
@@ -55,6 +56,7 @@ function App() {
             />
             <Route path="/cases" element={<CasesPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />
+            <Route path="/agreement" element={<AgreementPage />} />
             <Route path="/articles" element={<ArticlesPage />} />
             <Route path="/career" element={<CareerPage />} />
             <Route path="/career/:jobId" element={<VacancyPage />} />

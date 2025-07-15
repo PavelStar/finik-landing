@@ -20,8 +20,6 @@ const CasesPage = () => {
 
   if (!data) return;
 
-  console.log("casesPage ", data.intro);
-
   return (
     <div className={styles.casesPage}>
       <Intro {...data.intro} />

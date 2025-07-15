@@ -2,6 +2,7 @@
 @use "@styles/colors" as *;
 
 .vacancyPage {
+  padding-top: 0;
   @include mediaTablet {
   }
 
@@ -94,4 +95,20 @@
 .gridTitle {
   width: 100%;
   max-width: 443px;
+}
+
+.descriptionTitle {
+  margin-bottom: 16px;
+
+  @include mediaTablet {
+    margin-bottom: 8px;
+  }
+}
+
+.itemTitle {
+  margin-bottom: 16px;
+
+  @include mediaTablet {
+    margin-bottom: 8px;
+  }
 }

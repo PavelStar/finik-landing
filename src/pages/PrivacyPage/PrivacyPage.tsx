@@ -18,14 +18,12 @@ const PrivacyPage: FC<IPrivacyPageProps> = () => {
       .catch(console.error);
   }, []);
 
-  console.log("Privacy ", data);
-
   if (!data) return;
 
   return (
     <>
       <Intro className={styles.intro} {...data.intro} />
-      <Privacy {...data.content} />
+      <Privacy list={data.list} />
     </>
   );
 };

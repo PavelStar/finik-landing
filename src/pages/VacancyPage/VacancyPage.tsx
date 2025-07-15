@@ -67,7 +67,9 @@ const VacancyPage: FC<IVacancyPageProps> = ({ id }) => {
                 {vacancy.content.lists.map((item) => {
                   return (
                     <li key={item.title}>
-                      <Title size="L">{item.title}</Title>
+                      <Title className={styles.itemTitle} size="L">
+                        {item.title}
+                      </Title>
                       <ul className={styles.itemList}>
                         {item.items.map((item) => {
                           return (
