@@ -1,5 +1,5 @@
-type TMode = "gh-pages" | "test" | "dev";
-const mode: TMode = "gh-pages";
+type TMode = "gh-pages" | "test" | "dev" | "prod";
+const mode: TMode = "dev";
 
 const CONFIG = {
   "gh-pages": {
@@ -13,6 +13,10 @@ const CONFIG = {
   test: {
     URL_PREFIX: "/new/data/",
     PATH_PREFIX: "/new/",
+  },
+  prod: {
+    URL_PREFIX: "/data/",
+    PATH_PREFIX: "/",
   },
 } as const;
 

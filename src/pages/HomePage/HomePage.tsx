@@ -56,7 +56,7 @@ const HomePage: FC<IHomePage> = ({ onModalOpen }) => {
     <>
       <Intro className={styles.intro} {...data.intro} />
       <Cases {...data.cases} />
-      <Partners {...data.partners} />
+      <Partners {...data.partners} view="marquee" />
       <Services {...data.services} />
       <About {...data.about} />
       <Steps {...data.howWeWork} />
