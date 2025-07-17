@@ -1,5 +1,5 @@
 type TMode = "gh-pages" | "test" | "dev" | "prod";
-const mode: TMode = "prod";
+const mode: TMode = "gh-pages";
 
 const CONFIG = {
   "gh-pages": {
