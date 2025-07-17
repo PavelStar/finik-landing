@@ -18,7 +18,7 @@ const Footer = () => {
               Лигу Цифровой Экономики
             </Link>
           </Paragraph>
-          <RouterLink to="privacy">
+          {/* <RouterLink to="privacy">
             <Paragraph
               className={styles.privacyLink}
               textDecoration="underline"
@@ -26,7 +26,7 @@ const Footer = () => {
             >
               Политика конфиденциальности
             </Paragraph>
-          </RouterLink>
+          </RouterLink> */}
         </div>
       </div>
     </Section>

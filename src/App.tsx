@@ -7,14 +7,14 @@ import {
 import { Header, Footer } from "./sections/index";
 import {
   HomePage,
-  PrivacyPage,
+  // PrivacyPage,
   ArticlesPage,
   CareerPage,
   VacancyPage,
-  CasePage,
-  ServicePage,
-  CasesPage,
-  AgreementPage,
+  // CasePage,
+  // ServicePage,
+  // CasesPage,
+  // AgreementPage,
 } from "./pages/index";
 import styles from "./App.module.scss";
 import { Form, Modal, ScrollToTop } from "./components/index";
@@ -54,20 +54,20 @@ function App() {
               path="/"
               element={<HomePage onModalOpen={handleModalOpen} />}
             />
-            <Route path="/cases" element={<CasesPage />} />
-            <Route path="/privacy" element={<PrivacyPage />} />
-            <Route path="/agreement" element={<AgreementPage />} />
+            {/* <Route path="/cases" element={<CasesPage />} /> */}
+            {/* <Route path="/privacy" element={<PrivacyPage />} /> */}
+            {/* <Route path="/agreement" element={<AgreementPage />} /> */}
             <Route path="/articles" element={<ArticlesPage />} />
             <Route path="/career" element={<CareerPage />} />
             <Route path="/career/:jobId" element={<VacancyPage />} />
-            <Route
+            {/* <Route
               path="/cases/:caseId"
               element={<CasePage onModalOpen={handleModalOpen} />}
-            />
-            <Route
+            /> */}
+            {/* <Route
               path="/:serviceId"
               element={<ServicePage onModalOpen={handleModalOpen} />}
-            />
+            /> */}
           </Routes>
         </div>
 
