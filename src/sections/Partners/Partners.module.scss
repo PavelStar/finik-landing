@@ -55,6 +55,7 @@
       }
 
       img {
+        width: auto;
         height: 32px;
 
         @include mediaTablet {
