@@ -22,7 +22,7 @@ import { useState } from "react";
 import { PATH_PREFIX } from "./constants/url";
 
 function App() {
-  console.log("finik version 1.0.6");
+  console.log("finik version 1.0.7");
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 

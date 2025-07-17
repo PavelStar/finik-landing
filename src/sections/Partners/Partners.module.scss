@@ -47,19 +47,18 @@
       }
     }
 
-    .picture {
+    picture {
       height: 32px;
-      display: block;
 
       @include mediaTablet {
         height: 24px;
       }
 
       img {
-        display: block;
         height: 32px;
 
         @include mediaTablet {
+          display: block;
           height: 24px;
         }
       }
