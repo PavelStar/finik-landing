@@ -147,7 +147,7 @@ const Career: FC<ICareerProps & ICareer> = ({
                 {outro.description.link}
               </Link>
             </Paragraph>
-            {outro.button?.isHidden && (
+            {outro.button && !outro.button?.isHidden && (
               <RouterLink to={outro.button.href || ""}>
                 <Button className={styles.outroButton}>
                   {outro.button.text}
