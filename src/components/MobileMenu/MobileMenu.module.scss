@@ -14,6 +14,7 @@
   padding: 32px;
   overflow: auto;
   max-height: 100vh;
+  -webkit-overflow-scrolling: touch;
 
   @include mediaTablet {
     padding-left: 32px;
