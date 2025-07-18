@@ -7,16 +7,16 @@
       "id": 1,
       "href": "https://www.rambler.ru/pro/professii/54672865/?utm_content=pro_media&utm_medium=read_more&utm_source=copylink ",
       "date": "16 мая 2025",
-      "title": "UX/UI-дизайнер дал советы, как успешно пройти собеседование",
+      "title": "UX/UI-дизайнер дал советы, как успешно пройти собеседование",
       "image": {
         "alt": "Картинка статьи 1",
         "images": {
           "desktop": "articles-page-1.png",
-          "desktop2x": "articles-page-1.png",
+          "desktop2x": "articles-page-1@2x.png",
           "tablet": "articles-page-1-tablet.png",
-          "tablet2x": "articles-page-1-tablet.png",
+          "tablet2x": "articles-page-1-tablet@2x.png",
           "mobile": "articles-page-1-tablet.png",
-          "mobile2x": "articles-page-1-tablet.png"
+          "mobile2x": "articles-page-1-tablet@2x.png"
         }
       }
     },
@@ -24,16 +24,16 @@
       "id": 2,
       "href": "https://vc.ru/design/1849298-kak-stavit-zadachu-dizaineru-chtoby-poluchit-kachestvennyi-rezultat ",
       "date": "6 марта 2025",
-      "title": "Как ставить задачу дизайнеру, чтобы получить качественный результат",
+      "title": "Как ставить задачу дизайнеру, чтобы получить качественный результат",
       "image": {
         "alt": "Картинка статьи 2",
         "images": {
           "desktop": "articles-page-2.png",
-          "desktop2x": "articles-page-2.png",
+          "desktop2x": "articles-page-2@2x.png",
           "tablet": "articles-page-2-tablet.png",
-          "tablet2x": "articles-page-2-tablet.png",
+          "tablet2x": "articles-page-2-tablet@2x.png",
           "mobile": "articles-page-2-tablet.png",
-          "mobile2x": "articles-page-2-tablet.png"
+          "mobile2x": "articles-page-2-tablet@2x.png"
         }
       }
     },
@@ -46,11 +46,11 @@
         "alt": "Картинка статьи 3",
         "images": {
           "desktop": "articles-page-3.png",
-          "desktop2x": "articles-page-3.png",
+          "desktop2x": "articles-page-3@2x.png",
           "tablet": "articles-page-3-tablet.png",
-          "tablet2x": "articles-page-3-tablet.png",
+          "tablet2x": "articles-page-3-tablet@2x.png",
           "mobile": "articles-page-3-tablet.png",
-          "mobile2x": "articles-page-3-tablet.png"
+          "mobile2x": "articles-page-3-tablet@2x.png"
         }
       }
     },
@@ -63,11 +63,11 @@
         "alt": "Картинка статьи 4",
         "images": {
           "desktop": "articles-page-4.png",
-          "desktop2x": "articles-page-4.png",
+          "desktop2x": "articles-page-4@2x.png",
           "tablet": "articles-page-4-tablet.png",
-          "tablet2x": "articles-page-4-tablet.png",
+          "tablet2x": "articles-page-4-tablet@2x.png",
           "mobile": "articles-page-4-tablet.png",
-          "mobile2x": "articles-page-4-tablet.png"
+          "mobile2x": "articles-page-4-tablet@2x.png"
         }
       }
     },
@@ -80,11 +80,11 @@
         "alt": "Картинка статьи 5",
         "images": {
           "desktop": "articles-page-5.png",
-          "desktop2x": "articles-page-5.png",
+          "desktop2x": "articles-page-5@2x.png",
           "tablet": "articles-page-5-tablet.png",
-          "tablet2x": "articles-page-5-tablet.png",
+          "tablet2x": "articles-page-5-tablet@2x.png",
           "mobile": "articles-page-5-tablet.png",
-          "mobile2x": "articles-page-5-tablet.png"
+          "mobile2x": "articles-page-5-tablet@2x.png"
         }
       }
     },
@@ -97,11 +97,11 @@
         "alt": "Картинка статьи 6",
         "images": {
           "desktop": "articles-page-6.png",
-          "desktop2x": "articles-page-6.png",
+          "desktop2x": "articles-page-6@2x.png",
           "tablet": "articles-page-6-tablet.png",
-          "tablet2x": "articles-page-6-tablet.png",
+          "tablet2x": "articles-page-6-tablet@2x.png",
           "mobile": "articles-page-6-tablet.png",
-          "mobile2x": "articles-page-6-tablet.png"
+          "mobile2x": "articles-page-6-tablet@2x.png"
         }
       }
     },
@@ -114,11 +114,11 @@
         "alt": "Картинка статьи 7",
         "images": {
           "desktop": "articles-page-7.png",
-          "desktop2x": "articles-page-7.png",
+          "desktop2x": "articles-page-7@2x.png",
           "tablet": "articles-page-7-tablet.png",
-          "tablet2x": "articles-page-7-tablet.png",
+          "tablet2x": "articles-page-7-tablet@2x.png",
           "mobile": "articles-page-7-tablet.png",
-          "mobile2x": "articles-page-7-tablet.png"
+          "mobile2x": "articles-page-7-tablet@2x.png"
         }
       }
     },
@@ -131,11 +131,11 @@
         "alt": "Картинка статьи 8",
         "images": {
           "desktop": "articles-page-8.png",
-          "desktop2x": "articles-page-8.png",
+          "desktop2x": "articles-page-8@2x.png",
           "tablet": "articles-page-8-tablet.png",
-          "tablet2x": "articles-page-8-tablet.png",
+          "tablet2x": "articles-page-8-tablet@2x.png",
           "mobile": "articles-page-8-tablet.png",
-          "mobile2x": "articles-page-8-tablet.png"
+          "mobile2x": "articles-page-8-tablet@2x.png"
         }
       }
     },
@@ -148,11 +148,11 @@
         "alt": "Картинка статьи 9",
         "images": {
           "desktop": "articles-page-9.png",
-          "desktop2x": "articles-page-9.png",
+          "desktop2x": "articles-page-9@2x.png",
           "tablet": "articles-page-9-tablet.png",
-          "tablet2x": "articles-page-9-tablet.png",
+          "tablet2x": "articles-page-9-tablet@2x.png",
           "mobile": "articles-page-9-tablet.png",
-          "mobile2x": "articles-page-9-tablet.png"
+          "mobile2x": "articles-page-9-tablet@2x.png"
         }
       }
     },
@@ -165,11 +165,11 @@
         "alt": "Картинка статьи 10",
         "images": {
           "desktop": "articles-page-10.png",
-          "desktop2x": "articles-page-10.png",
+          "desktop2x": "articles-page-10@2x.png",
           "tablet": "articles-page-10-tablet.png",
-          "tablet2x": "articles-page-10-tablet.png",
+          "tablet2x": "articles-page-10-tablet@2x.png",
           "mobile": "articles-page-10-tablet.png",
-          "mobile2x": "articles-page-10-tablet.png"
+          "mobile2x": "articles-page-10-tablet@2x.png"
         }
       }
     },
@@ -182,11 +182,11 @@
         "alt": "Картинка статьи 11",
         "images": {
           "desktop": "articles-page-11.png",
-          "desktop2x": "articles-page-11.png",
+          "desktop2x": "articles-page-11@2x.png",
           "tablet": "articles-page-11-tablet.png",
-          "tablet2x": "articles-page-11-tablet.png",
+          "tablet2x": "articles-page-11-tablet@2x.png",
           "mobile": "articles-page-11-tablet.png",
-          "mobile2x": "articles-page-11-tablet.png"
+          "mobile2x": "articles-page-11-tablet@2x.png"
         }
       }
     },
@@ -199,11 +199,11 @@
         "alt": "Картинка статьи 12",
         "images": {
           "desktop": "articles-page-12.png",
-          "desktop2x": "articles-page-12.png",
+          "desktop2x": "articles-page-12@2x.png",
           "tablet": "articles-page-12-tablet.png",
-          "tablet2x": "articles-page-12-tablet.png",
+          "tablet2x": "articles-page-12-tablet@2x.png",
           "mobile": "articles-page-12-tablet.png",
-          "mobile2x": "articles-page-12-tablet.png"
+          "mobile2x": "articles-page-12-tablet@2x.png"
         }
       }
     },
@@ -216,11 +216,11 @@
         "alt": "Картинка статьи 13",
         "images": {
           "desktop": "articles-page-13.png",
-          "desktop2x": "articles-page-13.png",
+          "desktop2x": "articles-page-13@2x.png",
           "tablet": "articles-page-13-tablet.png",
-          "tablet2x": "articles-page-13-tablet.png",
+          "tablet2x": "articles-page-13-tablet@2x.png",
           "mobile": "articles-page-13-tablet.png",
-          "mobile2x": "articles-page-13-tablet.png"
+          "mobile2x": "articles-page-13-tablet@2x.png"
         }
       }
     },
@@ -228,16 +228,16 @@
       "id": 14,
       "href": "https://vc.ru/u/606142-liga-cifrovoy-ekonomiki/581252-gde-cherpat-vdohnovenie-dizayneru-obzor-poleznyh-kanalov ",
       "date": "12 января 2023",
-      "title": "Где черпать вдохновение дизайнеру: обзор полезных каналов",
+      "title": "Где черпать вдохновение дизайнеру: обзор полезных каналов",
       "image": {
         "alt": "Картинка статьи 14",
         "images": {
           "desktop": "articles-page-14.png",
-          "desktop2x": "articles-page-14.png",
+          "desktop2x": "articles-page-14@2x.png",
           "tablet": "articles-page-14-tablet.png",
-          "tablet2x": "articles-page-14-tablet.png",
+          "tablet2x": "articles-page-14-tablet@2x.png",
           "mobile": "articles-page-14-tablet.png",
-          "mobile2x": "articles-page-14-tablet.png"
+          "mobile2x": "articles-page-14-tablet@2x.png"
         }
       }
     },
@@ -250,11 +250,11 @@
         "alt": "Картинка статьи 15",
         "images": {
           "desktop": "articles-page-15.png",
-          "desktop2x": "articles-page-15.png",
+          "desktop2x": "articles-page-15@2x.png",
           "tablet": "articles-page-15-tablet.png",
-          "tablet2x": "articles-page-15-tablet.png",
+          "tablet2x": "articles-page-15-tablet@2x.png",
           "mobile": "articles-page-15-tablet.png",
-          "mobile2x": "articles-page-15-tablet.png"
+          "mobile2x": "articles-page-15-tablet@2x.png"
         }
       }
     },
@@ -267,11 +267,11 @@
         "alt": "Картинка статьи 16",
         "images": {
           "desktop": "articles-page-16.png",
-          "desktop2x": "articles-page-16.png",
+          "desktop2x": "articles-page-16@2x.png",
           "tablet": "articles-page-16-tablet.png",
-          "tablet2x": "articles-page-16-tablet.png",
+          "tablet2x": "articles-page-16-tablet@2x.png",
           "mobile": "articles-page-16-tablet.png",
-          "mobile2x": "articles-page-16-tablet.png"
+          "mobile2x": "articles-page-16-tablet@2x.png"
         }
       }
     },
@@ -284,11 +284,11 @@
         "alt": "Картинка статьи 17",
         "images": {
           "desktop": "articles-page-17.png",
-          "desktop2x": "articles-page-17.png",
+          "desktop2x": "articles-page-17@2x.png",
           "tablet": "articles-page-17-tablet.png",
-          "tablet2x": "articles-page-17-tablet.png",
+          "tablet2x": "articles-page-17-tablet@2x.png",
           "mobile": "articles-page-17-tablet.png",
-          "mobile2x": "articles-page-17-tablet.png"
+          "mobile2x": "articles-page-17-tablet@2x.png"
         }
       }
     },
@@ -301,11 +301,11 @@
         "alt": "Картинка статьи 18",
         "images": {
           "desktop": "articles-page-18.png",
-          "desktop2x": "articles-page-18.png",
+          "desktop2x": "articles-page-18@2x.png",
           "tablet": "articles-page-18-tablet.png",
-          "tablet2x": "articles-page-18-tablet.png",
+          "tablet2x": "articles-page-18-tablet@2x.png",
           "mobile": "articles-page-18-tablet.png",
-          "mobile2x": "articles-page-18-tablet.png"
+          "mobile2x": "articles-page-18-tablet@2x.png"
         }
       }
     },
@@ -313,16 +313,16 @@
       "id": 19,
       "href": "https://rusability.ru/articles/sila-prostoti-kak-sozdavat-interfeisi-kotorimi-hochetsya-polzovatsya",
       "date": "14 сентября 2022",
-      "title": "Сила простоты. Как создавать интерфейсы, которыми хочется пользоваться",
+      "title": "Сила простоты. Как создавать интерфейсы, которыми хочется пользоваться",
       "image": {
         "alt": "Картинка статьи 19",
         "images": {
           "desktop": "articles-page-19.png",
-          "desktop2x": "articles-page-19.png",
+          "desktop2x": "articles-page-19@2x.png",
           "tablet": "articles-page-19-tablet.png",
-          "tablet2x": "articles-page-19-tablet.png",
+          "tablet2x": "articles-page-19-tablet@2x.png",
           "mobile": "articles-page-19-tablet.png",
-          "mobile2x": "articles-page-19-tablet.png"
+          "mobile2x": "articles-page-19-tablet@2x.png"
         }
       }
     },
@@ -330,16 +330,16 @@
       "id": 20,
       "href": "https://infogra.ru/articles/articles-typography/eksperimenty-s-tipografikoj-i-polza-dlya-biznesa",
       "date": "13 сентября 2022",
-      "title": "Эксперименты с типографикой и польза для бизнеса",
+      "title": "Эксперименты с типографикой и польза для бизнеса",
       "image": {
         "alt": "Картинка статьи 20",
         "images": {
           "desktop": "articles-page-20.png",
-          "desktop2x": "articles-page-20.png",
+          "desktop2x": "articles-page-20@2x.png",
           "tablet": "articles-page-20-tablet.png",
-          "tablet2x": "articles-page-20-tablet.png",
+          "tablet2x": "articles-page-20-tablet@2x.png",
           "mobile": "articles-page-20-tablet.png",
-          "mobile2x": "articles-page-20-tablet.png"
+          "mobile2x": "articles-page-20-tablet@2x.png"
         }
       }
     },
@@ -352,11 +352,11 @@
         "alt": "Картинка статьи 21",
         "images": {
           "desktop": "articles-page-21.png",
-          "desktop2x": "articles-page-21.png",
+          "desktop2x": "articles-page-21@2x.png",
           "tablet": "articles-page-21-tablet.png",
-          "tablet2x": "articles-page-21-tablet.png",
+          "tablet2x": "articles-page-21-tablet@2x.png",
           "mobile": "articles-page-21-tablet.png",
-          "mobile2x": "articles-page-21-tablet.png"
+          "mobile2x": "articles-page-21-tablet@2x.png"
         }
       }
     },
@@ -369,11 +369,11 @@
         "alt": "Картинка статьи 22",
         "images": {
           "desktop": "articles-page-22.png",
-          "desktop2x": "articles-page-22.png",
+          "desktop2x": "articles-page-22@2x.png",
           "tablet": "articles-page-22-tablet.png",
-          "tablet2x": "articles-page-22-tablet.png",
+          "tablet2x": "articles-page-22-tablet@2x.png",
           "mobile": "articles-page-22-tablet.png",
-          "mobile2x": "articles-page-22-tablet.png"
+          "mobile2x": "articles-page-22-tablet@2x.png"
         }
       }
     },
@@ -386,11 +386,11 @@
         "alt": "Картинка статьи 23",
         "images": {
           "desktop": "articles-page-23.png",
-          "desktop2x": "articles-page-23.png",
+          "desktop2x": "articles-page-23@2x.png",
           "tablet": "articles-page-23-tablet.png",
-          "tablet2x": "articles-page-23-tablet.png",
+          "tablet2x": "articles-page-23-tablet@2x.png",
           "mobile": "articles-page-23-tablet.png",
-          "mobile2x": "articles-page-23-tablet.png"
+          "mobile2x": "articles-page-23-tablet@2x.png"
         }
       }
     }
