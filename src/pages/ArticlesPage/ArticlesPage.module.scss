@@ -36,6 +36,15 @@
   @include mediaTablet {
     flex: auto;
   }
+
+  picture {
+    border-radius: 32px;
+    overflow: hidden;
+
+    @include mediaTablet {
+      border-radius: 24px;
+    }
+  }
 }
 
 .list {
