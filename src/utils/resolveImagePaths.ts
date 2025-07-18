@@ -3,7 +3,7 @@ import type { IPicture } from "../types/types";
 export const imagesMap = import.meta.glob(
   "/src/assets/**/*.{png,jpg,jpeg,webp,svg}",
   {
-    query: "?format=webp&as=src",
+    query: "?format=webp&quality=90&as=src",
     eager: true,
     import: "default",
   }
