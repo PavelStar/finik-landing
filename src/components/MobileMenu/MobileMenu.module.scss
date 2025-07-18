@@ -12,6 +12,7 @@
   height: 100vh;
   background-color: $white;
   padding: 32px;
+  overflow: scroll;
 
   @include mediaTablet {
     padding-left: 32px;
