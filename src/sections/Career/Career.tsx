@@ -30,78 +30,90 @@ const Career: FC<ICareerProps & ICareer> = ({
   const { pathname } = useLocation();
   const [openItems, setOpenItems] = useState<Array<string>>([]);
 
+  const isListHidden = list.every((item) => item.isHidden);
+
   return (
     <Section className={styles.career} theme="dark" id={id}>
-      <SectionGrid titleWrapClassName={styles.titleWrap} title={title}>
-        <ul className={cx(styles.items, styles.itemsLinks)}>
-          {list.map((career) => {
-            if (itemsType === "link") {
+      <SectionGrid
+        titleWrapClassName={cx(styles.titleWrap, {
+          [styles.emptyList]: isListHidden,
+        })}
+        title={title}
+      >
+        {!isListHidden ? (
+          <ul className={cx(styles.items, styles.itemsLinks)}>
+            {list.map((career) => {
+              if (career.isHidden) {
+                return null;
+              }
+
+              if (itemsType === "link") {
+                return (
+                  <li key={career.id}>
+                    <RouterLink
+                      to={
+                        pathname.includes("career")
+                          ? `${career.id}`
+                          : `career/${career.id}`
+                      }
+                      className={cx(styles.itemLink)}
+                    >
+                      <Title size="L" color="light" level={3}>
+                        {career.title}
+                      </Title>
+                      <div className={cx(styles.iconWrap)}>
+                        <ArrowIcon className={styles.icon} />
+                      </div>
+                    </RouterLink>
+                  </li>
+                );
+              }
+
               return (
                 <li key={career.id}>
-                  <RouterLink
-                    to={
-                      pathname.includes("career")
-                        ? `${career.id}`
-                        : `career/${career.id}`
-                    }
-                    className={cx(styles.itemLink)}
+                  <Accordion
+                    theme="light"
+                    id={career.id}
+                    title={career.title}
+                    openItems={openItems}
+                    setOpenItems={setOpenItems}
                   >
-                    <Title size="L" color="light" level={3}>
-                      {career.title}
-                    </Title>
-                    <div className={cx(styles.iconWrap)}>
-                      <ArrowIcon className={styles.icon} />
-                    </div>
-                  </RouterLink>
-                </li>
-              );
-            }
-
-            return (
-              <li key={career.id}>
-                <Accordion
-                  theme="light"
-                  id={career.id}
-                  title={career.title}
-                  openItems={openItems}
-                  setOpenItems={setOpenItems}
-                >
-                  <div className={styles.contentWrap}>
-                    {career.content.description && (
-                      <div className={styles.descriptionWrap}>
-                        <Title
-                          className={styles.descriptionTitle}
-                          weight="bold"
-                        >
-                          {career.content.description.title}
-                        </Title>
-                        <Paragraph className={styles.descriptionText}>
-                          {career.content.description.text}
-                        </Paragraph>
-                      </div>
-                    )}
-                    <ul className={styles.listsWrap}>
-                      {career.content.lists.map((item) => {
-                        return (
-                          <li key={item.title}>
-                            <Title weight="bold">{item.title}</Title>
-                            <ul className={styles.itemList}>
-                              {item.items.map((item) => {
-                                return (
-                                  <li
-                                    key={item}
-                                    className={styles.itemListItem}
-                                  >
-                                    <Paragraph>{item}</Paragraph>
-                                  </li>
-                                );
-                              })}
-                            </ul>
-                          </li>
-                        );
-                      })}
-                    </ul>
-                    {/* {career.content.outro && (
+                    <div className={styles.contentWrap}>
+                      {career.content.description && (
+                        <div className={styles.descriptionWrap}>
+                          <Title
+                            className={styles.descriptionTitle}
+                            weight="bold"
+                          >
+                            {career.content.description.title}
+                          </Title>
+                          <Paragraph className={styles.descriptionText}>
+                            {career.content.description.text}
+                          </Paragraph>
+                        </div>
+                      )}
+                      <ul className={styles.listsWrap}>
+                        {career.content.lists.map((item) => {
+                          return (
+                            <li key={item.title}>
+                              <Title weight="bold">{item.title}</Title>
+                              <ul className={styles.itemList}>
+                                {item.items.map((item) => {
+                                  return (
+                                    <li
+                                      key={item}
+                                      className={styles.itemListItem}
+                                    >
+                                      <Paragraph>{item}</Paragraph>
+                                    </li>
+                                  );
+                                })}
+                              </ul>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                      {/* {career.content.outro && (
                       <Paragraph className={styles.itemOutro}>
                         {career.content.outro}{" "}
                         <Link textDecoration="underline">
@@ -109,12 +121,13 @@ const Career: FC<ICareerProps & ICareer> = ({
                         </Link>
                       </Paragraph>
                     )} */}
-                  </div>
-                </Accordion>
-              </li>
-            );
-          })}
-        </ul>
+                    </div>
+                  </Accordion>
+                </li>
+              );
+            })}
+          </ul>
+        ) : null}
 
         {outro && (
           <div className={cx(styles.contacts)}>
@@ -134,7 +147,7 @@ const Career: FC<ICareerProps & ICareer> = ({
                 {outro.description.link}
               </Link>
             </Paragraph>
-            {outro.button && (
+            {outro.button?.isHidden && (
               <RouterLink to={outro.button.href || ""}>
                 <Button className={styles.outroButton}>
                   {outro.button.text}

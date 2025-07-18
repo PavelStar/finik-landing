@@ -11,6 +11,7 @@ export interface IPicture {
 }
 
 export interface IButton {
+  isHidden?: boolean;
   text: string;
   scrollId?: string;
   href?: string;
@@ -204,6 +205,7 @@ export interface ICareer {
 }
 
 export interface ICareerItem {
+  isHidden: boolean;
   id: number;
   title: string;
   content: {

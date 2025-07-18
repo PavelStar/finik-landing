@@ -29,6 +29,14 @@
   }
 }
 
+.emptyList {
+  height: 44px;
+
+  @include mediaTablet {
+    height: 26px;
+  }
+}
+
 .contentWrap {
   display: flex;
   flex-direction: column;
