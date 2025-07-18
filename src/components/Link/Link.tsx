@@ -7,6 +7,7 @@ const cx = classNames.bind(styles);
 interface ILink {
   children?: ReactNode;
   text?: string;
+  target?: "_self" | "_blank";
   color?: "light" | "dark" | "grey";
   size?: "S" | "M" | "L" | "XL";
   weight?: "bold" | "medium" | "regular";
@@ -20,6 +21,7 @@ interface ILink {
 const Link: FC<ILink> = ({
   children,
   text = "",
+  target = "_self",
   color = "light",
   size = "M",
   weight = "regular",
@@ -46,6 +48,7 @@ const Link: FC<ILink> = ({
         textTransform,
         className
       )}
+      target={target}
       href={href}
       onClick={handleClick}
     >

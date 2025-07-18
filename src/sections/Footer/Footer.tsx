@@ -14,7 +14,11 @@ const Footer = () => {
         <div className={styles.linksWrap}>
           <Paragraph>
             {"Входит в "}
-            <Link href="https://digitalleague.ru/" textDecoration="underline">
+            <Link
+              href="https://digitalleague.ru/"
+              textDecoration="underline"
+              target="_blank"
+            >
               Лигу Цифровой Экономики
             </Link>
           </Paragraph>
