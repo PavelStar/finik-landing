@@ -10,6 +10,11 @@ export default defineConfig({
   base: PATH_PREFIX,
   // base: "/new/",
   plugins: [react(), svgr(), imagetools()],
+  server: {
+    fs: {
+      strict: false,
+    },
+  },
   resolve: {
     alias: {
       "@styles": path.resolve(__dirname, "src/styles"),
